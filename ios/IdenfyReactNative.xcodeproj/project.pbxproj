@@ -31,6 +31,7 @@
 		413788A3FA833C892A1A0FA4 /* Pods-IdenfyReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdenfyReactNative.debug.xcconfig"; path = "Target Support Files/Pods-IdenfyReactNative/Pods-IdenfyReactNative.debug.xcconfig"; sourceTree = "<group>"; };
 		772D249F253C785E007A52BB /* GetSdkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSdkConfig.swift; sourceTree = "<group>"; };
 		773DF113253EDBE200FB1DD7 /* NativeResponseToReactNativeResponseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeResponseToReactNativeResponseMapper.swift; sourceTree = "<group>"; };
+		8BE1F65728BE4CCB0051E9AB /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* IdenfyReactNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdenfyReactNative.m; sourceTree = "<group>"; };
 		E870A13E1406D2633851E8AD /* libPods-IdenfyReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IdenfyReactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FF95D5245B92E700C19C63 /* IdenfyReactNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IdenfyReactNative-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				8BE1F65728BE4CCB0051E9AB /* CountryCell.swift */,
 				772D249D253C785E007A52BB /* domain */,
 				F4FF95D6245B92E800C19C63 /* IdenfyReactNative.swift */,
 				B3E7B5891CC2AC0600A0062D /* IdenfyReactNative.m */,
