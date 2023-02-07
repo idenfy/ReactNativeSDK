@@ -71,7 +71,7 @@ android {
 }
 ```
 
-**Also starting version 2.0.2** you need add the following lines to your `android/app/build.gradle`:
+**Also starting version 2.0.2** you need add the following lines to your `android/build.gradle`:
 ```gradle
 allprojects {
     repositories {
