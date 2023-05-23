@@ -31,8 +31,8 @@ import Lottie
         return label
     }()
 
-    public var loadingSpinner: AnimationView = {
-        let lottieView = AnimationView(frame: .zero)
+    public var loadingSpinner: LottieAnimationView = {
+        let lottieView = LottieAnimationView(frame: .zero)
         lottieView.translatesAutoresizingMaskIntoConstraints = false
         if let anim = Bundle(identifier: "com.idenfy.idenfyviews")!.path(forResource: "idenfy_custom_country_loader", ofType: "json") {
             lottieView.animation = Animation.filepath(anim)
@@ -40,6 +40,7 @@ import Lottie
         lottieView.contentMode = .scaleAspectFit
         lottieView.play()
         lottieView.loopMode = .loop
+        lottieView.backgroundBehavior = .pauseAndRestore
         lottieView.isHidden = true
         return lottieView
     }()

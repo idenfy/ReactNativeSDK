@@ -53,6 +53,7 @@ Add the maven link `android/build.gradle`:
 allprojects {
   repositories {
     maven { url 'https://jitpack.io' }
+    maven { url 'https://developer.huawei.com/repo/' }
   }
 }
 ```
