@@ -35,7 +35,7 @@ import Lottie
         let lottieView = LottieAnimationView(frame: .zero)
         lottieView.translatesAutoresizingMaskIntoConstraints = false
         if let anim = Bundle(identifier: "com.idenfy.idenfyviews")!.path(forResource: "idenfy_custom_country_loader", ofType: "json") {
-            lottieView.animation = Animation.filepath(anim)
+            lottieView.animation = LottieAnimation.filepath(anim)
         }
         lottieView.contentMode = .scaleAspectFit
         lottieView.play()
