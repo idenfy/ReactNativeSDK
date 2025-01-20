@@ -12,6 +12,19 @@ import {
 } from './Consts';
 import { start, startFaceReAuth } from 'idenfy-react-native';
 import { IdenfyFaceAuthUIBuilder } from './IdenfyFaceAuthUIBuilder';
+import { IdenfyBuilder } from './models/IdenfyBuilder';
+import { IdenfyUIBuilder } from './models/IdenfyUIBuilder';
+import { IdenfyDocumentSelectionType } from './models/IdenfyDocumentSelectionType';
+import { IdenfyOnBoardingViewType } from './models/IdenfyOnBoardingViewType';
+import { IdenfyInstructionsEnum } from './models/IdenfyInstructionsEnum';
+import { ImmediateRedirectEnum } from './models/ImmediateRedirectEnum';
+import { IdenfyIdentificationResultsUISettingsV2 } from './models/IdenfyIdentificationResultsUISettingsV2';
+import {
+  DocumentCameraFrameVisibility,
+  HiddenForSpecificCountriesAndDocumentTypes,
+} from './models/DocumentCameraFrameVisibility';
+import { IdenfyLocaleEnum } from './models/IdenfyLocaleEnum';
+import { DocumentTypeEnum } from './models/DocumentTypeEnum';
 
 global.Buffer = Buffer; // very important
 export default class App extends Component {
@@ -187,9 +200,41 @@ export default class App extends Component {
       });
   };
   startSDK = (authToken: String) => {
+    const idenfyUISettings = new IdenfyUIBuilder()
+      .withAdditionalSupportView(true)
+      .withIdenfyDocumentSelectionType(
+        IdenfyDocumentSelectionType.navigateOnContinueButton
+      )
+      .withOnBoardingViewType(IdenfyOnBoardingViewType.multipleStatic)
+      .withInstructions(IdenfyInstructionsEnum.dialog)
+      .withImmediateRedirect(ImmediateRedirectEnum.full)
+      .withLanguageSelection(true)
+      .withIdenfyIdentificationResultsUISettingsV2(
+        new IdenfyIdentificationResultsUISettingsV2(true, true, true)
+      )
+      .withDocumentCameraFrameVisibility(
+        new HiddenForSpecificCountriesAndDocumentTypes({
+          US: [DocumentTypeEnum.PASSPORT],
+        })
+      )
+      .withSkipInternalPrivacyPolicy(false)
+      .build();
+
+    const idenfySettings = new IdenfyBuilder()
+      .withSelectedLocale(IdenfyLocaleEnum.EN)
+      .withUISettings(idenfyUISettings)
+      .withSSLPinning(true)
+      .build();
+
+    // Start with Idenfy Settings
     start({
       authToken: authToken,
+      idenfySettings: idenfySettings.toJson(),
     })
+      // Start without Idenfy Settings
+      // start({
+      //   authToken: authToken,
+      // })
       .then((response) => {
         this.setState({
           message: JSON.stringify(response),

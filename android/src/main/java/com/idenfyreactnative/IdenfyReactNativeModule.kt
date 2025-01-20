@@ -48,9 +48,8 @@ class IdenfyReactNativeModule(reactContext: ReactApplicationContext) :
     try {
 
       val authToken = GetSdkDataFromConfig.getSdkTokenFromConfig(config)
-      val idenfySettingsV2 = IdenfyBuilderV2()
-        .withAuthToken(authToken)
-        .build()
+      val idenfySettingsV2 = GetSdkDataFromConfig.getIdenfySettingsFromConfig(config)
+      idenfySettingsV2.authToken = authToken
 
       IdenfyController.getInstance().initializeIdenfySDKV2WithManual(
         currentActivity,

@@ -275,9 +275,41 @@ Calling IdenfyReactNative.start with provided authToken:
 ```typescript jsx
 import { start, startFaceReAuth } from '@idenfy/react-native-sdk';
 startSDK = (authToken: String) => {
+  const idenfyUISettings = new IdenfyUIBuilder()
+    .withAdditionalSupportView(true)
+    .withIdenfyDocumentSelectionType(
+      IdenfyDocumentSelectionType.navigateOnContinueButton
+    )
+    .withOnBoardingViewType(IdenfyOnBoardingViewType.multipleStatic)
+    .withInstructions(IdenfyInstructionsEnum.dialog)
+    .withImmediateRedirect(ImmediateRedirectEnum.full)
+    .withLanguageSelection(true)
+    .withIdenfyIdentificationResultsUISettingsV2(
+      new IdenfyIdentificationResultsUISettingsV2(true, true, true)
+    )
+    .withDocumentCameraFrameVisibility(
+      new HiddenForSpecificCountriesAndDocumentTypes({
+        US: [DocumentTypeEnum.PASSPORT],
+      })
+    )
+    .withSkipInternalPrivacyPolicy(false)
+    .build();
+
+  const idenfySettings = new IdenfyBuilder()
+    .withSelectedLocale(IdenfyLocaleEnum.EN)
+    .withUISettings(idenfyUISettings)
+    .withSSLPinning(true)
+    .build();
+
+  // Start with Idenfy Settings
   start({
     authToken: authToken,
+    idenfySettings: idenfySettings.toJson(),
   })
+    // Start without Idenfy Settings
+    // start({
+    //   authToken: authToken,
+    // })
     .then((response) => {
       this.setState({
         message: JSON.stringify(response),
@@ -542,7 +574,43 @@ The possible values and their explanations are:
 
 ## Additional customization
 
-Currently, @idenfy/react-native-sdk plugin does not provide customization options via React Native code directly. For any additional SDK customization you should edit native code inside of the plugin.
+Currently, @idenfy/react-native-sdk only provides IdenfySettings and IdenfyUISettings options via React Native code directly:
+
+```javascript
+const idenfyUISettings = new IdenfyUIBuilder()
+  .withAdditionalSupportView(true)
+  .withIdenfyDocumentSelectionType(
+    IdenfyDocumentSelectionType.navigateOnContinueButton
+  )
+  .withOnBoardingViewType(IdenfyOnBoardingViewType.multipleStatic)
+  .withInstructions(IdenfyInstructionsEnum.dialog)
+  .withImmediateRedirect(ImmediateRedirectEnum.full)
+  .withLanguageSelection(true)
+  .withIdenfyIdentificationResultsUISettingsV2(
+    new IdenfyIdentificationResultsUISettingsV2(true, true, true)
+  )
+  .withDocumentCameraFrameVisibility(
+    new HiddenForSpecificCountriesAndDocumentTypes({
+      US: [DocumentTypeEnum.PASSPORT],
+    })
+  )
+  .withSkipInternalPrivacyPolicy(false)
+  .build();
+
+const idenfySettings = new IdenfyBuilder()
+  .withSelectedLocale(IdenfyLocaleEnum.EN)
+  .withUISettings(idenfyUISettings)
+  .withSSLPinning(true)
+  .build();
+
+// Start with Idenfy Settings
+start({
+  authToken: authToken,
+  idenfySettings: idenfySettings.toJson(),
+});
+```
+
+For any additional SDK customization you should edit native code inside of the plugin.
 
 **Android customization:**
 Follow [Android native SDK](https://documentation.idenfy.com/mobile/Android/android-sdk#customizing-sdk-flow-optional) guide and edit **IdenfyReactNativeModule.kt**.
