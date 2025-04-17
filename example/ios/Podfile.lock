@@ -16,10 +16,10 @@ PODS:
   - hermes-engine (0.73.6):
     - hermes-engine/Pre-built (= 0.73.6)
   - hermes-engine/Pre-built (0.73.6)
-  - idenfy-react-native (2.5.8):
-    - iDenfySDK-Static/iDenfyBlurGlareDetection-Static (= 8.6.2)
+  - idenfy-react-native (2.5.9):
+    - iDenfySDK-Static/iDenfyBlurGlareDetection-Static (= 8.6.4)
     - React-Core
-  - iDenfySDK-Static/iDenfyBlurGlareDetection-Static (8.6.2):
+  - iDenfySDK-Static/iDenfyBlurGlareDetection-Static (8.6.4):
     - lottie-ios (= 4.4.3)
   - libevent (2.1.12)
   - lottie-ios (4.4.3)
@@ -1239,8 +1239,8 @@ SPEC CHECKSUMS:
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: c5d68082e772fa1c511173d6b30a9de2c05a69a2
   hermes-engine: 9cecf9953a681df7556b8cc9c74905de8f3293c0
-  idenfy-react-native: 27f0eaf23659ebed7f4a50d52c95e2c126e22315
-  iDenfySDK-Static: 32419064ca0c2a05742d2c9f2679f077592fc1ab
+  idenfy-react-native: 85e79c36ccf7e3c01c174f0bf117a631ce52b441
+  iDenfySDK-Static: 10b696a579daecd76c24c4f4104acba2f1945211
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   lottie-ios: fcb5e73e17ba4c983140b7d21095c834b3087418
   RCT-Folly: cd21f1661364f975ae76b3308167ad66b09f53f5
