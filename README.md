@@ -603,10 +603,10 @@ start({
 For any additional SDK customization you should edit native code inside of the plugin.
 
 **Android customization:**
-Follow [Android native SDK](https://documentation.idenfy.com/mobile/Android/android-sdk#customizing-sdk-flow-optional) guide and edit **IdenfyReactNativeModule.kt**.
+Follow [Android native SDK](https://documentation.idenfy.com/mobile/Android/android-customizing-flow) guide and edit **IdenfyReactNativeModule.kt**.
 
 **IOS customization:**
-Follow [IOS native SDK guide](https://documentation.idenfy.com/mobile/iOS/ios-sdk#customizing-sdk-flow-optional) and edit **IdenfyReactNative.swift**.
+Follow [IOS native SDK guide](https://documentation.idenfy.com/mobile/iOS/ios-customizing-flow) and edit **IdenfyReactNative.swift**.
 
 A detailed guide on how to provide complex customization:
 
