@@ -12,12 +12,10 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://developer.huawei.com/repo/' }
         maven { url "https://jitpack.io" }
     }
     dependencies {
-        classpath("com.android.tools.build:gradle")
-        classpath("com.android.tools.build:gradle:8.1.2")
+        classpath("com.android.tools.build:gradle:8.5.1")
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.20"
         classpath("com.facebook.react:react-native-gradle-plugin")
     }
@@ -27,6 +25,5 @@ allprojects {
     repositories {
         google()
         maven { url 'https://www.jitpack.io' }
-        maven { url 'https://developer.huawei.com/repo/' }
     }
 }
