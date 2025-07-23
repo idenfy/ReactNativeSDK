@@ -6,11 +6,10 @@ buildscript {
       google()
       mavenCentral()
       maven { url 'https://jitpack.io' }
-      maven { url 'https://developer.huawei.com/repo/' }
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:8.1.2'
+    classpath 'com.android.tools.build:gradle:8.5.1'
     // noinspection DifferentKotlinGradleVersion
     classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
   }
@@ -65,7 +64,6 @@ repositories {
   mavenCentral()
   google()
   maven { url 'https://jitpack.io' }
-  maven { url 'https://developer.huawei.com/repo/' }
 
   def found = false
   def defaultDir = null
@@ -139,8 +137,8 @@ dependencies {
     //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  implementation 'com.github.idenfy:sdk-api:8.6.3'
-  implementation 'com.github.idenfy:sdk-blurglaredetection:8.6.3'
+  implementation 'com.github.idenfy:sdk-api:8.6.5'
+  implementation 'com.github.idenfy:sdk-blurglaredetection:8.6.5'
    implementation 'androidx.multidex:multidex:2.0.1'
 // From node_modules
 }

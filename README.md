@@ -31,9 +31,9 @@ The SDK requires token for starting initialization. [Token generation guide](htt
 
 Minimum required versions by the platform:
 
-**React Native - 0.73.9**
+**React Native - 0.79.2**
 
-**IOS - 13.4**
+**IOS - 15.1**
 
 **iOS SDK is built using xCode 16.2**
 
@@ -71,7 +71,6 @@ Add the maven link `android/build.gradle`:
 allprojects {
   repositories {
     maven { url 'https://jitpack.io' }
-    maven { url 'https://developer.huawei.com/repo/' }
   }
 }
 ```
@@ -139,25 +138,15 @@ The main idea is to have **use_native_modules!**, **static linkage** and flipper
 
 Take a look at a fresh projects' Podfile:
 
-````ruby
+```ruby
 # Resolve react_native_pods.rb with node to allow for hoisting
 require Pod::Executable.execute_command('node', ['-p',
   'require.resolve(
     "react-native/scripts/react_native_pods.rb",
     {paths: [process.argv[1]]},
   )', __dir__]).strip
-platform :ios, '13.4'
+platform :ios, '15.1'
 prepare_react_native_project!
-# If you are using a `react-native-flipper` your iOS build will fail when `NO_FLIPPER=1` is set.
-# because `react-native-flipper` depends on (FlipperKit,...) that will be excluded
-#
-# To fix this you can also exclude `react-native-flipper` using a `react-native.config.js`
-# ```js
-# module.exports = {
-#   dependencies: {
-#     ...(process.env.NO_FLIPPER ? { 'react-native-flipper': { platforms: { ios: null } } } : {}),
-# ```
-flipper_config = ENV['NO_FLIPPER'] == "1" ? FlipperConfiguration.disabled : FlipperConfiguration.enabled
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
@@ -203,11 +192,12 @@ target 'IdenfyReactNativeExample' do
                       react_native_post_install(
                                                 installer,
                                                 config[:reactNativePath],
-                                                :mac_catalyst_enabled => false
+                                                :mac_catalyst_enabled => false,
+                                                # :ccache_enabled => true
                                                 )
                     end
 end
-````
+```
 
 Install the pods (run **pod update** as well):
 
