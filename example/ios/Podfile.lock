@@ -10,14 +10,35 @@ PODS:
   - hermes-engine (0.81.5):
     - hermes-engine/Pre-built (= 0.81.5)
   - hermes-engine/Pre-built (0.81.5)
-  - idenfy-react-native (2.6.9):
+  - idenfy-react-native (2.7.0):
+    - boost
+    - DoubleConversion
+    - fast_float
+    - fmt
+    - glog
+    - hermes-engine
     - iDenfySDK-Static/iDenfyLiveness-Static (= 8.8.1)
     - RCT-Folly
+    - RCT-Folly/Fabric
     - RCTRequired
     - RCTTypeSafety
-    - React-Codegen
     - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-jsi
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-renderercss
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
+    - SocketRocket
+    - Yoga
   - iDenfySDK-Static/iDenfyLiveness-Static (8.8.1):
     - lottie-ios
   - lottie-ios (4.6.0)
@@ -60,7 +81,6 @@ PODS:
     - React-RCTText (= 0.81.5)
     - React-RCTVibration (= 0.81.5)
   - React-callinvoker (0.81.5)
-  - React-Codegen (0.1.0)
   - React-Core (0.81.5):
     - boost
     - DoubleConversion
@@ -2439,7 +2459,6 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - iDenfySDK-Static
     - lottie-ios
-    - React-Codegen
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -2602,7 +2621,7 @@ SPEC CHECKSUMS:
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
   glog: 5683914934d5b6e4240e497e0f4a3b42d1854183
   hermes-engine: 9f4dfe93326146a1c99eb535b1cb0b857a3cd172
-  idenfy-react-native: 2160695c253048a4f1d05c3894ed089665e55428
+  idenfy-react-native: c94536e3a4dbfdc09be768100ef5cf41b22bff96
   iDenfySDK-Static: 6a890b38f58748b1db8923a378168d79d7236818
   lottie-ios: 8f959969761e9c45d70353667d00af0e5b9cadb3
   RCT-Folly: 59ec0ac1f2f39672a0c6e6cecdd39383b764646f
@@ -2611,7 +2630,6 @@ SPEC CHECKSUMS:
   RCTTypeSafety: b99aa872829ee18f6e777e0ef55852521c5a6788
   React: 914f8695f9bf38e6418228c2ffb70021e559f92f
   React-callinvoker: 23cd4e33928608bd0cc35357597568b8b9a5f068
-  React-Codegen: 4b8b4817cea7a54b83851d4c1f91f79aa73de30a
   React-Core: 895a479e2e0331f48af3ad919bece917926a0b7d
   React-CoreModules: dfa38212cf3a91f2eb84ccd43d747d006d33449e
   React-cxxreact: 7a4e2c77e564792252131e63270f6184d93343b3

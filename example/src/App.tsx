@@ -10,21 +10,22 @@ import {
   scanRef,
   authenticationMethod,
 } from './Consts';
-import { start, startFaceReAuth } from 'idenfy-react-native';
-import { IdenfyFaceAuthUIBuilder } from './IdenfyFaceAuthUIBuilder';
-import { IdenfyBuilder } from './models/IdenfyBuilder';
-import { IdenfyUIBuilder } from './models/IdenfyUIBuilder';
-import { IdenfyDocumentSelectionType } from './models/IdenfyDocumentSelectionType';
-import { IdenfyOnBoardingViewType } from './models/IdenfyOnBoardingViewType';
-import { IdenfyInstructionsEnum } from './models/IdenfyInstructionsEnum';
-import { ImmediateRedirectEnum } from './models/ImmediateRedirectEnum';
-import { IdenfyIdentificationResultsUISettingsV2 } from './models/IdenfyIdentificationResultsUISettingsV2';
 import {
+  start,
+  startFaceReAuth,
+  IdenfyBuilder,
+  IdenfyUIBuilder,
+  IdenfyDocumentSelectionType,
+  IdenfyOnBoardingViewType,
+  IdenfyInstructionsEnum,
+  ImmediateRedirectEnum,
+  IdenfyIdentificationResultsUISettingsV2,
   DocumentCameraFrameVisibility,
   HiddenForSpecificCountriesAndDocumentTypes,
-} from './models/DocumentCameraFrameVisibility';
-import { IdenfyLocaleEnum } from './models/IdenfyLocaleEnum';
-import { DocumentTypeEnum } from './models/DocumentTypeEnum';
+  IdenfyLocaleEnum,
+  DocumentTypeEnum,
+  IdenfyFaceAuthUIBuilder,
+} from 'idenfy-react-native';
 
 global.Buffer = Buffer; // very important
 export default class App extends Component {
