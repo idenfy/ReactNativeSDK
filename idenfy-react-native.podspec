@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.source_files = "ios/**/*.{h,m,mm,swift}"
 
-  s.dependency "iDenfySDK-Static/iDenfyLiveness-Static", "8.8.1"
+  s.dependency "iDenfySDK-Static/iDenfyLiveness-Static", "8.8.3"
 
   # Use install_modules_dependencies helper for React Native >= 0.71.0
   if respond_to?(:install_modules_dependencies, true)
