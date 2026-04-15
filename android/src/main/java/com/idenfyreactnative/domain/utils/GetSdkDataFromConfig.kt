@@ -108,9 +108,14 @@ internal object GetSdkDataFromConfig {
           idenfyUISettingsV2.immediateRedirectEnum = ImmediateRedirectEnum.valueOf(enum)
         }
 
-        if (uiSettingsMap.hasKey("skipInternalPrivacyPolicyView") && !uiSettingsMap.isNull("skipInternalPrivacyPolicyView")) {
-          idenfyUISettingsV2.skipInternalPrivacyPolicyView =
-            uiSettingsMap.getBoolean("skipInternalPrivacyPolicyView")
+        if (uiSettingsMap.hasKey("mismatchTagsAlert") && !uiSettingsMap.isNull("mismatchTagsAlert")) {
+          idenfyUISettingsV2.mismatchTagsAlert =
+            uiSettingsMap.getBoolean("mismatchTagsAlert")
+        }
+
+        if (uiSettingsMap.hasKey("withCountryAndDocumentSelectionJoined") && !uiSettingsMap.isNull("withCountryAndDocumentSelectionJoined")) {
+          idenfyUISettingsV2.withCountryAndDocumentSelectionJoined =
+            uiSettingsMap.getBoolean("withCountryAndDocumentSelectionJoined")
         }
 
         if (uiSettingsMap.hasKey("documentCameraFrameVisibility") && !uiSettingsMap.isNull("documentCameraFrameVisibility")) {

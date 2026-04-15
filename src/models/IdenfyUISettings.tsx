@@ -13,8 +13,9 @@ export class IdenfyUISettings {
   idenfyInstructionsEnum?: IdenfyInstructionsEnum;
   idenfyIdentificationResultsUISettingsV2?: IdenfyIdentificationResultsUISettingsV2;
   immediateRedirectEnum?: ImmediateRedirectEnum;
-  skipInternalPrivacyPolicyView?: boolean;
+  mismatchTagsAlert?: boolean;
   documentCameraFrameVisibility?: DocumentCameraFrameVisibility;
+  withCountryAndDocumentSelectionJoined?: boolean;
 
   constructor(
     isAdditionalSupportEnabled?: boolean,
@@ -24,8 +25,9 @@ export class IdenfyUISettings {
     idenfyInstructionsEnum?: IdenfyInstructionsEnum,
     idenfyIdentificationResultsUISettingsV2?: IdenfyIdentificationResultsUISettingsV2,
     immediateRedirectEnum?: ImmediateRedirectEnum,
-    skipInternalPrivacyPolicyView?: boolean,
-    documentCameraFrameVisibility?: DocumentCameraFrameVisibility
+    mismatchTagsAlert?: boolean,
+    documentCameraFrameVisibility?: DocumentCameraFrameVisibility,
+    withCountryAndDocumentSelectionJoined?: boolean
   ) {
     this.isAdditionalSupportEnabled = isAdditionalSupportEnabled;
     this.idenfyOnBoardingViewType = idenfyOnBoardingViewType;
@@ -35,8 +37,9 @@ export class IdenfyUISettings {
     this.idenfyIdentificationResultsUISettingsV2 =
       idenfyIdentificationResultsUISettingsV2;
     this.immediateRedirectEnum = immediateRedirectEnum;
-    this.skipInternalPrivacyPolicyView = skipInternalPrivacyPolicyView;
+    this.mismatchTagsAlert = mismatchTagsAlert;
     this.documentCameraFrameVisibility = documentCameraFrameVisibility;
+    this.withCountryAndDocumentSelectionJoined = withCountryAndDocumentSelectionJoined;
   }
 
   toJson(): Record<string, any> {
@@ -49,9 +52,10 @@ export class IdenfyUISettings {
       idenfyIdentificationResultsUISettingsV2:
         this.idenfyIdentificationResultsUISettingsV2?.toJson(),
       immediateRedirectEnum: this.immediateRedirectEnum,
-      skipInternalPrivacyPolicyView: this.skipInternalPrivacyPolicyView,
+      mismatchTagsAlert: this.mismatchTagsAlert,
       documentCameraFrameVisibility:
         this.documentCameraFrameVisibility?.toJson(),
+        withCountryAndDocumentSelectionJoined: this.withCountryAndDocumentSelectionJoined
     };
   }
 }

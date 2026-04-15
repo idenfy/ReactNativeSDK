@@ -218,7 +218,8 @@ export default class App extends Component {
           US: [DocumentTypeEnum.PASSPORT],
         })
       )
-      .withSkipInternalPrivacyPolicy(false)
+      .withMismatchTagsAlert(true)
+      .withCountryAndDocumentSelectionJoined(true)
       .build();
 
     const idenfySettings = new IdenfyBuilder()

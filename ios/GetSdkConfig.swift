@@ -70,7 +70,8 @@ class GetSdkConfig {
           idenfyUISettingsV2 = idenfyUISettingsV2.withImmediateRedirect(forcedEnum)
         }
         
-        idenfyUISettingsV2.skipInternalPrivacyPolicyView = uiSettingsMap["skipInternalPrivacyPolicyView"] as? Bool ?? false
+        idenfyUISettingsV2.mismatchTagsAlert = uiSettingsMap["mismatchTagsAlert"] as? Bool ?? true
+        idenfyUISettingsV2.withCountryAndDocumentSelectionJoined = uiSettingsMap["withCountryAndDocumentSelectionJoined"] as? Bool ?? true
         
         if let documentFrameVisibility = uiSettingsMap["documentCameraFrameVisibility"] as? NSDictionary,
            let visibilityValue = documentFrameVisibility["value"] as? String {

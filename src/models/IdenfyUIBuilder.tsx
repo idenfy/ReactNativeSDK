@@ -14,8 +14,9 @@ export class IdenfyUIBuilder {
   private idenfyInstructionsEnum?: IdenfyInstructionsEnum;
   private idenfyIdentificationResultsUISettingsV2?: IdenfyIdentificationResultsUISettingsV2;
   private immediateRedirectEnum?: ImmediateRedirectEnum;
-  private skipInternalPrivacyPolicyView?: boolean;
+  private mismatchTagsAlert?: boolean;
   private documentCameraFrameVisibility?: DocumentCameraFrameVisibility;
+  private countryAndDocumentSelectionJoined?: boolean;
 
   withAdditionalSupportView(
     isAdditionalSupportEnabled: boolean
@@ -65,10 +66,10 @@ export class IdenfyUIBuilder {
     return this;
   }
 
-  withSkipInternalPrivacyPolicy(
-    skipInternalPrivacyPolicyView: boolean
+  withMismatchTagsAlert(
+    mismatchTagsAlert: boolean
   ): IdenfyUIBuilder {
-    this.skipInternalPrivacyPolicyView = skipInternalPrivacyPolicyView;
+    this.mismatchTagsAlert = mismatchTagsAlert;
     return this;
   }
 
@@ -76,6 +77,13 @@ export class IdenfyUIBuilder {
     documentCameraFrameVisibility: DocumentCameraFrameVisibility
   ): IdenfyUIBuilder {
     this.documentCameraFrameVisibility = documentCameraFrameVisibility;
+    return this;
+  }
+
+    withCountryAndDocumentSelectionJoined(
+    countryAndDocumentSelectionJoined: boolean
+  ): IdenfyUIBuilder {
+    this.countryAndDocumentSelectionJoined = countryAndDocumentSelectionJoined;
     return this;
   }
 
@@ -88,8 +96,9 @@ export class IdenfyUIBuilder {
       this.idenfyInstructionsEnum,
       this.idenfyIdentificationResultsUISettingsV2,
       this.immediateRedirectEnum,
-      this.skipInternalPrivacyPolicyView,
-      this.documentCameraFrameVisibility
+      this.mismatchTagsAlert,
+      this.documentCameraFrameVisibility,
+      this.countryAndDocumentSelectionJoined
     );
   }
 }
