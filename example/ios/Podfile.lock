@@ -10,7 +10,7 @@ PODS:
   - hermes-engine (0.81.5):
     - hermes-engine/Pre-built (= 0.81.5)
   - hermes-engine/Pre-built (0.81.5)
-  - idenfy-react-native (2.7.2):
+  - idenfy-react-native (2.7.3):
     - boost
     - DoubleConversion
     - fast_float
@@ -2621,7 +2621,7 @@ SPEC CHECKSUMS:
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
   glog: 5683914934d5b6e4240e497e0f4a3b42d1854183
   hermes-engine: 9f4dfe93326146a1c99eb535b1cb0b857a3cd172
-  idenfy-react-native: 1ca9200814e75e73c283be661dc4bb894c167de3
+  idenfy-react-native: 54f9f455ed41de97073dde3b3998403db2f2cf54
   iDenfySDK-Static: c9e4f0faf50ab6b5dffb78b1bec9c30e89380303
   lottie-ios: 8f959969761e9c45d70353667d00af0e5b9cadb3
   RCT-Folly: 59ec0ac1f2f39672a0c6e6cecdd39383b764646f
