@@ -1,4 +1,4 @@
-## This is an official React Native plugin, which provides an easier integration of iDenfy KYC services. This plugin offers [identity verification](#identity-verification-flow-usage) and [face authentication](#face-authentication-flow-usage) flows
+## This is an official React Native plugin, which provides an easier integration of iDenfy KYC services. This plugin offers [identity verification](#identity-verification-flow-usage), [face authentication](#face-authentication-flow-usage) and [request update](#request-update-flow-usage) flows
 
 ## Table of contents
 
@@ -13,9 +13,11 @@
 * [Usage](#usage)
   - [Identity verification usage](#identity-verification-flow-usage)
   - [Face authentication usage](#face-authentication-flow-usage)
+  - [Request update usage](#request-update-flow-usage)
 * [Callbacks](#callbacks)
   - [Identity verification callbacks](#identity-verification-flow-callbacks)
   - [Face authentication callbakcs](#face-authentication-flow-callbacks)
+  - [Request update callbacks](#request-update-flow-callbacks)
 * [Additional customization](#additional-customization)
 * [SDK Integration tutorials](#sdk-integration-tutorials)
 
@@ -23,7 +25,7 @@
 
 ### 1. Obtaining an authentication token
 
-The SDK requires token for starting initialization. [Token generation guide](https://documentation.idenfy.com/API/GeneratingIdentificationToken)
+The SDK requires token for starting initialization. [Token generation guide](https://documentation.idenfy.com/kyc/generate-token)
 
 ### 2. Adding Idenfy React Native SDK
 
@@ -35,7 +37,7 @@ Minimum required versions by the platform:
 
 **IOS - 15.1**
 
-**iOS SDK is built using xCode 26.3**
+**iOS SDK is built using xCode 26.4.1**
 
 **Android - API 24**
 
@@ -219,7 +221,7 @@ If project is not successfully compiled or runtime issues occurs, make sure you 
 Once you have an authentication token, which can be retried with following code, found in the example app, you can call start method (**you need to import it**):
 
 ```typescript jsx
-import { start, startFaceReAuth } from '@idenfy/react-native-sdk';
+import { start, startFaceReAuth, startRequestUpdate } from '@idenfy/react-native-sdk';
 getAuthToken = () => {
   let encodedAuth = new Buffer(apiKey + ':' + apiSecret).toString('base64');
   return fetch(BASE_URL + 'api/v2/token', {
@@ -263,7 +265,7 @@ getAuthToken = () => {
 Calling IdenfyReactNative.start with provided authToken:
 
 ```typescript jsx
-import { start, startFaceReAuth } from '@idenfy/react-native-sdk';
+import { start, startFaceReAuth, startRequestUpdate } from '@idenfy/react-native-sdk';
 startSDK = (authToken: String) => {
   const idenfyUISettings = new IdenfyUIBuilder()
     .withAdditionalSupportView(true)
@@ -284,6 +286,7 @@ startSDK = (authToken: String) => {
     )
     .withMismatchTagsAlert(true)
     .withCountryAndDocumentSelectionJoined(true)
+    .withBottomSheetDialogs(true)
     .build();
 
   const idenfySettings = new IdenfyBuilder()
@@ -436,7 +439,7 @@ getAuthTokenForFaceAuth = (type: String) => {
 ### 3. Initializing the SDK
 
 ```typescript jsx
-import { start, startFaceReAuth } from '@idenfy/react-native-sdk';
+import { start, startFaceReAuth, startRequestUpdate } from '@idenfy/react-native-sdk';
 startFaceAuthSDK = (authToken: String) => {
   startFaceReAuth({
     authToken: authToken,
@@ -481,6 +484,50 @@ startFaceReAuth({
 });
 ```
 
+## Request update flow usage
+
+The request update flow allows users to provide additional information for their identification, such as proof of address (POA), risk assessment data, or questionnaire responses.
+
+### 1. Obtaining a request update token
+
+To start the request update flow, generate a token by making a POST request:
+
+```
+POST https://ivs.idenfy.com/api/v2/kyc/identifications/{scanRef}/request-information/
+```
+
+The request body can include optional fields:
+
+```json
+{
+  "additionalStepUploadRequired": true,
+  "questionnaire": "questionnaireId"
+}
+```
+
+### 2. Starting the request update flow
+
+```typescript jsx
+import { start, startFaceReAuth, startRequestUpdate } from '@idenfy/react-native-sdk';
+startRequestUpdateSDK = (authToken: String) => {
+  startRequestUpdate({
+    authToken: authToken,
+  })
+    .then((response) => {
+      this.setState({
+        message: JSON.stringify(response),
+        sdkFlowComplete: true,
+      });
+    })
+    .catch((error) => {
+      this.setState({
+        message: error.code + ': ' + error.message,
+        sdkFlowComplete: true,
+      });
+    });
+};
+```
+
 ## Callbacks
 
 #### Identity verification flow callbacks
@@ -488,7 +535,7 @@ startFaceReAuth({
 Callback from the SDK can be retrieved from start promise:
 
 ```typescript jsx
-import { start, startFaceReAuth } from '@idenfy/react-native-sdk';
+import { start, startFaceReAuth, startRequestUpdate } from '@idenfy/react-native-sdk';
 start({
   authToken: authToken,
 }).then((response) => {
@@ -536,7 +583,7 @@ After Face authentication is completed the SDK closes and returns response using
 Callback from the SDK can be retrieved from **startFaceReAuth** promise:
 
 ```typescript jsx
-import { start, startFaceReAuth } from '@idenfy/react-native-sdk';
+import { start, startFaceReAuth, startRequestUpdate } from '@idenfy/react-native-sdk';
 startFaceReAuth({
   authToken: authToken,
 }).then((response) => {
@@ -563,6 +610,39 @@ The possible values and their explanations are:
 | `FAILED`  | The user completed a face authentication flow and the authentication status, provided by the platform, is FAILED.      |
 | `EXIT`    | The user did not complete a face authentication flow and the authentication status, provided by the platform, is EXIT. |
 
+#### Request update flow callbacks
+
+After the request update flow is completed, the SDK closes and returns a response.
+
+Callback from the SDK can be retrieved from **startRequestUpdate** promise:
+
+```typescript jsx
+import { start, startFaceReAuth, startRequestUpdate } from '@idenfy/react-native-sdk';
+startRequestUpdate({
+  authToken: authToken,
+}).then((response) => {
+  this.setState({
+    message: JSON.stringify(response),
+    sdkFlowComplete: true,
+  });
+});
+```
+
+Result will have a following JSON structure:
+
+```javascript
+{
+  "informationUpdateStatus": "COMPLETED"
+}
+```
+
+The possible values and their explanations are:
+
+| Name        | Description                                                                           |
+| ----------- | ------------------------------------------------------------------------------------- |
+| `COMPLETED` | The user completed the request update flow.                          |
+| `EXPIRED`   | The user cancelled the request update flow or the token has expired. |
+
 ## Additional customization
 
 Currently, @idenfy/react-native-sdk only provides IdenfySettings and IdenfyUISettings options via React Native code directly:
@@ -587,6 +667,7 @@ const idenfyUISettings = new IdenfyUIBuilder()
   )
   .withMismatchTagsAlert(true)
   .withCountryAndDocumentSelectionJoined(true)
+  .withBottomSheetDialogs(true)
   .build();
 
 const idenfySettings = new IdenfyBuilder()

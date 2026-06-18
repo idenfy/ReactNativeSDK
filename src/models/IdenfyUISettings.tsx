@@ -16,6 +16,7 @@ export class IdenfyUISettings {
   mismatchTagsAlert?: boolean;
   documentCameraFrameVisibility?: DocumentCameraFrameVisibility;
   withCountryAndDocumentSelectionJoined?: boolean;
+  useBottomSheetDialogs?: boolean;
 
   constructor(
     isAdditionalSupportEnabled?: boolean,
@@ -27,7 +28,8 @@ export class IdenfyUISettings {
     immediateRedirectEnum?: ImmediateRedirectEnum,
     mismatchTagsAlert?: boolean,
     documentCameraFrameVisibility?: DocumentCameraFrameVisibility,
-    withCountryAndDocumentSelectionJoined?: boolean
+    withCountryAndDocumentSelectionJoined?: boolean,
+    useBottomSheetDialogs?: boolean
   ) {
     this.isAdditionalSupportEnabled = isAdditionalSupportEnabled;
     this.idenfyOnBoardingViewType = idenfyOnBoardingViewType;
@@ -40,6 +42,7 @@ export class IdenfyUISettings {
     this.mismatchTagsAlert = mismatchTagsAlert;
     this.documentCameraFrameVisibility = documentCameraFrameVisibility;
     this.withCountryAndDocumentSelectionJoined = withCountryAndDocumentSelectionJoined;
+    this.useBottomSheetDialogs = useBottomSheetDialogs;
   }
 
   toJson(): Record<string, any> {
@@ -55,7 +58,8 @@ export class IdenfyUISettings {
       mismatchTagsAlert: this.mismatchTagsAlert,
       documentCameraFrameVisibility:
         this.documentCameraFrameVisibility?.toJson(),
-        withCountryAndDocumentSelectionJoined: this.withCountryAndDocumentSelectionJoined
+        withCountryAndDocumentSelectionJoined: this.withCountryAndDocumentSelectionJoined,
+        useBottomSheetDialogs: this.useBottomSheetDialogs
     };
   }
 }

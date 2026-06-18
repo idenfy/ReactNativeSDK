@@ -25,6 +25,10 @@ export function startFaceReAuth(config: any): Promise<any> {
   return IdenfyReactNative.startFaceReAuth(config);
 }
 
+export function startRequestUpdate(config: any): Promise<any> {
+  return IdenfyReactNative.startRequestUpdate(config);
+}
+
 // Export models
 export {
   DocumentCameraFrameVisibility,

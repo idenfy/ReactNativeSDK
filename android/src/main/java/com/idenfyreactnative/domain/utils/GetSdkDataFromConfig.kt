@@ -118,6 +118,11 @@ internal object GetSdkDataFromConfig {
             uiSettingsMap.getBoolean("withCountryAndDocumentSelectionJoined")
         }
 
+        if (uiSettingsMap.hasKey("useBottomSheetDialogs") && !uiSettingsMap.isNull("useBottomSheetDialogs")) {
+          idenfyUISettingsV2.useBottomSheetDialogs =
+            uiSettingsMap.getBoolean("useBottomSheetDialogs")
+        }
+
         if (uiSettingsMap.hasKey("documentCameraFrameVisibility") && !uiSettingsMap.isNull("documentCameraFrameVisibility")) {
           val visibilityMap =
             uiSettingsMap.getMap("documentCameraFrameVisibility")!!

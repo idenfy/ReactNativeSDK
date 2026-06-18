@@ -10,14 +10,14 @@ PODS:
   - hermes-engine (0.81.5):
     - hermes-engine/Pre-built (= 0.81.5)
   - hermes-engine/Pre-built (0.81.5)
-  - idenfy-react-native (2.7.3):
+  - idenfy-react-native (2.7.4):
     - boost
     - DoubleConversion
     - fast_float
     - fmt
     - glog
     - hermes-engine
-    - iDenfySDK-Static/iDenfyLiveness-Static (= 9.0.0)
+    - iDenfySDK-Static/iDenfyLiveness-Static (= 9.1.0)
     - RCT-Folly
     - RCT-Folly/Fabric
     - RCTRequired
@@ -39,9 +39,9 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
-  - iDenfySDK-Static/iDenfyLiveness-Static (9.0.0):
+  - iDenfySDK-Static/iDenfyLiveness-Static (9.1.0):
     - lottie-ios
-  - lottie-ios (4.6.0)
+  - lottie-ios (4.6.1)
   - RCT-Folly (2024.11.18.00):
     - boost
     - DoubleConversion
@@ -1782,7 +1782,7 @@ PODS:
     - React-RCTFBReactNativeSpec
     - ReactCommon/turbomodule/core
     - SocketRocket
-  - react-native-safe-area-context (5.7.0):
+  - react-native-safe-area-context (5.8.0):
     - boost
     - DoubleConversion
     - fast_float
@@ -1800,8 +1800,8 @@ PODS:
     - React-graphics
     - React-ImageManager
     - React-jsi
-    - react-native-safe-area-context/common (= 5.7.0)
-    - react-native-safe-area-context/fabric (= 5.7.0)
+    - react-native-safe-area-context/common (= 5.8.0)
+    - react-native-safe-area-context/fabric (= 5.8.0)
     - React-NativeModulesApple
     - React-RCTFabric
     - React-renderercss
@@ -1812,7 +1812,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
-  - react-native-safe-area-context/common (5.7.0):
+  - react-native-safe-area-context/common (5.8.0):
     - boost
     - DoubleConversion
     - fast_float
@@ -1840,7 +1840,7 @@ PODS:
     - ReactCommon/turbomodule/core
     - SocketRocket
     - Yoga
-  - react-native-safe-area-context/fabric (5.7.0):
+  - react-native-safe-area-context/fabric (5.8.0):
     - boost
     - DoubleConversion
     - fast_float
@@ -2621,9 +2621,9 @@ SPEC CHECKSUMS:
   fmt: a40bb5bd0294ea969aaaba240a927bd33d878cdd
   glog: 5683914934d5b6e4240e497e0f4a3b42d1854183
   hermes-engine: 9f4dfe93326146a1c99eb535b1cb0b857a3cd172
-  idenfy-react-native: 54f9f455ed41de97073dde3b3998403db2f2cf54
-  iDenfySDK-Static: c9e4f0faf50ab6b5dffb78b1bec9c30e89380303
-  lottie-ios: 8f959969761e9c45d70353667d00af0e5b9cadb3
+  idenfy-react-native: 62c40b9553f37f9d650ea6ee1d32a2299f9b813e
+  iDenfySDK-Static: c230d6c3efaa3a364b2ea81eb1432708ab8cb816
+  lottie-ios: 6467ca7035120c5b0e0acee58bb679cf15875686
   RCT-Folly: 59ec0ac1f2f39672a0c6e6cecdd39383b764646f
   RCTDeprecation: 5eb1d2eeff5fb91151e8a8eef45b6c7658b6c897
   RCTRequired: cebcf9442fc296c9b89ac791dfd463021d9f6f23
@@ -2657,7 +2657,7 @@ SPEC CHECKSUMS:
   React-logger: 8bcfaf06f8c536fb9e9760526cf3d17ccd53e4ce
   React-Mapbuffer: 4649384414066eb77e30a3124dbb48732a3aa173
   React-microtasksnativemodule: e39f94cc96d61b8174a5cfb2d5862a73fa8c0d35
-  react-native-safe-area-context: 7e0ba374906d8f5009aaf96cd19d4866d8de342b
+  react-native-safe-area-context: 1d5d85de8650779a30faa45998b10037754e18a9
   React-NativeModulesApple: 8ce162c145e6b9767bb37a090c77d3d28f7d32b5
   React-oscompat: eb0626e8ba1a2c61673c991bf9dc21834898475d
   React-perflogger: d0d0d1b884120fa0a13bd38ac5e9c3c8e8bfe82a

@@ -1,6 +1,7 @@
 
 import Foundation
 import iDenfySDK
+import idenfycore
 typealias RNResponse = [String: String]
 struct NativeResponseToReactNativeResponseMapper {
     static func map(o: IdenfyIdentificationResult) -> RNResponse {
@@ -13,6 +14,12 @@ struct NativeResponseToReactNativeResponseMapper {
     static func mapFaceReauth(o: FaceAuthenticationResult) -> RNResponse {
         var response = RNResponse()
         response["faceAuthenticationStatus"] = o.faceAuthenticationStatus.rawValue
+        return response
+    }
+
+    static func mapRequestUpdate(o: InformationUpdateStatus) -> RNResponse {
+        var response = RNResponse()
+        response["informationUpdateStatus"] = o.rawValue
         return response
     }
 }

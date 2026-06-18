@@ -12,6 +12,7 @@ import com.idenfy.idenfySdk.api.response.ManualIdentificationStatus
 import com.idenfyreactnative.domain.mappers.NativeResponseToReactNativeResponseMapper
 import java.lang.Exception
 import com.idenfy.idenfySdk.api.response.*
+import com.idenfy.idenfySdk.api.response.InformationUpdateStatus
 
 
 internal class IdenfySdkActivityEventListener(private val idenfyReactNativeCallbacksUseCase: IdenfyReactNativeCallbacksUseCase,
@@ -58,6 +59,23 @@ internal class IdenfySdkActivityEventListener(private val idenfyReactNativeCallb
                                  idenfyReactNativeCallbacksUseCase.resetPromise()
 
                         }
+            else if (resultCode == IdenfyController.IDENFY_REQUEST_UPDATE_RESULT_CODE) {
+                try {
+                    val informationUpdateStatus: InformationUpdateStatus? =
+                        data?.getParcelableExtra(IdenfyController.IDENFY_REQUEST_UPDATE_RESULT)
+                    if (informationUpdateStatus == null) {
+                        callbackReceiver.reject("error", Exception("Data is null"))
+                        idenfyReactNativeCallbacksUseCase.resetPromise()
+                        return
+                    }
+                    val responseMap: WritableMap = nativeResponseToReactNativeResponseMapper.mapRequestUpdate(informationUpdateStatus)
+                    callbackReceiver.resolve(responseMap)
+                    idenfyReactNativeCallbacksUseCase.resetPromise()
+                } catch (e: Exception) {
+                    callbackReceiver.reject("error", Exception("An error occurred serializing results.$e"))
+                    idenfyReactNativeCallbacksUseCase.resetPromise()
+                }
+            }
         }
 
     }

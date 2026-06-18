@@ -72,6 +72,45 @@ class IdenfyReactNativeModule(reactContext: ReactApplicationContext) :
   }
 
   @ReactMethod
+  fun startRequestUpdate(config: ReadableMap, promise: Promise) {
+    idenfyReactNativeCallbacksUseCase.setCallbacksReceiver(promise)
+
+    val currentActivity = getCurrentActivity()
+
+    if (currentActivity == null) {
+      idenfyReactNativeCallbacksUseCase.getCallbackReceiver()
+        ?.reject("error", Exception("Android activity does not exist"))
+      idenfyReactNativeCallbacksUseCase.resetPromise()
+      return
+    }
+
+    try {
+
+      val authToken = GetSdkDataFromConfig.getSdkTokenFromConfig(config)
+      val idenfySettingsV2 = GetSdkDataFromConfig.getIdenfySettingsFromConfig(config)
+      idenfySettingsV2.authToken = authToken
+
+      IdenfyController.getInstance().initializeIdenfySDKV2WithManual(
+        currentActivity,
+        IdenfyController.IDENFY_REQUEST_CODE,
+        idenfySettingsV2
+      )
+    }
+
+    //Unexpected exceptions
+    catch (e: Throwable) {
+      e.printStackTrace()
+      idenfyReactNativeCallbacksUseCase.getCallbackReceiver()?.reject(
+        "error",
+        Exception("Unexpected error. Verify that config is structured correctly.")
+      )
+      idenfyReactNativeCallbacksUseCase.resetPromise()
+      return
+    }
+
+  }
+
+  @ReactMethod
   fun startFaceReAuth(config: ReadableMap, promise: Promise) {
     idenfyReactNativeCallbacksUseCase.setCallbacksReceiver(promise)
 

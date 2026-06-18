@@ -17,6 +17,7 @@ export class IdenfyUIBuilder {
   private mismatchTagsAlert?: boolean;
   private documentCameraFrameVisibility?: DocumentCameraFrameVisibility;
   private countryAndDocumentSelectionJoined?: boolean;
+  private useBottomSheetDialogs?: boolean;
 
   withAdditionalSupportView(
     isAdditionalSupportEnabled: boolean
@@ -87,6 +88,13 @@ export class IdenfyUIBuilder {
     return this;
   }
 
+  withBottomSheetDialogs(
+    useBottomSheetDialogs: boolean
+  ): IdenfyUIBuilder {
+    this.useBottomSheetDialogs = useBottomSheetDialogs;
+    return this;
+  }
+
   build(): IdenfyUISettings {
     return new IdenfyUISettings(
       this.isAdditionalSupportEnabled,
@@ -98,7 +106,8 @@ export class IdenfyUIBuilder {
       this.immediateRedirectEnum,
       this.mismatchTagsAlert,
       this.documentCameraFrameVisibility,
-      this.countryAndDocumentSelectionJoined
+      this.countryAndDocumentSelectionJoined,
+      this.useBottomSheetDialogs
     );
   }
 }

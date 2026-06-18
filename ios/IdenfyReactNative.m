@@ -14,6 +14,12 @@ RCT_EXTERN_METHOD(
     withRejecter:(RCTPromiseRejectBlock)reject
 )
 
+RCT_EXTERN_METHOD(
+    startRequestUpdate:(NSDictionary *)config
+    withResolver:(RCTPromiseResolveBlock)resolve
+    withRejecter:(RCTPromiseRejectBlock)reject
+)
+
 + (BOOL)requiresMainQueueSetup
 {
   return NO;

@@ -4,6 +4,7 @@ import com.facebook.react.bridge.Arguments
 import com.facebook.react.bridge.WritableMap
 import com.idenfy.idenfySdk.api.response.*
 import com.idenfy.idenfySdk.api.response.IdenfyIdentificationResult
+import com.idenfy.idenfySdk.api.response.InformationUpdateStatus
 
 internal class NativeResponseToReactNativeResponseMapper {
 
@@ -19,4 +20,10 @@ internal class NativeResponseToReactNativeResponseMapper {
             map.putString("faceAuthenticationStatus", o.status)
             return map
         }
+
+    fun mapRequestUpdate(o: InformationUpdateStatus): WritableMap {
+        val map = Arguments.createMap()
+        map.putString("informationUpdateStatus", o.name)
+        return map
+    }
 }

@@ -2,17 +2,9 @@ import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import React, { Component } from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import { Buffer } from 'buffer';
-import {
-  apiKey,
-  apiSecret,
-  BASE_URL,
-  clientId,
-  scanRef,
-  authenticationMethod,
-} from './Consts';
+import { apiKey, apiSecret, BASE_URL, clientId } from './Consts';
 import {
   start,
-  startFaceReAuth,
   IdenfyBuilder,
   IdenfyUIBuilder,
   IdenfyDocumentSelectionType,
@@ -20,144 +12,23 @@ import {
   IdenfyInstructionsEnum,
   ImmediateRedirectEnum,
   IdenfyIdentificationResultsUISettingsV2,
-  DocumentCameraFrameVisibility,
   HiddenForSpecificCountriesAndDocumentTypes,
   IdenfyLocaleEnum,
   DocumentTypeEnum,
-  IdenfyFaceAuthUIBuilder,
 } from 'idenfy-react-native';
+import RequestUpdateScreen from './RequestUpdateScreen';
+import FaceAuthScreen from './FaceAuthScreen';
 
 global.Buffer = Buffer; // very important
 export default class App extends Component {
   state = {
+    currentScreen: 'main' as 'main' | 'requestUpdate' | 'faceAuth',
     title: 'Sample iDenfy app',
     subtitle: 'Press button to begin identification!',
     buttonTitle: 'BEGIN IDENTIFICATION',
-    faceAuthButtonTitle: 'BEGIN FACE AUTHENTICATION',
     message: '--',
     sdkToken: '',
     sdkFlowComplete: false,
-  };
-
-  getFaceAuthTokenType = () => {
-    let encodedAuth = new Buffer(apiKey + ':' + apiSecret).toString('base64');
-    return fetch(
-      BASE_URL +
-        'identification/facial-auth/' +
-        scanRef +
-        '/check-status/?method=' +
-        authenticationMethod,
-      {
-        method: 'GET',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-          'Authorization': 'Basic ' + encodedAuth,
-        },
-      }
-    )
-      .then((response) => {
-        console.log(response);
-        if (response.ok) {
-          response.json().then((json) => {
-            switch (json.type) {
-              case 'AUTHENTICATION':
-                //The user can authenticate by face
-                this.getAuthTokenForFaceAuth(json.type);
-                break;
-              default:
-                //The user must perform an identification
-                break;
-            }
-          });
-        } else {
-          response.json().then((json) => {
-            console.log(json);
-            this.setState({
-              message:
-                'Error getting authToken, status code is: ' +
-                response.status.toString() +
-                '\n \n Response: ' +
-                JSON.stringify(json),
-              sdkFlowComplete: true,
-            });
-          });
-        }
-      })
-      .catch((error) => {
-        this.setState({
-          message: error.message,
-          sdkFlowComplete: true,
-        });
-        console.error(error);
-      });
-  };
-
-  getAuthTokenForFaceAuth = (type: String) => {
-    let encodedAuth = new Buffer(apiKey + ':' + apiSecret).toString('base64');
-    return fetch(BASE_URL + 'partner/authentication-info', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-        'Authorization': 'Basic ' + encodedAuth,
-      },
-      body: JSON.stringify({
-        scanRef: scanRef,
-        type: type,
-        method: authenticationMethod,
-      }),
-    })
-      .then((response) => {
-        console.log(response);
-        if (response.ok) {
-          response.json().then((json) => this.startFaceAuthSDK(json.token));
-        } else {
-          response.json().then((json) => {
-            console.log(json);
-            this.setState({
-              message:
-                'Error getting authToken, status code is: ' +
-                response.status.toString() +
-                '\n \n Response: ' +
-                JSON.stringify(json),
-              sdkFlowComplete: true,
-            });
-          });
-        }
-      })
-      .catch((error) => {
-        this.setState({
-          message: error.message,
-          sdkFlowComplete: true,
-        });
-        console.error(error);
-      });
-  };
-
-  startFaceAuthSDK = (authToken: String) => {
-    let idenfyFaceAuthUISettings = new IdenfyFaceAuthUIBuilder()
-      .withLanguageSelection(true)
-      .withOnBoardingView(true)
-      .build();
-
-    startFaceReAuth({
-      authToken: authToken,
-      withImmediateRedirect: false,
-      idenfyFaceAuthUISettings: idenfyFaceAuthUISettings,
-    })
-      .then((response) => {
-        this.setState({
-          message: JSON.stringify(response),
-          sdkFlowComplete: true,
-        });
-      })
-      .catch((error) => {
-        this.setState({
-          message: error.code + ': ' + error.message,
-          sdkFlowComplete: true,
-        });
-      });
   };
 
   getAuthToken = () => {
@@ -220,6 +91,7 @@ export default class App extends Component {
       )
       .withMismatchTagsAlert(true)
       .withCountryAndDocumentSelectionJoined(true)
+      .withBottomSheetDialogs(true)
       .build();
 
     const idenfySettings = new IdenfyBuilder()
@@ -252,43 +124,72 @@ export default class App extends Component {
   };
 
   render() {
+    if (this.state.currentScreen === 'requestUpdate') {
+      return (
+        <RequestUpdateScreen
+          onBack={() => this.setState({ currentScreen: 'main' })}
+        />
+      );
+    }
+
+    if (this.state.currentScreen === 'faceAuth') {
+      return (
+        <FaceAuthScreen
+          onBack={() => this.setState({ currentScreen: 'main' })}
+        />
+      );
+    }
+
     return (
       <View style={styles.root}>
         <Text style={styles.title}>{this.state.title}</Text>
         <Text style={styles.subtitle}>{this.state.subtitle}</Text>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => this.getAuthToken()}
-        >
-          <LinearGradient
-            angle={90}
-            useAngle={true}
-            colors={['#536DFE', '#8D6CFB']}
-            style={styles.gradient}
-          >
-            <Text style={styles.buttonTitle}>{this.state.buttonTitle}</Text>
-          </LinearGradient>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.faceAuthButton}
-          onPress={() => this.getFaceAuthTokenType()}
-        >
-          <LinearGradient
-            angle={90}
-            useAngle={true}
-            colors={['#536DFE', '#8D6CFB']}
-            style={styles.gradient}
-          >
-            <Text style={styles.buttonTitle}>
-              {this.state.faceAuthButtonTitle}
-            </Text>
-          </LinearGradient>
-        </TouchableOpacity>
         {this.state.sdkFlowComplete ? (
           <Text style={styles.resultMessage}>
             Results: {this.state.message}
           </Text>
         ) : null}
+        <View style={styles.buttonsContainer}>
+          <TouchableOpacity
+            style={styles.bottomButton}
+            onPress={() => this.setState({ currentScreen: 'requestUpdate' })}
+          >
+            <LinearGradient
+              angle={90}
+              useAngle={true}
+              colors={['#536DFE', '#8D6CFB']}
+              style={styles.gradient}
+            >
+              <Text style={styles.buttonTitle}>BEGIN REQUEST UPDATE</Text>
+            </LinearGradient>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.bottomButton}
+            onPress={() => this.setState({ currentScreen: 'faceAuth' })}
+          >
+            <LinearGradient
+              angle={90}
+              useAngle={true}
+              colors={['#536DFE', '#8D6CFB']}
+              style={styles.gradient}
+            >
+              <Text style={styles.buttonTitle}>BEGIN FACE AUTHENTICATION</Text>
+            </LinearGradient>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.bottomButton}
+            onPress={() => this.getAuthToken()}
+          >
+            <LinearGradient
+              angle={90}
+              useAngle={true}
+              colors={['#536DFE', '#8D6CFB']}
+              style={styles.gradient}
+            >
+              <Text style={styles.buttonTitle}>{this.state.buttonTitle}</Text>
+            </LinearGradient>
+          </TouchableOpacity>
+        </View>
       </View>
     );
   }
@@ -318,31 +219,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 6,
   },
-  button: {
+  buttonsContainer: {
     position: 'absolute',
-    bottom: 0,
+    bottom: 32,
+    left: 32,
+    right: 32,
+  },
+  bottomButton: {
     height: 56,
-    left: 0,
-    right: 0,
-    margin: 32,
-    marginBottom: 48,
+    marginBottom: 12,
   },
   buttonTitle: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: '#FFFFFF',
-  },
-  faceAuthButton: {
-    position: 'absolute',
-    bottom: 0,
-    height: 56,
-    left: 0,
-    right: 0,
-    margin: 32,
-    marginBottom: 116,
-  },
-  faceAuthButtonTitle: {
     fontSize: 16,
     fontWeight: 'bold',
     textAlign: 'center',

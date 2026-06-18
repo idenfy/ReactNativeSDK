@@ -1,5 +1,6 @@
 import Foundation
 import iDenfySDK
+import idenfycore
 @objc(IdenfyReactNative)
 class IdenfyReactNative: NSObject {
     
@@ -90,6 +91,51 @@ class IdenfyReactNative: NSObject {
             faceAuthenticationResult
             in
             let response = NativeResponseToReactNativeResponseMapper.mapFaceReauth(o: faceAuthenticationResult)
+            resolve(response)
+        })
+    }
+
+    @objc(startRequestUpdate:withResolver:withRejecter:)
+    func startRequestUpdate(_ config: NSDictionary,
+                            resolve: @escaping RCTPromiseResolveBlock,
+                            reject: @escaping RCTPromiseRejectBlock) {
+        DispatchQueue.main.async {
+            self.runRequestUpdate(withConfig: config, resolver: resolve, rejecter: reject)
+        }
+    }
+
+    @MainActor private func runRequestUpdate(withConfig config: NSDictionary,
+                                             resolver resolve: @escaping RCTPromiseResolveBlock,
+                                             rejecter reject: @escaping RCTPromiseRejectBlock) {
+        do {
+            let authToken = GetSdkConfig.getAuthToken(config: config)
+            let idenfySettingsV2 = GetSdkConfig.getIdenfySettingsFromConfig(config: config, authToken: authToken)
+            SdkVersionManager.platformWrapper = "reactnative"
+            let idenfyController = IdenfyController.shared
+            idenfyController.initializeIdenfySDKV2WithManual(idenfySettingsV2: idenfySettingsV2)
+
+            let idenfyVC = idenfyController.instantiateNavigationController()
+
+            idenfyVC.modalPresentationStyle = .fullScreen
+
+            UIApplication.shared.windows.first?.rootViewController?.present(idenfyVC, animated: true)
+
+            handleRequestUpdateSdkCallbacks(idenfyController: idenfyController, resolver: resolve)
+
+        } catch let error as NSError {
+            reject("error", error.domain, error)
+            return
+        } catch {
+            reject("error", "Unexpected error. Verify that config is structured correctly.", error)
+            return
+        }
+    }
+
+    private func handleRequestUpdateSdkCallbacks(idenfyController: IdenfyController, resolver resolve: @escaping RCTPromiseResolveBlock) {
+        idenfyController.handleIdenfyCallbacksForRequestUpdate(requestUpdateResult: {
+            informationUpdateStatus
+            in
+            let response = NativeResponseToReactNativeResponseMapper.mapRequestUpdate(o: informationUpdateStatus)
             resolve(response)
         })
     }
