@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Kara dark + gold theme for the iDenfy native SDK (Android).
+
+  The iDenfy dashboard theme does NOT apply to the native SDK; the SDK reads its
+  named color resources. This module depends on the iDenfy AAR (sdk-api 9.1.0),
+  so redefining a color name here overrides the AAR's value (library > its
+  dependency in resource merging). Overriding a name that no longer exists is a
+  no-op, never a build failure.
+
+  Master colors cascade to every screen (per-screen color files alias these).
+  The per-screen overrides below only fix cards + on-gold button text, which
+  default to @color/idenfyWhite — also used for camera-overlay icons, so it must
+  not be repurposed globally. Camera screens are intentionally left untouched.
+
+  Palette mirrors apps/native/global.css (.dark), background per request (#090710).
+-->
+<resources>
+	<!-- ===== Master palette (cascades) ===== -->
+	<color name="idenfyBackgroundColorV2">#090710</color>
+	<color name="idenfyMainColorV2">#E1BE6B</color>
+	<color name="idenfyMainDarkerColorV2">#E1BE6B</color>
+	<color name="idenfyGradientAccentV2">#E1BE6B</color>
+	<color name="idenfyMainColor50percentV2">#80E1BE6B</color>
+
+	<!-- Text (opaque white) + its alpha variants -->
+	<color name="idenfySecondColorV2">#FAFAFA</color>
+	<color name="idenfySecondColor6percentV2">#0FFAFAFA</color>
+	<color name="idenfySecondColor20percentV2">#33FAFAFA</color>
+	<color name="idenfySecondColor50percentV2">#80FAFAFA</color>
+	<color name="idenfySecondColor80percentV2">#CCFAFAFA</color>
+
+	<!-- Splash titles/description/spinner default to idenfyBlackV2 -->
+	<color name="idenfyBlackV2">#FAFAFA</color>
+
+	<!-- Surfaces / status -->
+	<color name="idenfyInactiveColorV2">#1C1C1E</color>
+	<color name="idenfyPhotoResultDetailsCardBackgroundColorV2">#1C1C1E</color>
+	<color name="idenfyLivenessBackgroundColor">#090710</color>
+	<color name="idenfyStepSuccessColorV2">#16A34A</color>
+	<color name="idenfyStepErrorColorV2">#EF4444</color>
+	<color name="idenfyRedColorV2">#EF4444</color>
+	<color name="idenfyErrorRedColorV2">#EF4444</color>
+
+	<!-- ===== App bar (default = white) — camera app bars left untouched ===== -->
+	<color name="idenfyDefaultAppBarBackgroundColor">#090710</color>
+	<color name="idenfyNoBackButtonAppBarBackgroundColor">#090710</color>
+	<color name="idenfyPhotoResultAppBarBackgroundColor">#090710</color>
+
+	<!-- ===== Per-screen: cards + on-gold button text (flow screens) ===== -->
+	<!-- Country + document selection (joined — primary selection screen) -->
+	<color name="idenfyCountryAndDocumentSelectionViewItemSelectionBackgroundColor">#1C1C1E</color>
+	<color name="idenfyCountryAndDocumentSelectionViewContinueButtonEnabledTextColor">#090710</color>
+	<color name="idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBackgroundColor">#E1BE6B</color>
+	<color name="idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedTextColor">#090710</color>
+	<color name="idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBorderColor">#E1BE6B</color>
+
+	<!-- Document selection (fallback / non-joined) -->
+	<color name="idenfyDocumentSelectionViewRecyclerViewItemBackgroundColor">#1C1C1E</color>
+	<color name="idenfyDocumentSelectionViewRecyclerViewItemHighlightedBackgroundColor">#E1BE6B</color>
+	<color name="idenfyDocumentSelectionViewRecyclerViewItemHighlightedTextColor">#090710</color>
+	<color name="idenfyDocumentSelectionViewContinueButtonEnabledTextColor">#090710</color>
+
+	<!-- Photo result (document + face) — primary "next" button text on gold -->
+	<color name="idenfyDocumentPhotoResultViewNextButtonTextColor">#090710</color>
+	<color name="idenfyFacePhotoResultViewNextButtonTextColor">#090710</color>
+
+	<!-- Identification results + privacy policy — on-gold button text -->
+	<color name="idenfyIdentificationResultsViewRetakeButtonTextColor">#090710</color>
+	<color name="idenfyPrivacyPolicyContinueButtonTextColor">#090710</color>
+</resources>

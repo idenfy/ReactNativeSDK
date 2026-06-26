@@ -96,8 +96,59 @@ const withIdenfyPodfile: ConfigPlugin = (config) => {
   ]);
 };
 
+// The iDenfy SDK resolves its brand images from the app's main bundle first, so
+// dropping an imageset of the same name into the app asset catalog replaces the
+// iDenfy logo (per iDenfy's "add IdenfyAssets to your app target" guide). The
+// asset is monochrome and flagged template-rendering, so the gold toolbar logo
+// tint (set in IdenfyKaraTheme.swift) paints it gold.
+const IDENFY_LOGO_ASSET = 'idenfy_ic_idenfy_logo_vector_v2';
+
+const withIdenfyLogo: ConfigPlugin = (config) => {
+  return withDangerousMod(config, [
+    'ios',
+    async (config) => {
+      const projectName = config.modRequest.projectName;
+      if (!projectName) {
+        return config;
+      }
+
+      const imagesetDir = path.join(
+        config.modRequest.platformProjectRoot,
+        projectName,
+        'Images.xcassets',
+        `${IDENFY_LOGO_ASSET}.imageset`
+      );
+
+      // Source ships with the plugin (files: ["plugin"] in package.json).
+      const sourcePng = path.join(__dirname, '..', 'assets', 'kara-idenfy-logo.png');
+      if (!fs.existsSync(sourcePng)) {
+        return config;
+      }
+
+      fs.mkdirSync(imagesetDir, { recursive: true });
+      fs.copyFileSync(sourcePng, path.join(imagesetDir, 'kara-idenfy-logo.png'));
+      fs.writeFileSync(
+        path.join(imagesetDir, 'Contents.json'),
+        JSON.stringify(
+          {
+            images: [{ idiom: 'universal', filename: 'kara-idenfy-logo.png' }],
+            info: { version: 1, author: 'expo' },
+            properties: { 'template-rendering-intent': 'template' },
+          },
+          null,
+          2
+        ),
+        'utf-8'
+      );
+
+      return config;
+    },
+  ]);
+};
+
 export const withIdenfyIos: ConfigPlugin<IdenfyPluginProps> = (config, props) => {
   config = withIdenfyCameraPermission(config, props);
   config = withIdenfyPodfile(config);
+  config = withIdenfyLogo(config);
   return config;
 };

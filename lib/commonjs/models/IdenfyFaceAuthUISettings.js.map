@@ -1,0 +1,1 @@
+{"version":3,"names":["IdenfyFaceAuthUISettings","isLanguageSelectionNeeded","skipOnBoardingView","exports"],"sourceRoot":"../../../src","sources":["models/IdenfyFaceAuthUISettings.tsx"],"mappings":";;;;;;AAAO,MAAMA,wBAAwB,CAAC;EACpCC,yBAAyB,GAAY,IAAI;EACzCC,kBAAkB,GAAY,KAAK;AACrC;AAACC,OAAA,CAAAH,wBAAA,GAAAA,wBAAA","ignoreList":[]}

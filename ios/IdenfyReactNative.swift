@@ -25,12 +25,13 @@ class IdenfyReactNative: NSObject {
                      resolver resolve: @escaping RCTPromiseResolveBlock,
                      rejecter reject: @escaping RCTPromiseRejectBlock) {
         do {
+            KaraIdenfyTheme.apply()
             let authToken = GetSdkConfig.getAuthToken(config: config)
             let idenfySettingsV2 = GetSdkConfig.getIdenfySettingsFromConfig(config: config, authToken: authToken)
             SdkVersionManager.platformWrapper = "reactnative"
             let idenfyController = IdenfyController.shared
             idenfyController.initializeIdenfySDKV2WithManual(idenfySettingsV2: idenfySettingsV2)
-            
+
             let idenfyVC = idenfyController.instantiateNavigationController()
             
             idenfyVC.modalPresentationStyle = .fullScreen
@@ -108,6 +109,7 @@ class IdenfyReactNative: NSObject {
                                              resolver resolve: @escaping RCTPromiseResolveBlock,
                                              rejecter reject: @escaping RCTPromiseRejectBlock) {
         do {
+            KaraIdenfyTheme.apply()
             let authToken = GetSdkConfig.getAuthToken(config: config)
             let idenfySettingsV2 = GetSdkConfig.getIdenfySettingsFromConfig(config: config, authToken: authToken)
             SdkVersionManager.platformWrapper = "reactnative"
