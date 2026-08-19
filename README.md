@@ -48,12 +48,6 @@ Once the setup completed successfully, you can initialize a new project with CLI
 $ npx react-native init AwesomeProject
 ```
 
-[Here is the full example project](IdenfyNewProjectExample.zip), which integrates our SDK and is generated via CLI command:
-
-```shell
-$  npx react-native init IdenfyNewProjectExample --template react-native-template-typescript
-```
-
 #### 2.2 Adding SDK dependency through npm
 
 Navigate to the root directory of your React Native project. The rest of this second section will assume you are in the root directory.
