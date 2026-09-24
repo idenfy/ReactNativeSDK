@@ -4,6 +4,7 @@ import { IdenfyInstructionsEnum } from './IdenfyInstructionsEnum';
 import { IdenfyIdentificationResultsUISettingsV2 } from './IdenfyIdentificationResultsUISettingsV2';
 import { ImmediateRedirectEnum } from './ImmediateRedirectEnum';
 import { DocumentCameraFrameVisibility } from './DocumentCameraFrameVisibility';
+import { IdenfyColorScheme } from './IdenfyColorScheme';
 
 export class IdenfyUISettings {
   isAdditionalSupportEnabled?: boolean;
@@ -17,6 +18,7 @@ export class IdenfyUISettings {
   documentCameraFrameVisibility?: DocumentCameraFrameVisibility;
   withCountryAndDocumentSelectionJoined?: boolean;
   useBottomSheetDialogs?: boolean;
+  idenfyColorScheme?: IdenfyColorScheme;
 
   constructor(
     isAdditionalSupportEnabled?: boolean,
@@ -29,7 +31,8 @@ export class IdenfyUISettings {
     mismatchTagsAlert?: boolean,
     documentCameraFrameVisibility?: DocumentCameraFrameVisibility,
     withCountryAndDocumentSelectionJoined?: boolean,
-    useBottomSheetDialogs?: boolean
+    useBottomSheetDialogs?: boolean,
+    idenfyColorScheme?: IdenfyColorScheme
   ) {
     this.isAdditionalSupportEnabled = isAdditionalSupportEnabled;
     this.idenfyOnBoardingViewType = idenfyOnBoardingViewType;
@@ -43,6 +46,7 @@ export class IdenfyUISettings {
     this.documentCameraFrameVisibility = documentCameraFrameVisibility;
     this.withCountryAndDocumentSelectionJoined = withCountryAndDocumentSelectionJoined;
     this.useBottomSheetDialogs = useBottomSheetDialogs;
+    this.idenfyColorScheme = idenfyColorScheme;
   }
 
   toJson(): Record<string, any> {
@@ -59,7 +63,8 @@ export class IdenfyUISettings {
       documentCameraFrameVisibility:
         this.documentCameraFrameVisibility?.toJson(),
         withCountryAndDocumentSelectionJoined: this.withCountryAndDocumentSelectionJoined,
-        useBottomSheetDialogs: this.useBottomSheetDialogs
+        useBottomSheetDialogs: this.useBottomSheetDialogs,
+        idenfyColorScheme: this.idenfyColorScheme?.toJson(),
     };
   }
 }

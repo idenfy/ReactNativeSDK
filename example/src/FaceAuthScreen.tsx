@@ -8,11 +8,13 @@ import {
 import React, { Component } from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import { Buffer } from 'buffer';
-import { apiKey, apiSecret, BASE_URL, authenticationMethod } from './Consts';
+import { apiKey, apiSecret, BASE_URL, authenticationMethod, selectedFlow } from './Consts';
+import { SdkFlow } from './SdkFlow';
 import {
   startFaceReAuth,
   IdenfyFaceAuthUIBuilder,
 } from 'idenfy-react-native';
+import { createSampleColorScheme } from './ColorScheme';
 
 interface Props {
   onBack: () => void;
@@ -124,15 +126,20 @@ export default class FaceAuthScreen extends Component<Props, State> {
   };
 
   startFaceAuthSDK = (authToken: String) => {
-    let idenfyFaceAuthUISettings = new IdenfyFaceAuthUIBuilder()
+    let faceAuthBuilder = new IdenfyFaceAuthUIBuilder()
       .withLanguageSelection(true)
-      .withOnBoardingView(true)
-      .build();
+      .withOnBoardingView(true);
+
+    if (selectedFlow === SdkFlow.WithImplementedColors) {
+      faceAuthBuilder = faceAuthBuilder.withColorScheme(createSampleColorScheme());
+    }
+
+    let idenfyFaceAuthUISettings = faceAuthBuilder.build();
 
     startFaceReAuth({
       authToken: authToken,
       withImmediateRedirect: false,
-      idenfyFaceAuthUISettings: idenfyFaceAuthUISettings,
+      idenfyFaceAuthUISettings: idenfyFaceAuthUISettings.toJson(),
     })
       .then((response) => {
         this.setState({

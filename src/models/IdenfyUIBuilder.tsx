@@ -4,6 +4,7 @@ import { IdenfyInstructionsEnum } from './IdenfyInstructionsEnum';
 import { IdenfyIdentificationResultsUISettingsV2 } from './IdenfyIdentificationResultsUISettingsV2';
 import { ImmediateRedirectEnum } from './ImmediateRedirectEnum';
 import { DocumentCameraFrameVisibility } from './DocumentCameraFrameVisibility';
+import { IdenfyColorScheme } from './IdenfyColorScheme';
 import { IdenfyUISettings } from './IdenfyUISettings';
 
 export class IdenfyUIBuilder {
@@ -18,6 +19,7 @@ export class IdenfyUIBuilder {
   private documentCameraFrameVisibility?: DocumentCameraFrameVisibility;
   private countryAndDocumentSelectionJoined?: boolean;
   private useBottomSheetDialogs?: boolean;
+  private idenfyColorScheme?: IdenfyColorScheme;
 
   withAdditionalSupportView(
     isAdditionalSupportEnabled: boolean
@@ -95,6 +97,13 @@ export class IdenfyUIBuilder {
     return this;
   }
 
+  withColorScheme(
+    idenfyColorScheme: IdenfyColorScheme
+  ): IdenfyUIBuilder {
+    this.idenfyColorScheme = idenfyColorScheme;
+    return this;
+  }
+
   build(): IdenfyUISettings {
     return new IdenfyUISettings(
       this.isAdditionalSupportEnabled,
@@ -107,7 +116,8 @@ export class IdenfyUIBuilder {
       this.mismatchTagsAlert,
       this.documentCameraFrameVisibility,
       this.countryAndDocumentSelectionJoined,
-      this.useBottomSheetDialogs
+      this.useBottomSheetDialogs,
+      this.idenfyColorScheme
     );
   }
 }

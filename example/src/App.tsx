@@ -2,7 +2,8 @@ import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import React, { Component } from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import { Buffer } from 'buffer';
-import { apiKey, apiSecret, BASE_URL, clientId } from './Consts';
+import { apiKey, apiSecret, BASE_URL, clientId, selectedFlow } from './Consts';
+import { SdkFlow } from './SdkFlow';
 import {
   start,
   IdenfyBuilder,
@@ -18,6 +19,7 @@ import {
 } from 'idenfy-react-native';
 import RequestUpdateScreen from './RequestUpdateScreen';
 import FaceAuthScreen from './FaceAuthScreen';
+import { createSampleColorScheme } from './ColorScheme';
 
 global.Buffer = Buffer; // very important
 export default class App extends Component {
@@ -72,7 +74,7 @@ export default class App extends Component {
       });
   };
   startSDK = (authToken: String) => {
-    const idenfyUISettings = new IdenfyUIBuilder()
+    let uiBuilder = new IdenfyUIBuilder()
       .withAdditionalSupportView(true)
       .withIdenfyDocumentSelectionType(
         IdenfyDocumentSelectionType.navigateOnContinueButton
@@ -91,8 +93,13 @@ export default class App extends Component {
       )
       .withMismatchTagsAlert(true)
       .withCountryAndDocumentSelectionJoined(true)
-      .withBottomSheetDialogs(true)
-      .build();
+      .withBottomSheetDialogs(true);
+
+    if (selectedFlow === SdkFlow.WithImplementedColors) {
+      uiBuilder = uiBuilder.withColorScheme(createSampleColorScheme());
+    }
+
+    const idenfyUISettings = uiBuilder.build();
 
     const idenfySettings = new IdenfyBuilder()
       .withSelectedLocale(IdenfyLocaleEnum.EN)

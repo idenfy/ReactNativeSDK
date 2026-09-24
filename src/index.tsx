@@ -47,4 +47,5 @@ export { IdenfyOnBoardingViewType } from './models/IdenfyOnBoardingViewType';
 export { IdenfySettings } from './models/IdenfySettings';
 export { IdenfyUIBuilder } from './models/IdenfyUIBuilder';
 export { IdenfyUISettings } from './models/IdenfyUISettings';
+export { IdenfyColorScheme } from './models/IdenfyColorScheme';
 export { ImmediateRedirectEnum } from './models/ImmediateRedirectEnum';
