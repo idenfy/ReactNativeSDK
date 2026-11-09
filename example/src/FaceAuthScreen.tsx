@@ -8,12 +8,15 @@ import {
 import React, { Component } from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import { Buffer } from 'buffer';
-import { apiKey, apiSecret, BASE_URL, authenticationMethod, selectedFlow } from './Consts';
-import { SdkFlow } from './SdkFlow';
 import {
-  startFaceReAuth,
-  IdenfyFaceAuthUIBuilder,
-} from 'idenfy-react-native';
+  apiKey,
+  apiSecret,
+  BASE_URL,
+  authenticationMethod,
+  selectedFlow,
+} from './Consts';
+import { SdkFlow } from './SdkFlow';
+import { startFaceReAuth, IdenfyFaceAuthUIBuilder } from 'idenfy-react-native';
 import { createSampleColorScheme } from './ColorScheme';
 
 interface Props {
@@ -131,7 +134,9 @@ export default class FaceAuthScreen extends Component<Props, State> {
       .withOnBoardingView(true);
 
     if (selectedFlow === SdkFlow.WithImplementedColors) {
-      faceAuthBuilder = faceAuthBuilder.withColorScheme(createSampleColorScheme());
+      faceAuthBuilder = faceAuthBuilder.withColorScheme(
+        createSampleColorScheme()
+      );
     }
 
     let idenfyFaceAuthUISettings = faceAuthBuilder.build();

@@ -13,6 +13,7 @@ import com.idenfyreactnative.domain.mappers.NativeResponseToReactNativeResponseM
 import java.lang.Exception
 import com.idenfy.idenfySdk.api.response.*
 import com.idenfy.idenfySdk.api.response.InformationUpdateStatus
+import com.idenfy.idenfySdk.api.response.BankCardVerificationResult
 
 
 internal class IdenfySdkActivityEventListener(private val idenfyReactNativeCallbacksUseCase: IdenfyReactNativeCallbacksUseCase,
@@ -69,6 +70,23 @@ internal class IdenfySdkActivityEventListener(private val idenfyReactNativeCallb
                         return
                     }
                     val responseMap: WritableMap = nativeResponseToReactNativeResponseMapper.mapRequestUpdate(informationUpdateStatus)
+                    callbackReceiver.resolve(responseMap)
+                    idenfyReactNativeCallbacksUseCase.resetPromise()
+                } catch (e: Exception) {
+                    callbackReceiver.reject("error", Exception("An error occurred serializing results.$e"))
+                    idenfyReactNativeCallbacksUseCase.resetPromise()
+                }
+            }
+            else if (resultCode == IdenfyController.IDENFY_BANK_CARD_VERIFICATION_RESULT_CODE) {
+                try {
+                    val bankCardVerificationResult: BankCardVerificationResult? =
+                        data?.getParcelableExtra(IdenfyController.IDENFY_BANK_CARD_VERIFICATION_RESULT)
+                    if (bankCardVerificationResult == null) {
+                        callbackReceiver.reject("error", Exception("Data is null"))
+                        idenfyReactNativeCallbacksUseCase.resetPromise()
+                        return
+                    }
+                    val responseMap: WritableMap = nativeResponseToReactNativeResponseMapper.mapBankCardVerification(bankCardVerificationResult)
                     callbackReceiver.resolve(responseMap)
                     idenfyReactNativeCallbacksUseCase.resetPromise()
                 } catch (e: Exception) {

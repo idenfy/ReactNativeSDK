@@ -5,6 +5,7 @@ import com.facebook.react.bridge.WritableMap
 import com.idenfy.idenfySdk.api.response.*
 import com.idenfy.idenfySdk.api.response.IdenfyIdentificationResult
 import com.idenfy.idenfySdk.api.response.InformationUpdateStatus
+import com.idenfy.idenfySdk.api.response.BankCardVerificationResult
 
 internal class NativeResponseToReactNativeResponseMapper {
 
@@ -24,6 +25,12 @@ internal class NativeResponseToReactNativeResponseMapper {
     fun mapRequestUpdate(o: InformationUpdateStatus): WritableMap {
         val map = Arguments.createMap()
         map.putString("informationUpdateStatus", o.name)
+        return map
+    }
+
+    fun mapBankCardVerification(o: BankCardVerificationResult): WritableMap {
+        val map = Arguments.createMap()
+        map.putString("bankCardVerificationStatus", o.bankCardVerificationStatus.name)
         return map
     }
 }

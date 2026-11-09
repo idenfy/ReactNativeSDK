@@ -29,6 +29,10 @@ export function startRequestUpdate(config: any): Promise<any> {
   return IdenfyReactNative.startRequestUpdate(config);
 }
 
+export function startBankCardVerification(config: any): Promise<any> {
+  return IdenfyReactNative.startBankCardVerification(config);
+}
+
 // Export models
 export {
   DocumentCameraFrameVisibility,
@@ -48,4 +52,6 @@ export { IdenfySettings } from './models/IdenfySettings';
 export { IdenfyUIBuilder } from './models/IdenfyUIBuilder';
 export { IdenfyUISettings } from './models/IdenfyUISettings';
 export { IdenfyColorScheme } from './models/IdenfyColorScheme';
+export { IdenfyBankCardVerificationUIBuilder } from './models/IdenfyBankCardVerificationUIBuilder';
+export { IdenfyBankCardVerificationUISettings } from './models/IdenfyBankCardVerificationUISettings';
 export { ImmediateRedirectEnum } from './models/ImmediateRedirectEnum';

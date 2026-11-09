@@ -1,10 +1,11 @@
 import { IdenfyColorScheme } from 'idenfy-react-native';
 
 export function createSampleColorScheme(): IdenfyColorScheme {
-  const mainColor = 0xFF6AA82F;
-  const secondaryColor = 0xFF000000;
-  const backgroundColor = 0xFFFFFFFF;
-  const white = 0xFFFFFFFF;
+  const mainColor = 0xff6aa82f;
+  const mainColorLight = 0xffe8f5d9;
+  const secondaryColor = 0xff000000;
+  const backgroundColor = 0xffffffff;
+  const white = 0xffffffff;
 
   const scheme = new IdenfyColorScheme();
   // Base colors
@@ -19,7 +20,8 @@ export function createSampleColorScheme(): IdenfyColorScheme {
 
   // Toolbar
   scheme.idenfyDefaultAppBarIconTintColor = secondaryColor;
-  scheme.idenfyLanguageSelectionToolbarLanguageSelectionIconTintColor = secondaryColor;
+  scheme.idenfyLanguageSelectionToolbarLanguageSelectionIconTintColor =
+    secondaryColor;
   scheme.idenfyLanguageSelectionToolbarCloseIconTintColor = secondaryColor;
 
   // Continue button text & spinner color (all screens)
@@ -28,8 +30,10 @@ export function createSampleColorScheme(): IdenfyColorScheme {
   scheme.idenfyRetakeButtonTextColor = secondaryColor;
 
   // Camera buttons
-  scheme.idenfyDocumentCameraPreviewSessionTakePhotoButtonUnFocusedTintColor = mainColor;
-  scheme.idenfyFaceCameraPreviewSessionTakePhotoButtonUnFocusedTintColor = mainColor;
+  scheme.idenfyDocumentCameraPreviewSessionTakePhotoButtonUnFocusedTintColor =
+    mainColor;
+  scheme.idenfyFaceCameraPreviewSessionTakePhotoButtonUnFocusedTintColor =
+    mainColor;
   scheme.idenfyFaceCameraPreviewSessionFaceOvalColor = white;
 
   // Photo result
@@ -37,14 +41,16 @@ export function createSampleColorScheme(): IdenfyColorScheme {
   scheme.idenfyRetakeButtonBackgroundColor = white;
   scheme.idenfyRetakeButtonBorderColor = secondaryColor;
 
-  // Country/doc selection highlighted cell
-  scheme.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBorderColor = secondaryColor;
-  scheme.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBackgroundColor = mainColor;
-  scheme.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedTextColor = secondaryColor;
+  // Highlighted/selected item colors (all screens)
+  scheme.idenfyHighlightedItemBackgroundColor = mainColorLight;
+  scheme.idenfyHighlightedItemTextColor = secondaryColor;
+  scheme.idenfyHighlightedItemBorderColor = secondaryColor;
 
   // Manual reviewing
-  scheme.idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedTitleColor = secondaryColor;
-  scheme.idenfyManualReviewingStatusWaitingBackToAccountButtonTextColor = secondaryColor;
+  scheme.idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedTitleColor =
+    secondaryColor;
+  scheme.idenfyManualReviewingStatusWaitingBackToAccountButtonTextColor =
+    secondaryColor;
 
   return scheme;
 }

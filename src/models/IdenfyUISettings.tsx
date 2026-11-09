@@ -44,7 +44,8 @@ export class IdenfyUISettings {
     this.immediateRedirectEnum = immediateRedirectEnum;
     this.mismatchTagsAlert = mismatchTagsAlert;
     this.documentCameraFrameVisibility = documentCameraFrameVisibility;
-    this.withCountryAndDocumentSelectionJoined = withCountryAndDocumentSelectionJoined;
+    this.withCountryAndDocumentSelectionJoined =
+      withCountryAndDocumentSelectionJoined;
     this.useBottomSheetDialogs = useBottomSheetDialogs;
     this.idenfyColorScheme = idenfyColorScheme;
   }
@@ -62,9 +63,10 @@ export class IdenfyUISettings {
       mismatchTagsAlert: this.mismatchTagsAlert,
       documentCameraFrameVisibility:
         this.documentCameraFrameVisibility?.toJson(),
-        withCountryAndDocumentSelectionJoined: this.withCountryAndDocumentSelectionJoined,
-        useBottomSheetDialogs: this.useBottomSheetDialogs,
-        idenfyColorScheme: this.idenfyColorScheme?.toJson(),
+      withCountryAndDocumentSelectionJoined:
+        this.withCountryAndDocumentSelectionJoined,
+      useBottomSheetDialogs: this.useBottomSheetDialogs,
+      idenfyColorScheme: this.idenfyColorScheme?.toJson(),
     };
   }
 }

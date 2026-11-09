@@ -139,4 +139,55 @@ class IdenfyReactNative: NSObject {
             resolve(response)
         })
     }
+
+    @objc(startBankCardVerification:withResolver:withRejecter:)
+    func startBankCardVerification(_ config: NSDictionary,
+                                   resolve: @escaping RCTPromiseResolveBlock,
+                                   reject: @escaping RCTPromiseRejectBlock) {
+        DispatchQueue.main.async {
+            self.runBankCardVerification(withConfig: config, resolver: resolve, rejecter: reject)
+        }
+    }
+
+    @MainActor private func runBankCardVerification(withConfig config: NSDictionary,
+                                                     resolver resolve: @escaping RCTPromiseResolveBlock,
+                                                     rejecter reject: @escaping RCTPromiseRejectBlock) {
+        do {
+            let authToken = GetSdkConfig.getAuthToken(config: config)
+            let immediateRedirect = GetSdkConfig.getImmediateRedirectFromConfig(config: config)
+
+            if let bcvUISettings = config["idenfyBankCardVerificationUISettings"] as? NSDictionary {
+                if let colorSchemeMap = bcvUISettings["idenfyColorScheme"] as? [String: Any] {
+                    GetSdkConfig.decodeColorScheme(colorSchemeMap)
+                }
+            }
+
+            SdkVersionManager.platformWrapper = "reactnative"
+            let idenfyController = IdenfyController.shared
+            let bankCardVerificationInitialization = BankCardVerificationInitialization(bankCardVerificationToken: authToken, withImmediateRedirect: immediateRedirect)
+            idenfyController.initializeBankCardVerification(bankCardVerificationInitialization: bankCardVerificationInitialization)
+
+            let idenfyVC = idenfyController.instantiateNavigationController()
+            idenfyVC.modalPresentationStyle = .fullScreen
+            UIApplication.shared.windows.first?.rootViewController?.present(idenfyVC, animated: true)
+
+            handleBankCardVerificationSdkCallbacks(idenfyController: idenfyController, resolver: resolve)
+
+        } catch let error as NSError {
+            reject("error", error.domain, error)
+            return
+        } catch {
+            reject("error", "Unexpected error. Verify that config is structured correctly.", error)
+            return
+        }
+    }
+
+    private func handleBankCardVerificationSdkCallbacks(idenfyController: IdenfyController, resolver resolve: @escaping RCTPromiseResolveBlock) {
+        idenfyController.handleIdenfyCallbacksForBankCardVerification(bankCardVerificationResult: {
+            bankCardVerificationResult
+            in
+            let response = NativeResponseToReactNativeResponseMapper.mapBankCardVerification(o: bankCardVerificationResult)
+            resolve(response)
+        })
+    }
 }

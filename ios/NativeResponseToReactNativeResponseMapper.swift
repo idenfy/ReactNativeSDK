@@ -22,4 +22,10 @@ struct NativeResponseToReactNativeResponseMapper {
         response["informationUpdateStatus"] = o.rawValue
         return response
     }
+
+    static func mapBankCardVerification(o: BankCardVerificationResult) -> RNResponse {
+        var response = RNResponse()
+        response["bankCardVerificationStatus"] = o.bankCardVerificationStatus.rawValue
+        return response
+    }
 }

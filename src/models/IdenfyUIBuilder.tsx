@@ -69,9 +69,7 @@ export class IdenfyUIBuilder {
     return this;
   }
 
-  withMismatchTagsAlert(
-    mismatchTagsAlert: boolean
-  ): IdenfyUIBuilder {
+  withMismatchTagsAlert(mismatchTagsAlert: boolean): IdenfyUIBuilder {
     this.mismatchTagsAlert = mismatchTagsAlert;
     return this;
   }
@@ -83,23 +81,19 @@ export class IdenfyUIBuilder {
     return this;
   }
 
-    withCountryAndDocumentSelectionJoined(
+  withCountryAndDocumentSelectionJoined(
     countryAndDocumentSelectionJoined: boolean
   ): IdenfyUIBuilder {
     this.countryAndDocumentSelectionJoined = countryAndDocumentSelectionJoined;
     return this;
   }
 
-  withBottomSheetDialogs(
-    useBottomSheetDialogs: boolean
-  ): IdenfyUIBuilder {
+  withBottomSheetDialogs(useBottomSheetDialogs: boolean): IdenfyUIBuilder {
     this.useBottomSheetDialogs = useBottomSheetDialogs;
     return this;
   }
 
-  withColorScheme(
-    idenfyColorScheme: IdenfyColorScheme
-  ): IdenfyUIBuilder {
+  withColorScheme(idenfyColorScheme: IdenfyColorScheme): IdenfyUIBuilder {
     this.idenfyColorScheme = idenfyColorScheme;
     return this;
   }

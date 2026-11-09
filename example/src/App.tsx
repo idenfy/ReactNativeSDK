@@ -19,12 +19,17 @@ import {
 } from 'idenfy-react-native';
 import RequestUpdateScreen from './RequestUpdateScreen';
 import FaceAuthScreen from './FaceAuthScreen';
+import BankCardVerificationScreen from './BankCardVerificationScreen';
 import { createSampleColorScheme } from './ColorScheme';
 
 global.Buffer = Buffer; // very important
 export default class App extends Component {
   state = {
-    currentScreen: 'main' as 'main' | 'requestUpdate' | 'faceAuth',
+    currentScreen: 'main' as
+      | 'main'
+      | 'requestUpdate'
+      | 'faceAuth'
+      | 'bankCardVerification',
     title: 'Sample iDenfy app',
     subtitle: 'Press button to begin identification!',
     buttonTitle: 'BEGIN IDENTIFICATION',
@@ -147,6 +152,14 @@ export default class App extends Component {
       );
     }
 
+    if (this.state.currentScreen === 'bankCardVerification') {
+      return (
+        <BankCardVerificationScreen
+          onBack={() => this.setState({ currentScreen: 'main' })}
+        />
+      );
+    }
+
     return (
       <View style={styles.root}>
         <Text style={styles.title}>{this.state.title}</Text>
@@ -181,6 +194,23 @@ export default class App extends Component {
               style={styles.gradient}
             >
               <Text style={styles.buttonTitle}>BEGIN FACE AUTHENTICATION</Text>
+            </LinearGradient>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.bottomButton}
+            onPress={() =>
+              this.setState({ currentScreen: 'bankCardVerification' })
+            }
+          >
+            <LinearGradient
+              angle={90}
+              useAngle={true}
+              colors={['#536DFE', '#8D6CFB']}
+              style={styles.gradient}
+            >
+              <Text style={styles.buttonTitle}>
+                BEGIN BANK CARD VERIFICATION
+              </Text>
             </LinearGradient>
           </TouchableOpacity>
           <TouchableOpacity

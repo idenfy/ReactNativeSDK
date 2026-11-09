@@ -4,6 +4,8 @@ import com.facebook.react.bridge.*
 import com.idenfy.idenfySdk.CoreSdkInitialization.IdenfyController
 import com.idenfy.idenfySdk.api.initialization.IdenfySettingsV2.IdenfyBuilderV2
 import com.idenfy.idenfySdk.faceauthentication.api.FaceAuthenticationInitialization
+import com.idenfy.idenfySdk.api.initialization.BankCardVerificationInitialization
+import com.idenfy.idenfySdk.api.ui.IdenfyBankCardVerificationUISettings
 import com.idenfyreactnative.di.DIProvider
 import com.idenfyreactnative.domain.IdenfyReactNativeCallbacksUseCase
 import com.idenfyreactnative.domain.IdenfySdkActivityEventListener
@@ -94,6 +96,60 @@ class IdenfyReactNativeModule(reactContext: ReactApplicationContext) :
         currentActivity,
         IdenfyController.IDENFY_REQUEST_CODE,
         idenfySettingsV2
+      )
+    }
+
+    //Unexpected exceptions
+    catch (e: Throwable) {
+      e.printStackTrace()
+      idenfyReactNativeCallbacksUseCase.getCallbackReceiver()?.reject(
+        "error",
+        Exception("Unexpected error. Verify that config is structured correctly.")
+      )
+      idenfyReactNativeCallbacksUseCase.resetPromise()
+      return
+    }
+
+  }
+
+  @ReactMethod
+  fun startBankCardVerification(config: ReadableMap, promise: Promise) {
+    idenfyReactNativeCallbacksUseCase.setCallbacksReceiver(promise)
+
+    val currentActivity = getCurrentActivity()
+
+    if (currentActivity == null) {
+      idenfyReactNativeCallbacksUseCase.getCallbackReceiver()
+        ?.reject("error", Exception("Android activity does not exist"))
+      idenfyReactNativeCallbacksUseCase.resetPromise()
+      return
+    }
+
+    try {
+      val authToken = GetSdkDataFromConfig.getSdkTokenFromConfig(config)
+      val immediateRedirect = GetSdkDataFromConfig.getImmediateRedirectFromConfig(config)
+
+      val idenfyBankCardVerificationUISettings = IdenfyBankCardVerificationUISettings()
+      if (config.hasKey("idenfyBankCardVerificationUISettings") && !config.isNull("idenfyBankCardVerificationUISettings")) {
+        val bcvUISettings = config.getMap("idenfyBankCardVerificationUISettings")
+        if (bcvUISettings != null && bcvUISettings.hasKey("idenfyColorScheme") && !bcvUISettings.isNull("idenfyColorScheme")) {
+          val colorSchemeMap = bcvUISettings.getMap("idenfyColorScheme")
+          if (colorSchemeMap != null) {
+            idenfyBankCardVerificationUISettings.idenfyColorScheme = GetSdkDataFromConfig.decodeColorScheme(colorSchemeMap)
+          }
+        }
+      }
+
+      val bankCardVerificationInitialization = BankCardVerificationInitialization(
+        authToken,
+        immediateRedirect,
+        idenfyBankCardVerificationUISettings
+      )
+
+      IdenfyController.getInstance().initializeBankCardVerificationSDK(
+        currentActivity,
+        IdenfyController.IDENFY_REQUEST_CODE,
+        bankCardVerificationInitialization
       )
     }
 

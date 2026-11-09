@@ -30,5 +30,5 @@ export enum IdenfyLocaleEnum {
   FI = 'FI',
   TR = 'TR',
   ZH = 'ZH',
-  JA = 'JA'
+  JA = 'JA',
 }

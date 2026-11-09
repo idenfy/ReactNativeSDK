@@ -70,7 +70,6 @@ export class IdenfyColorScheme {
   idenfyDocumentSelectionViewContinueButtonDisabledBackgroundColor?: number;
   idenfyDocumentSelectionViewContinueButtonDisabledTextColor?: number;
   idenfyDocumentSelectionViewContinueButtonEnabledTextColor?: number;
-  idenfyDocumentSelectionViewLoadingSpinnerTintColor?: number;
   idenfyFaceAuthenticationResultsViewBackgroundColor?: number;
   idenfyFaceAuthenticationResultsCommonInformationTitleTextColor?: number;
   idenfyFaceAuthenticationResultsCommonInformationDescriptionTextColor?: number;
@@ -110,11 +109,11 @@ export class IdenfyColorScheme {
   idenfyIdentificationResultsViewContentMaskForegroundColor?: number;
   idenfyIdentificationResultsViewSuccessStepTextColor?: number;
   idenfyIdentificationResultsViewErrorStepTextColorV2?: number;
-  idenfyIdentificationResultsViewDocNotFoundAlertBackgroundColorV2?: number;
-  idenfyIdentificationResultsViewDocNotFoundAlertTitleTextColorV2?: number;
-  idenfyIdentificationResultsViewDocNotFoundAlertDescriptionTextColorV2?: number;
-  idenfyIdentificationResultsViewDocNotFoundAlertDescriptionDocumentHighlightColorV2?: number;
-  idenfyIdentificationResultsViewDocNotFoundAlertContinueButtonTextColorV2?: number;
+  idenfyIdentificationResultsViewCountryMismatchAlertBackgroundColorV2?: number;
+  idenfyIdentificationResultsViewCountryMismatchAlertTitleTextColorV2?: number;
+  idenfyIdentificationResultsViewCountryMismatchAlertDescriptionTextColorV2?: number;
+  idenfyIdentificationResultsViewCountryMismatchAlertContinueButtonTextColorV2?: number;
+  idenfyIdentificationResultsViewCountryMismatchAlertBackButtonTextColorV2?: number;
   idenfyIdentificationResultsViewMrzNotFoundAlertBackgroundColorV2?: number;
   idenfyIdentificationResultsViewMrzNotFoundAlertTitleTextColorV2?: number;
   idenfyIdentificationResultsViewMrzNotFoundAlertDescriptionTextColorV2?: number;
@@ -142,8 +141,6 @@ export class IdenfyColorScheme {
   idenfyLanguageSelectionViewLanguageRecyclerViewItemBackgroundColor?: number;
   idenfyLanguageSelectionViewLanguageRecyclerViewItemBorderColor?: number;
   idenfyLanguageSelectionViewLanguageRecyclerViewItemTextColor?: number;
-  idenfyLanguageSelectionViewLanguageRecyclerViewItemHighlightedTextColor?: number;
-  idenfyLanguageSelectionViewLanguageRecyclerViewItemHighlightedBackgroundColor?: number;
   idenfyManualReviewingStatusApprovedViewBackgroundColor?: number;
   idenfyManualReviewingStatusApprovedCommonInformationTitleTextColor?: number;
   idenfyManualReviewingStatusApprovedCommonInformationDescriptionTextColor?: number;
@@ -244,7 +241,6 @@ export class IdenfyColorScheme {
   idenfyBankVerificationViewBanksRecyclerViewItemBackgroundColor?: number;
   idenfyBankVerificationViewBankRecyclerViewItemTextColor?: number;
   idenfyBankVerificationViewLoadingSpinnerTintColor?: number;
-  idenfyBankVerificationViewContinueButtonLoadingSpinnerTintColor?: number;
   idenfyCameraPermissionViewBackgroundColor?: number;
   idenfyCameraPermissionViewTitleTextColor?: number;
   idenfyCameraPermissionViewDescriptionTextColor?: number;
@@ -276,7 +272,6 @@ export class IdenfyColorScheme {
   idenfyCountrySelectionViewCountryRecyclerViewItemTextColor?: number;
   idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedTextColor?: number;
   idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedBackgroundColor?: number;
-  idenfyCountrySelectionViewCountryRecyclerViewItemLoadingSpinnerTintColor?: number;
   idenfyCountryViewSelectionCountrySearchBarBorderColor?: number;
   idenfyCountrySelectionViewPredefinedCountryContinueButtonTextColor?: number;
   idenfyDocumentPhotoResultViewBackgroundColor?: number;
@@ -322,7 +317,6 @@ export class IdenfyColorScheme {
   idenfyEmailSMSVerificationContinueButtonDisabledTextColor?: number;
   idenfyEmailSMSVerificationViewContinueButtonDisabledBackgroundColor?: number;
   idenfyEmailSMSVerificationContinueButtonEnabledTextColor?: number;
-  idenfyEmailSMSVerificationContinueButtonLoadingSpinnerTintColor?: number;
   idenfyFacePhotoResultViewBackgroundColor?: number;
   idenfyFacePhotoResultViewTitleTextColor?: number;
   idenfyFacePhotoResultViewDescriptionTextColor?: number;
@@ -340,7 +334,6 @@ export class IdenfyColorScheme {
   idenfyMFACaptchaMethodViewCaptchaEditTextHintTitleColor?: number;
   idenfyMFACaptchaMethodViewCaptchaEditTextTopHintTitleColor?: number;
   idenfyMFACaptchaMethodViewContinueButtonTextColor?: number;
-  idenfyMFACaptchaMethodViewContinueButtonLoadingSpinnerColor?: number;
   idenfyMFAGeneralViewBackgroundColor?: number;
   idenfyMFAGeneralViewTitleTextColor?: number;
   idenfyMFAGeneralViewDescriptionTextColor?: number;
@@ -351,13 +344,11 @@ export class IdenfyColorScheme {
   idenfyMFAGeneralViewEditTextHintTitleColor?: number;
   idenfyMFAGeneralViewEditTextTopHintTitleColor?: number;
   idenfyMFAGeneralViewContinueButtonTextColor?: number;
-  idenfyMFAGeneralViewContinueButtonLoadingSpinnerTintColor?: number;
   idenfyMFAMethodSelectionViewBackgroundColor?: number;
   idenfyMFAMethodSelectionViewTitleTextColor?: number;
   idenfyMFAMethodSelectionViewDescriptionTextColor?: number;
   idenfyMFAMethodSelectionViewTopHintTitleColor?: number;
   idenfyMFAMethodSelectionViewContinueButtonTextColor?: number;
-  idenfyMFAMethodSelectionViewContinueButtonLoadingSpinnerTintColor?: number;
   idenfyProviderLoginViewBackgroundColor?: number;
   idenfyProviderLoginViewTitleTextColor?: number;
   idenfyProviderLoginViewDescriptionTextColor?: number;
@@ -368,7 +359,6 @@ export class IdenfyColorScheme {
   idenfyProviderLoginViewUsernameAndPasswordEditTextHintTitleColor?: number;
   idenfyProviderLoginViewUsernameAndPasswordEditTextTopHintTitleColor?: number;
   idenfyProviderLoginViewContinueButtonTextColor?: number;
-  idenfyProviderLoginViewContinueButtonLoadingSpinnerTintColor?: number;
   idenfyProviderSelectionViewBackgroundColor?: number;
   idenfyProviderSelectionViewTitleTextColor?: number;
   idenfyProviderSelectionViewDescriptionTextColor?: number;
@@ -383,7 +373,6 @@ export class IdenfyColorScheme {
   idenfyProviderSelectionViewProviderRecyclerViewItemHighlightedTextColor?: number;
   idenfyProviderSelectionViewProviderRecyclerViewItemHighlightedBackgroundColor?: number;
   idenfyProviderViewSelectionProviderSearchBarBorderColor?: number;
-  idenfyProviderSelectionViewProviderRecyclerViewItemLoadingSpinnerTintColor?: number;
   idenfyAdditionalSupportViewBackgroundColor?: number;
   idenfyAdditionalSupportCommonInformationTitleTextColor?: number;
   idenfyAdditionalSupportCommonInformationDescriptionTextColor?: number;
@@ -401,7 +390,6 @@ export class IdenfyColorScheme {
   idenfyCountryAndDocumentSelectionViewContinueButtonDisabledBackgroundColor?: number;
   idenfyCountryAndDocumentSelectionViewContinueButtonDisabledTextColor?: number;
   idenfyCountryAndDocumentSelectionViewContinueButtonEnabledTextColor?: number;
-  idenfyCountryAndDocumentSelectionViewContinueButtonLoadingSpinnerTintColor?: number;
   idenfyCountryAndDocumentSelectionViewPhysicalDocumentTitleDividerColor?: number;
   idenfyDocumentCameraPreviewSessionBackgroundColor?: number;
   idenfyDocumentCameraPreviewSessionBottomActionButtonsViewBackgroundColor?: number;
@@ -420,7 +408,6 @@ export class IdenfyColorScheme {
   idenfyPrivacyPolicyCardViewArrowIconTintColor?: number;
   idenfyPrivacyPolicyCardViewIconTintColor?: number;
   idenfyPrivacyPolicyContinueButtonTextColor?: number;
-  idenfyPrivacyPolicyContinueButtonLoadingSpinnerTintColor?: number;
   idenfyPartnerPrivacyPolicyDialogViewBackgroundColor?: number;
   idenfySplashScreenViewTitleTextColor?: number;
   idenfySplashScreenViewDescriptionTextColor?: number;
@@ -443,7 +430,6 @@ export class IdenfyColorScheme {
   idenfyEIDSessionViewTitleTextColor?: number;
   idenfyEIDSessionViewDescriptionTextColor?: number;
   idenfyEIDSessionViewButtonTextColor?: number;
-  idenfyEIDSessionViewButtonLoadingSpinnerTintColor?: number;
   idenfyEIDSessionViewCodeInputEditTextTitleColor?: number;
   idenfyEIDSessionViewCodeInputEditTextHintColor?: number;
   idenfyEIDSessionViewCodeInputFieldErrorMessageTextColor?: number;
@@ -459,469 +445,2023 @@ export class IdenfyColorScheme {
   idenfyEIDSessionViewClickToUploadTextColor?: number;
   idenfyEIDSessionViewInputFieldBorderColor?: number;
   idenfyEIDSessionViewInputFieldBackgroundColor?: number;
+  idenfyHighlightedItemBackgroundColor?: number;
+  idenfyHighlightedItemTextColor?: number;
+  idenfyHighlightedItemBorderColor?: number;
+  idenfyBankCardCameraViewLoadingSpinnerColor?: number;
+  idenfyBankCardOnBoardingViewBackgroundColor?: number;
+  idenfyBankCardOnBoardingViewTitleTextColor?: number;
+  idenfyBankCardOnBoardingViewDescriptionTextColor?: number;
+  idenfyBankCardOnBoardingViewCardIconTintColor?: number;
+  idenfyBankCardOnBoardingViewCardBorderColor?: number;
+  idenfyBankCardOnBoardingViewCardBackgroundColor?: number;
+  idenfyBankCardOnBoardingViewCardSelectedBorderColor?: number;
+  idenfyBankCardOnBoardingViewCardSelectedBackgroundColor?: number;
+  idenfyBankCardOnBoardingViewCardSelectedTextColor?: number;
+  idenfyBankCardOnBoardingViewContinueButtonDisabledBackgroundColor?: number;
+  idenfyBankCardOnBoardingViewContinueButtonDisabledTextColor?: number;
+  idenfyBankCardOnBoardingViewContinueButtonEnabledTextColor?: number;
+  idenfyBankCardSelectionViewBackgroundColor?: number;
+  idenfyBankCardSelectionViewButtonDisabledBackgroundColor?: number;
+  idenfyBankCardSelectionViewButtonDisabledTextColor?: number;
+  idenfyBankCardSelectionViewButtonEnabledTextColor?: number;
+  idenfyBankCardSelectionViewButtonTextColor?: number;
+  idenfyBankCardUploadViewBackgroundColor?: number;
+  idenfyBankCardUploadViewDescriptionTextColor?: number;
+  idenfyBankCardUploadViewClickToUploadTextColor?: number;
+  idenfyBankCardUploadViewUploadIconTintColor?: number;
+  idenfyBankCardUploadViewButtonDisabledBackgroundColor?: number;
+  idenfyBankCardUploadViewButtonDisabledTextColor?: number;
+  idenfyBankCardUploadViewButtonEnabledTextColor?: number;
+  idenfyBankCardUploadReviewViewBackgroundColor?: number;
+  idenfyBankCardUploadReviewViewDescriptionTextColor?: number;
+  idenfyBankCardUploadReviewViewQuestionCardBackgroundColor?: number;
+  idenfyBankCardUploadReviewViewQuestionCardIconColor?: number;
+  idenfyBankCardUploadReviewViewQuestionCardTitleColor?: number;
+  idenfyBankCardUploadReviewViewNextButtonTextColor?: number;
+  idenfyBankCardUploadReviewViewRetakeButtonTextColor?: number;
+  idenfyBankCardUploadReviewViewButtonTextColor?: number;
+  idenfyBankCardVerificationPrivacyPolicyViewBackgroundColor?: number;
+  idenfyBankCardVerificationPrivacyPolicyCommonInformationTitleTextColor?: number;
+  idenfyBankCardVerificationPrivacyPolicyCommonInformationDescriptionTextColor?: number;
+  idenfyBankCardVerificationPrivacyPolicyCardViewTextColor?: number;
+  idenfyBankCardVerificationPrivacyPolicyCardViewBackgroundColor?: number;
+  idenfyBankCardVerificationPrivacyPolicyCardViewIconTintColor?: number;
+  idenfyBankCardVerificationPrivacyPolicyContinueButtonTextColor?: number;
+  idenfyBankCardVerificationResultsViewBackgroundColor?: number;
+  idenfyBankCardVerificationResultsCommonInformationTitleTextColor?: number;
+  idenfyBankCardVerificationResultsCommonInformationDescriptionTextColor?: number;
+  idenfyBankCardVerificationResultsContinueButtonTextColor?: number;
 
   toJson(): Record<string, number> {
     const map: Record<string, number> = {};
-    if (this.idenfyBackgroundColorV2 != null) map['idenfyBackgroundColorV2'] = this.idenfyBackgroundColorV2!;
-    if (this.idenfyMainColorV2 != null) map['idenfyMainColorV2'] = this.idenfyMainColorV2!;
-    if (this.idenfyMainDarkerColorV2 != null) map['idenfyMainDarkerColorV2'] = this.idenfyMainDarkerColorV2!;
-    if (this.idenfySecondColorV2 != null) map['idenfySecondColorV2'] = this.idenfySecondColorV2!;
-    if (this.idenfyMainColor50percentV2 != null) map['idenfyMainColor50percentV2'] = this.idenfyMainColor50percentV2!;
-    if (this.idenfySecondColor6percentV2 != null) map['idenfySecondColor6percentV2'] = this.idenfySecondColor6percentV2!;
-    if (this.idenfySecondColor20percentV2 != null) map['idenfySecondColor20percentV2'] = this.idenfySecondColor20percentV2!;
-    if (this.idenfySecondColor50percentV2 != null) map['idenfySecondColor50percentV2'] = this.idenfySecondColor50percentV2!;
-    if (this.idenfySecondColor80percentV2 != null) map['idenfySecondColor80percentV2'] = this.idenfySecondColor80percentV2!;
-    if (this.idenfyInactiveColorV2 != null) map['idenfyInactiveColorV2'] = this.idenfyInactiveColorV2!;
-    if (this.idenfyStepSuccessColorV2 != null) map['idenfyStepSuccessColorV2'] = this.idenfyStepSuccessColorV2!;
-    if (this.idenfyStepErrorColorV2 != null) map['idenfyStepErrorColorV2'] = this.idenfyStepErrorColorV2!;
-    if (this.idenfyFaceOvalStrokeColor != null) map['idenfyFaceOvalStrokeColor'] = this.idenfyFaceOvalStrokeColor!;
-    if (this.idenfyTakePhotoButtonBackgroundFocused != null) map['idenfyTakePhotoButtonBackgroundFocused'] = this.idenfyTakePhotoButtonBackgroundFocused!;
-    if (this.idenfyTakePhotoButtonIconUnFocused != null) map['idenfyTakePhotoButtonIconUnFocused'] = this.idenfyTakePhotoButtonIconUnFocused!;
-    if (this.idenfyTransparentCameraOverlayV2 != null) map['idenfyTransparentCameraOverlayV2'] = this.idenfyTransparentCameraOverlayV2!;
-    if (this.idenfyDrawerCurrentInstructionIndicatorColorV2 != null) map['idenfyDrawerCurrentInstructionIndicatorColorV2'] = this.idenfyDrawerCurrentInstructionIndicatorColorV2!;
-    if (this.idenfyDrawerInstructionControlsTintColorV2 != null) map['idenfyDrawerInstructionControlsTintColorV2'] = this.idenfyDrawerInstructionControlsTintColorV2!;
-    if (this.idenfyPhotoResultDetailsCardBackgroundColorV2 != null) map['idenfyPhotoResultDetailsCardBackgroundColorV2'] = this.idenfyPhotoResultDetailsCardBackgroundColorV2!;
-    if (this.idenfyRedColorV2 != null) map['idenfyRedColorV2'] = this.idenfyRedColorV2!;
-    if (this.idenfyErrorRedColorV2 != null) map['idenfyErrorRedColorV2'] = this.idenfyErrorRedColorV2!;
-    if (this.idenfyErrorLightRedColorV2 != null) map['idenfyErrorLightRedColorV2'] = this.idenfyErrorLightRedColorV2!;
-    if (this.idenfyGreenColorV2 != null) map['idenfyGreenColorV2'] = this.idenfyGreenColorV2!;
-    if (this.idenfyGrayColorV2 != null) map['idenfyGrayColorV2'] = this.idenfyGrayColorV2!;
-    if (this.idenfyTransparentCameraOverlay != null) map['idenfyTransparentCameraOverlay'] = this.idenfyTransparentCameraOverlay!;
-    if (this.idenfyHelpSheetOverlay != null) map['idenfyHelpSheetOverlay'] = this.idenfyHelpSheetOverlay!;
-    if (this.idenfyLivenessBackgroundColor != null) map['idenfyLivenessBackgroundColor'] = this.idenfyLivenessBackgroundColor!;
-    if (this.idenfyBlack != null) map['idenfyBlack'] = this.idenfyBlack!;
-    if (this.idenfyWhite != null) map['idenfyWhite'] = this.idenfyWhite!;
-    if (this.idenfyWarningLightYellowV2 != null) map['idenfyWarningLightYellowV2'] = this.idenfyWarningLightYellowV2!;
-    if (this.idenfyWarningYellowV2 != null) map['idenfyWarningYellowV2'] = this.idenfyWarningYellowV2!;
-    if (this.idenfyBackgroundGreenV2 != null) map['idenfyBackgroundGreenV2'] = this.idenfyBackgroundGreenV2!;
-    if (this.idenfyBorderGreenV2 != null) map['idenfyBorderGreenV2'] = this.idenfyBorderGreenV2!;
-    if (this.idenfyPurpleColor != null) map['idenfyPurpleColor'] = this.idenfyPurpleColor!;
-    if (this.idenfyPurpleTextColor != null) map['idenfyPurpleTextColor'] = this.idenfyPurpleTextColor!;
-    if (this.idenfyPurpleBackgroundColor != null) map['idenfyPurpleBackgroundColor'] = this.idenfyPurpleBackgroundColor!;
-    if (this.idenfyLightBlueColor != null) map['idenfyLightBlueColor'] = this.idenfyLightBlueColor!;
-    if (this.idenfyBlueColor != null) map['idenfyBlueColor'] = this.idenfyBlueColor!;
-    if (this.idenfyLightGrayColor != null) map['idenfyLightGrayColor'] = this.idenfyLightGrayColor!;
-    if (this.idenfyBlackV2 != null) map['idenfyBlackV2'] = this.idenfyBlackV2!;
-    if (this.idenfyDefaultAppBarBackgroundColor != null) map['idenfyDefaultAppBarBackgroundColor'] = this.idenfyDefaultAppBarBackgroundColor!;
-    if (this.idenfyDefaultAppBarIconTintColor != null) map['idenfyDefaultAppBarIconTintColor'] = this.idenfyDefaultAppBarIconTintColor!;
-    if (this.idenfyCameraPreviewSessionAppBarBackgroundColor != null) map['idenfyCameraPreviewSessionAppBarBackgroundColor'] = this.idenfyCameraPreviewSessionAppBarBackgroundColor!;
-    if (this.idenfyCameraPreviewSessionAppBarBackButtonTintColor != null) map['idenfyCameraPreviewSessionAppBarBackButtonTintColor'] = this.idenfyCameraPreviewSessionAppBarBackButtonTintColor!;
-    if (this.idenfyCameraPreviewSessionAppBarCameraFlashButtonTintColor != null) map['idenfyCameraPreviewSessionAppBarCameraFlashButtonTintColor'] = this.idenfyCameraPreviewSessionAppBarCameraFlashButtonTintColor!;
-    if (this.idenfyCameraPreviewSessionAppBarBackButtonTextColor != null) map['idenfyCameraPreviewSessionAppBarBackButtonTextColor'] = this.idenfyCameraPreviewSessionAppBarBackButtonTextColor!;
-    if (this.idenfyCameraPreviewSessionAppBarFaceNotDetectedAlertTintColor != null) map['idenfyCameraPreviewSessionAppBarFaceNotDetectedAlertTintColor'] = this.idenfyCameraPreviewSessionAppBarFaceNotDetectedAlertTintColor!;
-    if (this.idenfyFaceAuthenticationCameraPreviewSessionAppBarCameraLanguageSelectionTintColor != null) map['idenfyFaceAuthenticationCameraPreviewSessionAppBarCameraLanguageSelectionTintColor'] = this.idenfyFaceAuthenticationCameraPreviewSessionAppBarCameraLanguageSelectionTintColor!;
-    if (this.idenfyNoBackButtonAppBarBackgroundColor != null) map['idenfyNoBackButtonAppBarBackgroundColor'] = this.idenfyNoBackButtonAppBarBackgroundColor!;
-    if (this.idenfyPhotoResultAppBarBackgroundColor != null) map['idenfyPhotoResultAppBarBackgroundColor'] = this.idenfyPhotoResultAppBarBackgroundColor!;
-    if (this.idenfyPhotoResultAppBarBackButtonTextColor != null) map['idenfyPhotoResultAppBarBackButtonTextColor'] = this.idenfyPhotoResultAppBarBackButtonTextColor!;
-    if (this.idenfyLanguageSelectionToolbarLanguageSelectionIconTintColor != null) map['idenfyLanguageSelectionToolbarLanguageSelectionIconTintColor'] = this.idenfyLanguageSelectionToolbarLanguageSelectionIconTintColor!;
-    if (this.idenfyLanguageSelectionToolbarCloseIconTintColor != null) map['idenfyLanguageSelectionToolbarCloseIconTintColor'] = this.idenfyLanguageSelectionToolbarCloseIconTintColor!;
-    if (this.idenfyIdentificationResultsViewInstructionsAlertBackgroundColorV2 != null) map['idenfyIdentificationResultsViewInstructionsAlertBackgroundColorV2'] = this.idenfyIdentificationResultsViewInstructionsAlertBackgroundColorV2!;
-    if (this.idenfyIdentificationResultsViewInstructionsAlertLoadingSpinnerColor != null) map['idenfyIdentificationResultsViewInstructionsAlertLoadingSpinnerColor'] = this.idenfyIdentificationResultsViewInstructionsAlertLoadingSpinnerColor!;
-    if (this.idenfyIdentificationResultsViewInstructionsAlertTitleTextColorV2 != null) map['idenfyIdentificationResultsViewInstructionsAlertTitleTextColorV2'] = this.idenfyIdentificationResultsViewInstructionsAlertTitleTextColorV2!;
-    if (this.idenfyIdentificationResultsViewInstructionsAlertContinueButtonTextColorV2 != null) map['idenfyIdentificationResultsViewInstructionsAlertContinueButtonTextColorV2'] = this.idenfyIdentificationResultsViewInstructionsAlertContinueButtonTextColorV2!;
-    if (this.idenfyIdentificationResultsViewInstructionsAlertProgressBarProgressColorV2 != null) map['idenfyIdentificationResultsViewInstructionsAlertProgressBarProgressColorV2'] = this.idenfyIdentificationResultsViewInstructionsAlertProgressBarProgressColorV2!;
-    if (this.idenfyDocumentSelectionViewBackgroundColor != null) map['idenfyDocumentSelectionViewBackgroundColor'] = this.idenfyDocumentSelectionViewBackgroundColor!;
-    if (this.idenfyDocumentSelectionViewTitleTextColor != null) map['idenfyDocumentSelectionViewTitleTextColor'] = this.idenfyDocumentSelectionViewTitleTextColor!;
-    if (this.idenfyDocumentSelectionViewDescriptionTextColor != null) map['idenfyDocumentSelectionViewDescriptionTextColor'] = this.idenfyDocumentSelectionViewDescriptionTextColor!;
-    if (this.idenfyDocumentSelectionViewRecyclerViewBorderColor != null) map['idenfyDocumentSelectionViewRecyclerViewBorderColor'] = this.idenfyDocumentSelectionViewRecyclerViewBorderColor!;
-    if (this.idenfyDocumentSelectionViewRecyclerViewBackgroundColor != null) map['idenfyDocumentSelectionViewRecyclerViewBackgroundColor'] = this.idenfyDocumentSelectionViewRecyclerViewBackgroundColor!;
-    if (this.idenfyDocumentSelectionViewRecyclerViewItemBackgroundColor != null) map['idenfyDocumentSelectionViewRecyclerViewItemBackgroundColor'] = this.idenfyDocumentSelectionViewRecyclerViewItemBackgroundColor!;
-    if (this.idenfyDocumentSelectionViewRecyclerViewItemBorderColor != null) map['idenfyDocumentSelectionViewRecyclerViewItemBorderColor'] = this.idenfyDocumentSelectionViewRecyclerViewItemBorderColor!;
-    if (this.idenfyDocumentSelectionViewRecyclerViewItemTitleTextColor != null) map['idenfyDocumentSelectionViewRecyclerViewItemTitleTextColor'] = this.idenfyDocumentSelectionViewRecyclerViewItemTitleTextColor!;
-    if (this.idenfyDocumentSelectionViewRecyclerViewItemHighlightedTextColor != null) map['idenfyDocumentSelectionViewRecyclerViewItemHighlightedTextColor'] = this.idenfyDocumentSelectionViewRecyclerViewItemHighlightedTextColor!;
-    if (this.idenfyDocumentSelectionViewRecyclerViewItemHighlightedBackgroundColor != null) map['idenfyDocumentSelectionViewRecyclerViewItemHighlightedBackgroundColor'] = this.idenfyDocumentSelectionViewRecyclerViewItemHighlightedBackgroundColor!;
-    if (this.idenfyDocumentSelectionViewContinueButtonDisabledBackgroundColor != null) map['idenfyDocumentSelectionViewContinueButtonDisabledBackgroundColor'] = this.idenfyDocumentSelectionViewContinueButtonDisabledBackgroundColor!;
-    if (this.idenfyDocumentSelectionViewContinueButtonDisabledTextColor != null) map['idenfyDocumentSelectionViewContinueButtonDisabledTextColor'] = this.idenfyDocumentSelectionViewContinueButtonDisabledTextColor!;
-    if (this.idenfyDocumentSelectionViewContinueButtonEnabledTextColor != null) map['idenfyDocumentSelectionViewContinueButtonEnabledTextColor'] = this.idenfyDocumentSelectionViewContinueButtonEnabledTextColor!;
-    if (this.idenfyDocumentSelectionViewLoadingSpinnerTintColor != null) map['idenfyDocumentSelectionViewLoadingSpinnerTintColor'] = this.idenfyDocumentSelectionViewLoadingSpinnerTintColor!;
-    if (this.idenfyFaceAuthenticationResultsViewBackgroundColor != null) map['idenfyFaceAuthenticationResultsViewBackgroundColor'] = this.idenfyFaceAuthenticationResultsViewBackgroundColor!;
-    if (this.idenfyFaceAuthenticationResultsCommonInformationTitleTextColor != null) map['idenfyFaceAuthenticationResultsCommonInformationTitleTextColor'] = this.idenfyFaceAuthenticationResultsCommonInformationTitleTextColor!;
-    if (this.idenfyFaceAuthenticationResultsCommonInformationDescriptionTextColor != null) map['idenfyFaceAuthenticationResultsCommonInformationDescriptionTextColor'] = this.idenfyFaceAuthenticationResultsCommonInformationDescriptionTextColor!;
-    if (this.idenfyFaceAuthenticationResultsContinueButtonTextColor != null) map['idenfyFaceAuthenticationResultsContinueButtonTextColor'] = this.idenfyFaceAuthenticationResultsContinueButtonTextColor!;
-    if (this.idenfyFaceCameraPreviewSessionBackgroundColor != null) map['idenfyFaceCameraPreviewSessionBackgroundColor'] = this.idenfyFaceCameraPreviewSessionBackgroundColor!;
-    if (this.idenfyFaceCameraPreviewSessionOvalOutsideColor != null) map['idenfyFaceCameraPreviewSessionOvalOutsideColor'] = this.idenfyFaceCameraPreviewSessionOvalOutsideColor!;
-    if (this.idenfyFaceCameraPreviewSessionBottomActionButtonsViewBackgroundColor != null) map['idenfyFaceCameraPreviewSessionBottomActionButtonsViewBackgroundColor'] = this.idenfyFaceCameraPreviewSessionBottomActionButtonsViewBackgroundColor!;
-    if (this.idenfyFaceCameraPreviewSessionTakePhotoButtonUnFocusedTintColor != null) map['idenfyFaceCameraPreviewSessionTakePhotoButtonUnFocusedTintColor'] = this.idenfyFaceCameraPreviewSessionTakePhotoButtonUnFocusedTintColor!;
-    if (this.idenfyFaceCameraPreviewSessionTakePhotoButtonFocusedTintColor != null) map['idenfyFaceCameraPreviewSessionTakePhotoButtonFocusedTintColor'] = this.idenfyFaceCameraPreviewSessionTakePhotoButtonFocusedTintColor!;
-    if (this.idenfyFaceCameraPreviewSessionTakePhotoButtonUnFocusedBackgroundColor != null) map['idenfyFaceCameraPreviewSessionTakePhotoButtonUnFocusedBackgroundColor'] = this.idenfyFaceCameraPreviewSessionTakePhotoButtonUnFocusedBackgroundColor!;
-    if (this.idenfyFaceCameraPreviewSessionTakePhotoButtonFocusedBackgroundColor != null) map['idenfyFaceCameraPreviewSessionTakePhotoButtonFocusedBackgroundColor'] = this.idenfyFaceCameraPreviewSessionTakePhotoButtonFocusedBackgroundColor!;
-    if (this.idenfyFaceCameraPreviewSessionFaceOvalColor != null) map['idenfyFaceCameraPreviewSessionFaceOvalColor'] = this.idenfyFaceCameraPreviewSessionFaceOvalColor!;
-    if (this.idenfyFaceCameraPreviewSessionFaceOvalNotDetectedColor != null) map['idenfyFaceCameraPreviewSessionFaceOvalNotDetectedColor'] = this.idenfyFaceCameraPreviewSessionFaceOvalNotDetectedColor!;
-    if (this.idenfyFaceCameraPreviewSessionFaceOvalLoadingColor != null) map['idenfyFaceCameraPreviewSessionFaceOvalLoadingColor'] = this.idenfyFaceCameraPreviewSessionFaceOvalLoadingColor!;
-    if (this.idenfyFaceCameraPreviewSessionFaceDetectedColor != null) map['idenfyFaceCameraPreviewSessionFaceDetectedColor'] = this.idenfyFaceCameraPreviewSessionFaceDetectedColor!;
-    if (this.idenfyFaceCameraPreviewTitleTextColor != null) map['idenfyFaceCameraPreviewTitleTextColor'] = this.idenfyFaceCameraPreviewTitleTextColor!;
-    if (this.idenfyFaceCameraPreviewDescriptionTextColor != null) map['idenfyFaceCameraPreviewDescriptionTextColor'] = this.idenfyFaceCameraPreviewDescriptionTextColor!;
-    if (this.idenfyFaceCameraPreviewSessionLivenessAccentColor != null) map['idenfyFaceCameraPreviewSessionLivenessAccentColor'] = this.idenfyFaceCameraPreviewSessionLivenessAccentColor!;
-    if (this.idenfyContinueButtonTextColor != null) map['idenfyContinueButtonTextColor'] = this.idenfyContinueButtonTextColor!;
-    if (this.idenfyContinueButtonSpinnerColor != null) map['idenfyContinueButtonSpinnerColor'] = this.idenfyContinueButtonSpinnerColor!;
-    if (this.idenfyRetakeButtonTextColor != null) map['idenfyRetakeButtonTextColor'] = this.idenfyRetakeButtonTextColor!;
-    if (this.idenfyPhotoResultCardTitleColor != null) map['idenfyPhotoResultCardTitleColor'] = this.idenfyPhotoResultCardTitleColor!;
-    if (this.idenfyGradientButtonColorStart != null) map['idenfyGradientButtonColorStart'] = this.idenfyGradientButtonColorStart!;
-    if (this.idenfyGradientButtonColorEnd != null) map['idenfyGradientButtonColorEnd'] = this.idenfyGradientButtonColorEnd!;
-    if (this.idenfyRetakeButtonBackgroundColor != null) map['idenfyRetakeButtonBackgroundColor'] = this.idenfyRetakeButtonBackgroundColor!;
-    if (this.idenfyRetakeButtonBorderColor != null) map['idenfyRetakeButtonBorderColor'] = this.idenfyRetakeButtonBorderColor!;
-    if (this.idenfyIdentificationResultsViewBackgroundColor != null) map['idenfyIdentificationResultsViewBackgroundColor'] = this.idenfyIdentificationResultsViewBackgroundColor!;
-    if (this.idenfyIdentificationResultsViewTitleTextColor != null) map['idenfyIdentificationResultsViewTitleTextColor'] = this.idenfyIdentificationResultsViewTitleTextColor!;
-    if (this.idenfyIdentificationResultsViewDescriptionTextColor != null) map['idenfyIdentificationResultsViewDescriptionTextColor'] = this.idenfyIdentificationResultsViewDescriptionTextColor!;
-    if (this.idenfyIdentificationResultsViewDocumentStepTitleTextColor != null) map['idenfyIdentificationResultsViewDocumentStepTitleTextColor'] = this.idenfyIdentificationResultsViewDocumentStepTitleTextColor!;
-    if (this.idenfyIdentificationResultsViewDocumentStepLoadingStepDividerLoadingColor != null) map['idenfyIdentificationResultsViewDocumentStepLoadingStepDividerLoadingColor'] = this.idenfyIdentificationResultsViewDocumentStepLoadingStepDividerLoadingColor!;
-    if (this.idenfyIdentificationResultsViewDocumentStepLoadingSpinnerAccentColor != null) map['idenfyIdentificationResultsViewDocumentStepLoadingSpinnerAccentColor'] = this.idenfyIdentificationResultsViewDocumentStepLoadingSpinnerAccentColor!;
-    if (this.idenfyIdentificationResultsViewDocumentStepLoadingStepDividerSuccessColor != null) map['idenfyIdentificationResultsViewDocumentStepLoadingStepDividerSuccessColor'] = this.idenfyIdentificationResultsViewDocumentStepLoadingStepDividerSuccessColor!;
-    if (this.idenfyIdentificationResultsViewDocumentStepLoadingStepDividerErrorColor != null) map['idenfyIdentificationResultsViewDocumentStepLoadingStepDividerErrorColor'] = this.idenfyIdentificationResultsViewDocumentStepLoadingStepDividerErrorColor!;
-    if (this.idenfyIdentificationResultsViewDocumentStepScrollBarThumbColor != null) map['idenfyIdentificationResultsViewDocumentStepScrollBarThumbColor'] = this.idenfyIdentificationResultsViewDocumentStepScrollBarThumbColor!;
-    if (this.idenfyIdentificationResultsViewRetakeButtonTextColor != null) map['idenfyIdentificationResultsViewRetakeButtonTextColor'] = this.idenfyIdentificationResultsViewRetakeButtonTextColor!;
-    if (this.idenfyIdentificationResultsViewContentMaskForegroundColor != null) map['idenfyIdentificationResultsViewContentMaskForegroundColor'] = this.idenfyIdentificationResultsViewContentMaskForegroundColor!;
-    if (this.idenfyIdentificationResultsViewSuccessStepTextColor != null) map['idenfyIdentificationResultsViewSuccessStepTextColor'] = this.idenfyIdentificationResultsViewSuccessStepTextColor!;
-    if (this.idenfyIdentificationResultsViewErrorStepTextColorV2 != null) map['idenfyIdentificationResultsViewErrorStepTextColorV2'] = this.idenfyIdentificationResultsViewErrorStepTextColorV2!;
-    if (this.idenfyIdentificationResultsViewDocNotFoundAlertBackgroundColorV2 != null) map['idenfyIdentificationResultsViewDocNotFoundAlertBackgroundColorV2'] = this.idenfyIdentificationResultsViewDocNotFoundAlertBackgroundColorV2!;
-    if (this.idenfyIdentificationResultsViewDocNotFoundAlertTitleTextColorV2 != null) map['idenfyIdentificationResultsViewDocNotFoundAlertTitleTextColorV2'] = this.idenfyIdentificationResultsViewDocNotFoundAlertTitleTextColorV2!;
-    if (this.idenfyIdentificationResultsViewDocNotFoundAlertDescriptionTextColorV2 != null) map['idenfyIdentificationResultsViewDocNotFoundAlertDescriptionTextColorV2'] = this.idenfyIdentificationResultsViewDocNotFoundAlertDescriptionTextColorV2!;
-    if (this.idenfyIdentificationResultsViewDocNotFoundAlertDescriptionDocumentHighlightColorV2 != null) map['idenfyIdentificationResultsViewDocNotFoundAlertDescriptionDocumentHighlightColorV2'] = this.idenfyIdentificationResultsViewDocNotFoundAlertDescriptionDocumentHighlightColorV2!;
-    if (this.idenfyIdentificationResultsViewDocNotFoundAlertContinueButtonTextColorV2 != null) map['idenfyIdentificationResultsViewDocNotFoundAlertContinueButtonTextColorV2'] = this.idenfyIdentificationResultsViewDocNotFoundAlertContinueButtonTextColorV2!;
-    if (this.idenfyIdentificationResultsViewMrzNotFoundAlertBackgroundColorV2 != null) map['idenfyIdentificationResultsViewMrzNotFoundAlertBackgroundColorV2'] = this.idenfyIdentificationResultsViewMrzNotFoundAlertBackgroundColorV2!;
-    if (this.idenfyIdentificationResultsViewMrzNotFoundAlertTitleTextColorV2 != null) map['idenfyIdentificationResultsViewMrzNotFoundAlertTitleTextColorV2'] = this.idenfyIdentificationResultsViewMrzNotFoundAlertTitleTextColorV2!;
-    if (this.idenfyIdentificationResultsViewMrzNotFoundAlertDescriptionTextColorV2 != null) map['idenfyIdentificationResultsViewMrzNotFoundAlertDescriptionTextColorV2'] = this.idenfyIdentificationResultsViewMrzNotFoundAlertDescriptionTextColorV2!;
-    if (this.idenfyIdentificationResultsViewMrzNotFoundAlertContinueButtonTextColorV2 != null) map['idenfyIdentificationResultsViewMrzNotFoundAlertContinueButtonTextColorV2'] = this.idenfyIdentificationResultsViewMrzNotFoundAlertContinueButtonTextColorV2!;
-    if (this.idenfyIdentificationResultsViewMrzNotFoundAlertBackButtonTextColorV2 != null) map['idenfyIdentificationResultsViewMrzNotFoundAlertBackButtonTextColorV2'] = this.idenfyIdentificationResultsViewMrzNotFoundAlertBackButtonTextColorV2!;
-    if (this.idenfyIdentificationResultsViewMismatchTagsFoundAlertBackgroundColorV2 != null) map['idenfyIdentificationResultsViewMismatchTagsFoundAlertBackgroundColorV2'] = this.idenfyIdentificationResultsViewMismatchTagsFoundAlertBackgroundColorV2!;
-    if (this.idenfyIdentificationResultsViewMismatchTagsFoundAlertTitleTextColorV2 != null) map['idenfyIdentificationResultsViewMismatchTagsFoundAlertTitleTextColorV2'] = this.idenfyIdentificationResultsViewMismatchTagsFoundAlertTitleTextColorV2!;
-    if (this.idenfyIdentificationResultsViewMismatchTagsFoundAlertDescriptionTextColorV2 != null) map['idenfyIdentificationResultsViewMismatchTagsFoundAlertDescriptionTextColorV2'] = this.idenfyIdentificationResultsViewMismatchTagsFoundAlertDescriptionTextColorV2!;
-    if (this.idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonDisabledTextColorV2 != null) map['idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonDisabledTextColorV2'] = this.idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonDisabledTextColorV2!;
-    if (this.idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonDisabledBackgroundColorV2 != null) map['idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonDisabledBackgroundColorV2'] = this.idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonDisabledBackgroundColorV2!;
-    if (this.idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonEnabledTextColorV2 != null) map['idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonEnabledTextColorV2'] = this.idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonEnabledTextColorV2!;
-    if (this.idenfyIdentificationSuccessResultsViewBackgroundColor != null) map['idenfyIdentificationSuccessResultsViewBackgroundColor'] = this.idenfyIdentificationSuccessResultsViewBackgroundColor!;
-    if (this.idenfyIdentificationSuccessResultsViewTitleTextColor != null) map['idenfyIdentificationSuccessResultsViewTitleTextColor'] = this.idenfyIdentificationSuccessResultsViewTitleTextColor!;
-    if (this.idenfyIdentificationSuccessResultsViewDescriptionTextColor != null) map['idenfyIdentificationSuccessResultsViewDescriptionTextColor'] = this.idenfyIdentificationSuccessResultsViewDescriptionTextColor!;
-    if (this.idenfyIdentificationSuccessResultsViewIdentifiedTextColor != null) map['idenfyIdentificationSuccessResultsViewIdentifiedTextColor'] = this.idenfyIdentificationSuccessResultsViewIdentifiedTextColor!;
-    if (this.idenfyIdentificationSuspectedResultsViewTitleColor != null) map['idenfyIdentificationSuspectedResultsViewTitleColor'] = this.idenfyIdentificationSuspectedResultsViewTitleColor!;
-    if (this.idenfyIdentificationSuspectedResultsViewDescriptionColor != null) map['idenfyIdentificationSuspectedResultsViewDescriptionColor'] = this.idenfyIdentificationSuspectedResultsViewDescriptionColor!;
-    if (this.idenfyIdentificationSuspectedResultsViewDescriptionEmailColor != null) map['idenfyIdentificationSuspectedResultsViewDescriptionEmailColor'] = this.idenfyIdentificationSuspectedResultsViewDescriptionEmailColor!;
-    if (this.idenfyIdentificationSuspectedResultsViewContinueButtonBackgroundColor != null) map['idenfyIdentificationSuspectedResultsViewContinueButtonBackgroundColor'] = this.idenfyIdentificationSuspectedResultsViewContinueButtonBackgroundColor!;
-    if (this.idenfyIdentificationSuspectedResultsViewContinueButtonTitleColor != null) map['idenfyIdentificationSuspectedResultsViewContinueButtonTitleColor'] = this.idenfyIdentificationSuspectedResultsViewContinueButtonTitleColor!;
-    if (this.idenfyLanguageSelectionViewBackgroundColor != null) map['idenfyLanguageSelectionViewBackgroundColor'] = this.idenfyLanguageSelectionViewBackgroundColor!;
-    if (this.idenfyLanguageSelectionViewTitleTextColor != null) map['idenfyLanguageSelectionViewTitleTextColor'] = this.idenfyLanguageSelectionViewTitleTextColor!;
-    if (this.idenfyLanguageSelectionViewLanguageRecyclerViewBackgroundColor != null) map['idenfyLanguageSelectionViewLanguageRecyclerViewBackgroundColor'] = this.idenfyLanguageSelectionViewLanguageRecyclerViewBackgroundColor!;
-    if (this.idenfyLanguageSelectionViewLanguageRecyclerViewBorderColor != null) map['idenfyLanguageSelectionViewLanguageRecyclerViewBorderColor'] = this.idenfyLanguageSelectionViewLanguageRecyclerViewBorderColor!;
-    if (this.idenfyLanguageSelectionViewLanguageRecyclerViewItemBackgroundColor != null) map['idenfyLanguageSelectionViewLanguageRecyclerViewItemBackgroundColor'] = this.idenfyLanguageSelectionViewLanguageRecyclerViewItemBackgroundColor!;
-    if (this.idenfyLanguageSelectionViewLanguageRecyclerViewItemBorderColor != null) map['idenfyLanguageSelectionViewLanguageRecyclerViewItemBorderColor'] = this.idenfyLanguageSelectionViewLanguageRecyclerViewItemBorderColor!;
-    if (this.idenfyLanguageSelectionViewLanguageRecyclerViewItemTextColor != null) map['idenfyLanguageSelectionViewLanguageRecyclerViewItemTextColor'] = this.idenfyLanguageSelectionViewLanguageRecyclerViewItemTextColor!;
-    if (this.idenfyLanguageSelectionViewLanguageRecyclerViewItemHighlightedTextColor != null) map['idenfyLanguageSelectionViewLanguageRecyclerViewItemHighlightedTextColor'] = this.idenfyLanguageSelectionViewLanguageRecyclerViewItemHighlightedTextColor!;
-    if (this.idenfyLanguageSelectionViewLanguageRecyclerViewItemHighlightedBackgroundColor != null) map['idenfyLanguageSelectionViewLanguageRecyclerViewItemHighlightedBackgroundColor'] = this.idenfyLanguageSelectionViewLanguageRecyclerViewItemHighlightedBackgroundColor!;
-    if (this.idenfyManualReviewingStatusApprovedViewBackgroundColor != null) map['idenfyManualReviewingStatusApprovedViewBackgroundColor'] = this.idenfyManualReviewingStatusApprovedViewBackgroundColor!;
-    if (this.idenfyManualReviewingStatusApprovedCommonInformationTitleTextColor != null) map['idenfyManualReviewingStatusApprovedCommonInformationTitleTextColor'] = this.idenfyManualReviewingStatusApprovedCommonInformationTitleTextColor!;
-    if (this.idenfyManualReviewingStatusApprovedCommonInformationDescriptionTextColor != null) map['idenfyManualReviewingStatusApprovedCommonInformationDescriptionTextColor'] = this.idenfyManualReviewingStatusApprovedCommonInformationDescriptionTextColor!;
-    if (this.idenfyManualReviewingStatusApprovedContinueButtonTextColor != null) map['idenfyManualReviewingStatusApprovedContinueButtonTextColor'] = this.idenfyManualReviewingStatusApprovedContinueButtonTextColor!;
-    if (this.idenfyManualReviewingStatusFailedViewBackgroundColor != null) map['idenfyManualReviewingStatusFailedViewBackgroundColor'] = this.idenfyManualReviewingStatusFailedViewBackgroundColor!;
-    if (this.idenfyManualReviewingStatusFailedCommonInformationTitleTextColor != null) map['idenfyManualReviewingStatusFailedCommonInformationTitleTextColor'] = this.idenfyManualReviewingStatusFailedCommonInformationTitleTextColor!;
-    if (this.idenfyManualReviewingStatusFailedCommonInformationDescriptionTextColor != null) map['idenfyManualReviewingStatusFailedCommonInformationDescriptionTextColor'] = this.idenfyManualReviewingStatusFailedCommonInformationDescriptionTextColor!;
-    if (this.idenfyManualReviewingStatusFailedCommonInformationDescriptionSupportEmailTextColor != null) map['idenfyManualReviewingStatusFailedCommonInformationDescriptionSupportEmailTextColor'] = this.idenfyManualReviewingStatusFailedCommonInformationDescriptionSupportEmailTextColor!;
-    if (this.idenfyManualReviewingStatusFailedContinueButtonTextColor != null) map['idenfyManualReviewingStatusFailedContinueButtonTextColor'] = this.idenfyManualReviewingStatusFailedContinueButtonTextColor!;
-    if (this.idenfyManualReviewingStatusWaitingViewBackgroundColor != null) map['idenfyManualReviewingStatusWaitingViewBackgroundColor'] = this.idenfyManualReviewingStatusWaitingViewBackgroundColor!;
-    if (this.idenfyManualReviewingStatusWaitingCommonInformationTitleTextColor != null) map['idenfyManualReviewingStatusWaitingCommonInformationTitleTextColor'] = this.idenfyManualReviewingStatusWaitingCommonInformationTitleTextColor!;
-    if (this.idenfyManualReviewingStatusWaitingCommonInformationDescriptionTextColor != null) map['idenfyManualReviewingStatusWaitingCommonInformationDescriptionTextColor'] = this.idenfyManualReviewingStatusWaitingCommonInformationDescriptionTextColor!;
-    if (this.idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedBackgroundColor != null) map['idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedBackgroundColor'] = this.idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedBackgroundColor!;
-    if (this.idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedTitleColor != null) map['idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedTitleColor'] = this.idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedTitleColor!;
-    if (this.idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedTickImageTintColor != null) map['idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedTickImageTintColor'] = this.idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedTickImageTintColor!;
-    if (this.idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingBackgroundColor != null) map['idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingBackgroundColor'] = this.idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingBackgroundColor!;
-    if (this.idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingTitleColor != null) map['idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingTitleColor'] = this.idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingTitleColor!;
-    if (this.idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingSpinnerColor != null) map['idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingSpinnerColor'] = this.idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingSpinnerColor!;
-    if (this.idenfyManualReviewingStatusWaitingCommonWaitingDurationTitleColor != null) map['idenfyManualReviewingStatusWaitingCommonWaitingDurationTitleColor'] = this.idenfyManualReviewingStatusWaitingCommonWaitingDurationTitleColor!;
-    if (this.idenfyManualReviewingStatusWaitingCommonWaitingTimerBoxBackgroundColor != null) map['idenfyManualReviewingStatusWaitingCommonWaitingTimerBoxBackgroundColor'] = this.idenfyManualReviewingStatusWaitingCommonWaitingTimerBoxBackgroundColor!;
-    if (this.idenfyManualReviewingStatusWaitingCommonWaitingTimerImageTintColor != null) map['idenfyManualReviewingStatusWaitingCommonWaitingTimerImageTintColor'] = this.idenfyManualReviewingStatusWaitingCommonWaitingTimerImageTintColor!;
-    if (this.idenfyManualReviewingStatusWaitingCommonWaitingTimerTitleColor != null) map['idenfyManualReviewingStatusWaitingCommonWaitingTimerTitleColor'] = this.idenfyManualReviewingStatusWaitingCommonWaitingTimerTitleColor!;
-    if (this.idenfyManualReviewingStatusWaitingBackToAccountButtonBackgroundColor != null) map['idenfyManualReviewingStatusWaitingBackToAccountButtonBackgroundColor'] = this.idenfyManualReviewingStatusWaitingBackToAccountButtonBackgroundColor!;
-    if (this.idenfyManualReviewingStatusWaitingBackToAccountButtonTextColor != null) map['idenfyManualReviewingStatusWaitingBackToAccountButtonTextColor'] = this.idenfyManualReviewingStatusWaitingBackToAccountButtonTextColor!;
-    if (this.idenfyNFCReadingTimeOutViewBackgroundColor != null) map['idenfyNFCReadingTimeOutViewBackgroundColor'] = this.idenfyNFCReadingTimeOutViewBackgroundColor!;
-    if (this.idenfyNFCReadingTimeOutCommonInformationTitleTextColor != null) map['idenfyNFCReadingTimeOutCommonInformationTitleTextColor'] = this.idenfyNFCReadingTimeOutCommonInformationTitleTextColor!;
-    if (this.idenfyNFCReadingTimeOutCommonInformationDescriptionTextColor != null) map['idenfyNFCReadingTimeOutCommonInformationDescriptionTextColor'] = this.idenfyNFCReadingTimeOutCommonInformationDescriptionTextColor!;
-    if (this.idenfyNFCReadingTimeOutContinueButtonTextColor != null) map['idenfyNFCReadingTimeOutContinueButtonTextColor'] = this.idenfyNFCReadingTimeOutContinueButtonTextColor!;
-    if (this.idenfyNFCReadingViewBackgroundColor != null) map['idenfyNFCReadingViewBackgroundColor'] = this.idenfyNFCReadingViewBackgroundColor!;
-    if (this.idenfyNFCReadingCommonInformationTitleTextColor != null) map['idenfyNFCReadingCommonInformationTitleTextColor'] = this.idenfyNFCReadingCommonInformationTitleTextColor!;
-    if (this.idenfyNFCReadingCommonInformationDescriptionTextColor != null) map['idenfyNFCReadingCommonInformationDescriptionTextColor'] = this.idenfyNFCReadingCommonInformationDescriptionTextColor!;
-    if (this.idenfyNFCRequiredViewBackgroundColor != null) map['idenfyNFCRequiredViewBackgroundColor'] = this.idenfyNFCRequiredViewBackgroundColor!;
-    if (this.idenfyNFCRequiredCommonInformationTitleTextColor != null) map['idenfyNFCRequiredCommonInformationTitleTextColor'] = this.idenfyNFCRequiredCommonInformationTitleTextColor!;
-    if (this.idenfyNFCRequiredCommonInformationDescriptionTextColor != null) map['idenfyNFCRequiredCommonInformationDescriptionTextColor'] = this.idenfyNFCRequiredCommonInformationDescriptionTextColor!;
-    if (this.idenfyNFCRequiredContinueButtonTextColor != null) map['idenfyNFCRequiredContinueButtonTextColor'] = this.idenfyNFCRequiredContinueButtonTextColor!;
-    if (this.idenfyQuestionnaireViewBackgroundColor != null) map['idenfyQuestionnaireViewBackgroundColor'] = this.idenfyQuestionnaireViewBackgroundColor!;
-    if (this.idenfyQuestionnaireViewTitleTextColor != null) map['idenfyQuestionnaireViewTitleTextColor'] = this.idenfyQuestionnaireViewTitleTextColor!;
-    if (this.idenfyQuestionnaireViewDescriptionTextColor != null) map['idenfyQuestionnaireViewDescriptionTextColor'] = this.idenfyQuestionnaireViewDescriptionTextColor!;
-    if (this.idenfyQuestionnaireViewSectionTitleTextColor != null) map['idenfyQuestionnaireViewSectionTitleTextColor'] = this.idenfyQuestionnaireViewSectionTitleTextColor!;
-    if (this.idenfyQuestionnaireViewSectionDescriptionTextColor != null) map['idenfyQuestionnaireViewSectionDescriptionTextColor'] = this.idenfyQuestionnaireViewSectionDescriptionTextColor!;
-    if (this.idenfyQuestionnaireViewContinueButtonDisabledBackgroundColor != null) map['idenfyQuestionnaireViewContinueButtonDisabledBackgroundColor'] = this.idenfyQuestionnaireViewContinueButtonDisabledBackgroundColor!;
-    if (this.idenfyQuestionnaireViewContinueButtonDisabledTextColor != null) map['idenfyQuestionnaireViewContinueButtonDisabledTextColor'] = this.idenfyQuestionnaireViewContinueButtonDisabledTextColor!;
-    if (this.idenfyQuestionnaireViewContinueButtonEnabledTextColor != null) map['idenfyQuestionnaireViewContinueButtonEnabledTextColor'] = this.idenfyQuestionnaireViewContinueButtonEnabledTextColor!;
-    if (this.idenfyQuestionnaireViewLoadingSpinnerTintColor != null) map['idenfyQuestionnaireViewLoadingSpinnerTintColor'] = this.idenfyQuestionnaireViewLoadingSpinnerTintColor!;
-    if (this.idenfyQuestionnaireViewQuestionItemTitleTextColor != null) map['idenfyQuestionnaireViewQuestionItemTitleTextColor'] = this.idenfyQuestionnaireViewQuestionItemTitleTextColor!;
-    if (this.idenfyQuestionnaireViewQuestionItemDescriptionTextColor != null) map['idenfyQuestionnaireViewQuestionItemDescriptionTextColor'] = this.idenfyQuestionnaireViewQuestionItemDescriptionTextColor!;
-    if (this.idenfyQuestionnaireViewTextQuestionItemEditTextTitleColor != null) map['idenfyQuestionnaireViewTextQuestionItemEditTextTitleColor'] = this.idenfyQuestionnaireViewTextQuestionItemEditTextTitleColor!;
-    if (this.idenfyQuestionnaireViewTextQuestionItemEditTextHintColor != null) map['idenfyQuestionnaireViewTextQuestionItemEditTextHintColor'] = this.idenfyQuestionnaireViewTextQuestionItemEditTextHintColor!;
-    if (this.idenfyQuestionnaireViewTextQuestionItemEditTextHighlightedBorderColor != null) map['idenfyQuestionnaireViewTextQuestionItemEditTextHighlightedBorderColor'] = this.idenfyQuestionnaireViewTextQuestionItemEditTextHighlightedBorderColor!;
-    if (this.idenfyQuestionnaireViewTextQuestionItemEditTextBackgroundColor != null) map['idenfyQuestionnaireViewTextQuestionItemEditTextBackgroundColor'] = this.idenfyQuestionnaireViewTextQuestionItemEditTextBackgroundColor!;
-    if (this.idenfyQuestionnaireViewTextQuestionItemEditTextBorderColor != null) map['idenfyQuestionnaireViewTextQuestionItemEditTextBorderColor'] = this.idenfyQuestionnaireViewTextQuestionItemEditTextBorderColor!;
-    if (this.idenfyQuestionnaireViewCheckBoxQuestionItemCheckBoxColor != null) map['idenfyQuestionnaireViewCheckBoxQuestionItemCheckBoxColor'] = this.idenfyQuestionnaireViewCheckBoxQuestionItemCheckBoxColor!;
-    if (this.idenfyQuestionnaireViewCheckBoxQuestionItemCheckBoxDescriptionColor != null) map['idenfyQuestionnaireViewCheckBoxQuestionItemCheckBoxDescriptionColor'] = this.idenfyQuestionnaireViewCheckBoxQuestionItemCheckBoxDescriptionColor!;
-    if (this.idenfyQuestionnaireViewCountryQuestionTrailingIconTintColor != null) map['idenfyQuestionnaireViewCountryQuestionTrailingIconTintColor'] = this.idenfyQuestionnaireViewCountryQuestionTrailingIconTintColor!;
-    if (this.idenfyQuestionnaireViewDateQuestionTrailingIconTintColor != null) map['idenfyQuestionnaireViewDateQuestionTrailingIconTintColor'] = this.idenfyQuestionnaireViewDateQuestionTrailingIconTintColor!;
-    if (this.idenfyQuestionnaireViewFileQuestionUploadIconTintColor != null) map['idenfyQuestionnaireViewFileQuestionUploadIconTintColor'] = this.idenfyQuestionnaireViewFileQuestionUploadIconTintColor!;
-    if (this.idenfyQuestionnaireViewFileQuestionCancelIconTintColor != null) map['idenfyQuestionnaireViewFileQuestionCancelIconTintColor'] = this.idenfyQuestionnaireViewFileQuestionCancelIconTintColor!;
-    if (this.idenfyQuestionnaireViewFileQuestionFilePickerPlaceHolderTextColor != null) map['idenfyQuestionnaireViewFileQuestionFilePickerPlaceHolderTextColor'] = this.idenfyQuestionnaireViewFileQuestionFilePickerPlaceHolderTextColor!;
-    if (this.idenfyQuestionnaireViewImageQuestionUploadIconTintColor != null) map['idenfyQuestionnaireViewImageQuestionUploadIconTintColor'] = this.idenfyQuestionnaireViewImageQuestionUploadIconTintColor!;
-    if (this.idenfyQuestionnaireViewImageQuestionCancelIconTintColor != null) map['idenfyQuestionnaireViewImageQuestionCancelIconTintColor'] = this.idenfyQuestionnaireViewImageQuestionCancelIconTintColor!;
-    if (this.idenfyQuestionnaireViewImageQuestionImagePickerPlaceHolderTextColor != null) map['idenfyQuestionnaireViewImageQuestionImagePickerPlaceHolderTextColor'] = this.idenfyQuestionnaireViewImageQuestionImagePickerPlaceHolderTextColor!;
-    if (this.idenfyQuestionnaireViewPasswordQuestionTrailingIconTintColor != null) map['idenfyQuestionnaireViewPasswordQuestionTrailingIconTintColor'] = this.idenfyQuestionnaireViewPasswordQuestionTrailingIconTintColor!;
-    if (this.idenfyQuestionnaireViewRadioQuestionRadioButtonTintColor != null) map['idenfyQuestionnaireViewRadioQuestionRadioButtonTintColor'] = this.idenfyQuestionnaireViewRadioQuestionRadioButtonTintColor!;
-    if (this.idenfyQuestionnaireViewRadioQuestionRadioButtonBackgroundColor != null) map['idenfyQuestionnaireViewRadioQuestionRadioButtonBackgroundColor'] = this.idenfyQuestionnaireViewRadioQuestionRadioButtonBackgroundColor!;
-    if (this.idenfyQuestionnaireViewRadioQuestionRadioButtonTextColor != null) map['idenfyQuestionnaireViewRadioQuestionRadioButtonTextColor'] = this.idenfyQuestionnaireViewRadioQuestionRadioButtonTextColor!;
-    if (this.idenfyQuestionnaireViewSelectMultiQuestionCheckBoxTintColor != null) map['idenfyQuestionnaireViewSelectMultiQuestionCheckBoxTintColor'] = this.idenfyQuestionnaireViewSelectMultiQuestionCheckBoxTintColor!;
-    if (this.idenfyQuestionnaireViewSelectMultiQuestionCheckBoxTextColor != null) map['idenfyQuestionnaireViewSelectMultiQuestionCheckBoxTextColor'] = this.idenfyQuestionnaireViewSelectMultiQuestionCheckBoxTextColor!;
-    if (this.idenfyQuestionnaireViewInputFieldErrorMessageTextColor != null) map['idenfyQuestionnaireViewInputFieldErrorMessageTextColor'] = this.idenfyQuestionnaireViewInputFieldErrorMessageTextColor!;
-    if (this.idenfyQuestionnaireViewCountryMultiQuestionCountryPickerPlaceHolderTextColor != null) map['idenfyQuestionnaireViewCountryMultiQuestionCountryPickerPlaceHolderTextColor'] = this.idenfyQuestionnaireViewCountryMultiQuestionCountryPickerPlaceHolderTextColor!;
-    if (this.idenfyUploadPhotoViewBackgroundColor != null) map['idenfyUploadPhotoViewBackgroundColor'] = this.idenfyUploadPhotoViewBackgroundColor!;
-    if (this.idenfyUploadPhotoViewTitleTextColor != null) map['idenfyUploadPhotoViewTitleTextColor'] = this.idenfyUploadPhotoViewTitleTextColor!;
-    if (this.idenfyUploadPhotoViewDescriptionTextColor != null) map['idenfyUploadPhotoViewDescriptionTextColor'] = this.idenfyUploadPhotoViewDescriptionTextColor!;
-    if (this.idenfyUploadPhotoViewCroppingBorderColor != null) map['idenfyUploadPhotoViewCroppingBorderColor'] = this.idenfyUploadPhotoViewCroppingBorderColor!;
-    if (this.idenfyUploadPhotoViewCroppingBackgroundColor != null) map['idenfyUploadPhotoViewCroppingBackgroundColor'] = this.idenfyUploadPhotoViewCroppingBackgroundColor!;
-    if (this.idenfyUploadPhotoViewCroppingPhotoLoadingSpinnerColor != null) map['idenfyUploadPhotoViewCroppingPhotoLoadingSpinnerColor'] = this.idenfyUploadPhotoViewCroppingPhotoLoadingSpinnerColor!;
-    if (this.idenfyUploadPhotoViewChooseAnotherPhotoButtonTextColor != null) map['idenfyUploadPhotoViewChooseAnotherPhotoButtonTextColor'] = this.idenfyUploadPhotoViewChooseAnotherPhotoButtonTextColor!;
-    if (this.idenfyUploadPhotoViewContinuePhotoButtonTextColor != null) map['idenfyUploadPhotoViewContinuePhotoButtonTextColor'] = this.idenfyUploadPhotoViewContinuePhotoButtonTextColor!;
-    if (this.idenfyBankVerificationViewBackgroundColor != null) map['idenfyBankVerificationViewBackgroundColor'] = this.idenfyBankVerificationViewBackgroundColor!;
-    if (this.idenfyBankVerificationCommonInformationTitleTextColor != null) map['idenfyBankVerificationCommonInformationTitleTextColor'] = this.idenfyBankVerificationCommonInformationTitleTextColor!;
-    if (this.idenfyBankVerificationCommonInformationDescriptionTextColor != null) map['idenfyBankVerificationCommonInformationDescriptionTextColor'] = this.idenfyBankVerificationCommonInformationDescriptionTextColor!;
-    if (this.idenfyBankVerificationViewItemSelectionBorderColor != null) map['idenfyBankVerificationViewItemSelectionBorderColor'] = this.idenfyBankVerificationViewItemSelectionBorderColor!;
-    if (this.idenfyBankVerificationViewItemSelectionBackgroundColor != null) map['idenfyBankVerificationViewItemSelectionBackgroundColor'] = this.idenfyBankVerificationViewItemSelectionBackgroundColor!;
-    if (this.idenfyBankVerificationViewItemSelectionTextColor != null) map['idenfyBankVerificationViewItemSelectionTextColor'] = this.idenfyBankVerificationViewItemSelectionTextColor!;
-    if (this.idenfyBankVerificationViewItemSelectionTrailingIconTintColor != null) map['idenfyBankVerificationViewItemSelectionTrailingIconTintColor'] = this.idenfyBankVerificationViewItemSelectionTrailingIconTintColor!;
-    if (this.idenfyBankVerificationViewCheckBoxColor != null) map['idenfyBankVerificationViewCheckBoxColor'] = this.idenfyBankVerificationViewCheckBoxColor!;
-    if (this.idenfyBankVerificationViewCheckBoxDescriptionColor != null) map['idenfyBankVerificationViewCheckBoxDescriptionColor'] = this.idenfyBankVerificationViewCheckBoxDescriptionColor!;
-    if (this.idenfyBankVerificationViewCheckBoxInformationTrailingIconTintColor != null) map['idenfyBankVerificationViewCheckBoxInformationTrailingIconTintColor'] = this.idenfyBankVerificationViewCheckBoxInformationTrailingIconTintColor!;
-    if (this.idenfyBankVerificationContinueButtonTextColor != null) map['idenfyBankVerificationContinueButtonTextColor'] = this.idenfyBankVerificationContinueButtonTextColor!;
-    if (this.idenfyBankVerificationContinueButtonDisabledTextColor != null) map['idenfyBankVerificationContinueButtonDisabledTextColor'] = this.idenfyBankVerificationContinueButtonDisabledTextColor!;
-    if (this.idenfyBankVerificationViewContinueButtonDisabledBackgroundColor != null) map['idenfyBankVerificationViewContinueButtonDisabledBackgroundColor'] = this.idenfyBankVerificationViewContinueButtonDisabledBackgroundColor!;
-    if (this.idenfyBankVerificationContinueButtonEnabledTextColor != null) map['idenfyBankVerificationContinueButtonEnabledTextColor'] = this.idenfyBankVerificationContinueButtonEnabledTextColor!;
-    if (this.idenfyBankVerificationViewSuccessStatusContainerBackgroundColor != null) map['idenfyBankVerificationViewSuccessStatusContainerBackgroundColor'] = this.idenfyBankVerificationViewSuccessStatusContainerBackgroundColor!;
-    if (this.idenfyBankVerificationViewSuccessStatusContainerBorderColor != null) map['idenfyBankVerificationViewSuccessStatusContainerBorderColor'] = this.idenfyBankVerificationViewSuccessStatusContainerBorderColor!;
-    if (this.idenfyBankVerificationViewFailedStatusContainerBackgroundColor != null) map['idenfyBankVerificationViewFailedStatusContainerBackgroundColor'] = this.idenfyBankVerificationViewFailedStatusContainerBackgroundColor!;
-    if (this.idenfyBankVerificationViewFailedStatusContainerBorderColor != null) map['idenfyBankVerificationViewFailedStatusContainerBorderColor'] = this.idenfyBankVerificationViewFailedStatusContainerBorderColor!;
-    if (this.idenfyBankVerificationViewSuccessStatusDescriptionIconTintColor != null) map['idenfyBankVerificationViewSuccessStatusDescriptionIconTintColor'] = this.idenfyBankVerificationViewSuccessStatusDescriptionIconTintColor!;
-    if (this.idenfyBankVerificationViewBanksRecyclerViewItemBorderColor != null) map['idenfyBankVerificationViewBanksRecyclerViewItemBorderColor'] = this.idenfyBankVerificationViewBanksRecyclerViewItemBorderColor!;
-    if (this.idenfyBankVerificationViewBanksRecyclerViewItemBackgroundColor != null) map['idenfyBankVerificationViewBanksRecyclerViewItemBackgroundColor'] = this.idenfyBankVerificationViewBanksRecyclerViewItemBackgroundColor!;
-    if (this.idenfyBankVerificationViewBankRecyclerViewItemTextColor != null) map['idenfyBankVerificationViewBankRecyclerViewItemTextColor'] = this.idenfyBankVerificationViewBankRecyclerViewItemTextColor!;
-    if (this.idenfyBankVerificationViewLoadingSpinnerTintColor != null) map['idenfyBankVerificationViewLoadingSpinnerTintColor'] = this.idenfyBankVerificationViewLoadingSpinnerTintColor!;
-    if (this.idenfyBankVerificationViewContinueButtonLoadingSpinnerTintColor != null) map['idenfyBankVerificationViewContinueButtonLoadingSpinnerTintColor'] = this.idenfyBankVerificationViewContinueButtonLoadingSpinnerTintColor!;
-    if (this.idenfyCameraPermissionViewBackgroundColor != null) map['idenfyCameraPermissionViewBackgroundColor'] = this.idenfyCameraPermissionViewBackgroundColor!;
-    if (this.idenfyCameraPermissionViewTitleTextColor != null) map['idenfyCameraPermissionViewTitleTextColor'] = this.idenfyCameraPermissionViewTitleTextColor!;
-    if (this.idenfyCameraPermissionViewDescriptionTextColor != null) map['idenfyCameraPermissionViewDescriptionTextColor'] = this.idenfyCameraPermissionViewDescriptionTextColor!;
-    if (this.idenfyCameraPermissionViewGuidanceDescriptionTextColor != null) map['idenfyCameraPermissionViewGuidanceDescriptionTextColor'] = this.idenfyCameraPermissionViewGuidanceDescriptionTextColor!;
-    if (this.idenfyCameraPermissionViewGoToSettingsButtonTextColor != null) map['idenfyCameraPermissionViewGoToSettingsButtonTextColor'] = this.idenfyCameraPermissionViewGoToSettingsButtonTextColor!;
-    if (this.idenfyCameraOnBoardingViewBackgroundColor != null) map['idenfyCameraOnBoardingViewBackgroundColor'] = this.idenfyCameraOnBoardingViewBackgroundColor!;
-    if (this.idenfyCameraOnBoardingViewLoadingSpinnerColor != null) map['idenfyCameraOnBoardingViewLoadingSpinnerColor'] = this.idenfyCameraOnBoardingViewLoadingSpinnerColor!;
-    if (this.idenfyCameraStaticOnBoardingViewTitleColor != null) map['idenfyCameraStaticOnBoardingViewTitleColor'] = this.idenfyCameraStaticOnBoardingViewTitleColor!;
-    if (this.idenfyCameraStaticOnBoardingViewDescriptionColor != null) map['idenfyCameraStaticOnBoardingViewDescriptionColor'] = this.idenfyCameraStaticOnBoardingViewDescriptionColor!;
-    if (this.idenfyCameraStaticOnBoardingViewProgressBarBackgroundColor != null) map['idenfyCameraStaticOnBoardingViewProgressBarBackgroundColor'] = this.idenfyCameraStaticOnBoardingViewProgressBarBackgroundColor!;
-    if (this.idenfyCameraStaticOnBoardingViewProgressBarForegroundColor != null) map['idenfyCameraStaticOnBoardingViewProgressBarForegroundColor'] = this.idenfyCameraStaticOnBoardingViewProgressBarForegroundColor!;
-    if (this.idenfyCameraStaticOnBoardingViewVideoDescriptionsTitleColor != null) map['idenfyCameraStaticOnBoardingViewVideoDescriptionsTitleColor'] = this.idenfyCameraStaticOnBoardingViewVideoDescriptionsTitleColor!;
-    if (this.idenfyCameraStaticOnBoardingViewVideoDescriptionsCircleImageTintColor != null) map['idenfyCameraStaticOnBoardingViewVideoDescriptionsCircleImageTintColor'] = this.idenfyCameraStaticOnBoardingViewVideoDescriptionsCircleImageTintColor!;
-    if (this.idenfyCameraStaticOnBoardingViewVideoDescriptionsTextColor != null) map['idenfyCameraStaticOnBoardingViewVideoDescriptionsTextColor'] = this.idenfyCameraStaticOnBoardingViewVideoDescriptionsTextColor!;
-    if (this.idenfyCameraStaticOnBoardingViewEnabledButtonTitleColor != null) map['idenfyCameraStaticOnBoardingViewEnabledButtonTitleColor'] = this.idenfyCameraStaticOnBoardingViewEnabledButtonTitleColor!;
-    if (this.idenfyCameraStaticOnBoardingViewDisabledButtonBackgroundColor != null) map['idenfyCameraStaticOnBoardingViewDisabledButtonBackgroundColor'] = this.idenfyCameraStaticOnBoardingViewDisabledButtonBackgroundColor!;
-    if (this.idenfyCameraStaticOnBoardingViewDisabledButtonTitleColor != null) map['idenfyCameraStaticOnBoardingViewDisabledButtonTitleColor'] = this.idenfyCameraStaticOnBoardingViewDisabledButtonTitleColor!;
-    if (this.idenfyCameraStaticOnBoardingViewLoadingSpinnerColor != null) map['idenfyCameraStaticOnBoardingViewLoadingSpinnerColor'] = this.idenfyCameraStaticOnBoardingViewLoadingSpinnerColor!;
-    if (this.idenfyCountrySelectionViewBackgroundColor != null) map['idenfyCountrySelectionViewBackgroundColor'] = this.idenfyCountrySelectionViewBackgroundColor!;
-    if (this.idenfyCountrySelectionViewTitleTextColor != null) map['idenfyCountrySelectionViewTitleTextColor'] = this.idenfyCountrySelectionViewTitleTextColor!;
-    if (this.idenfyCountrySelectionViewDescriptionTextColor != null) map['idenfyCountrySelectionViewDescriptionTextColor'] = this.idenfyCountrySelectionViewDescriptionTextColor!;
-    if (this.idenfyCountrySelectionViewCountrySearchBarBackgroundColor != null) map['idenfyCountrySelectionViewCountrySearchBarBackgroundColor'] = this.idenfyCountrySelectionViewCountrySearchBarBackgroundColor!;
-    if (this.idenfyCountrySelectionViewCountrySearchBarHighlightedTextColor != null) map['idenfyCountrySelectionViewCountrySearchBarHighlightedTextColor'] = this.idenfyCountrySelectionViewCountrySearchBarHighlightedTextColor!;
-    if (this.idenfyCountrySelectionViewCountrySearchBarTextColor != null) map['idenfyCountrySelectionViewCountrySearchBarTextColor'] = this.idenfyCountrySelectionViewCountrySearchBarTextColor!;
-    if (this.idenfyCountrySelectionViewCountryRecyclerViewBackgroundColor != null) map['idenfyCountrySelectionViewCountryRecyclerViewBackgroundColor'] = this.idenfyCountrySelectionViewCountryRecyclerViewBackgroundColor!;
-    if (this.idenfyCountrySelectionViewCountryRecyclerViewBorderColor != null) map['idenfyCountrySelectionViewCountryRecyclerViewBorderColor'] = this.idenfyCountrySelectionViewCountryRecyclerViewBorderColor!;
-    if (this.idenfyCountrySelectionViewCountryRecyclerViewItemBackgroundColor != null) map['idenfyCountrySelectionViewCountryRecyclerViewItemBackgroundColor'] = this.idenfyCountrySelectionViewCountryRecyclerViewItemBackgroundColor!;
-    if (this.idenfyCountrySelectionViewCountryRecyclerViewItemBorderColor != null) map['idenfyCountrySelectionViewCountryRecyclerViewItemBorderColor'] = this.idenfyCountrySelectionViewCountryRecyclerViewItemBorderColor!;
-    if (this.idenfyCountrySelectionViewCountryRecyclerViewItemTextColor != null) map['idenfyCountrySelectionViewCountryRecyclerViewItemTextColor'] = this.idenfyCountrySelectionViewCountryRecyclerViewItemTextColor!;
-    if (this.idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedTextColor != null) map['idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedTextColor'] = this.idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedTextColor!;
-    if (this.idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedBackgroundColor != null) map['idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedBackgroundColor'] = this.idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedBackgroundColor!;
-    if (this.idenfyCountrySelectionViewCountryRecyclerViewItemLoadingSpinnerTintColor != null) map['idenfyCountrySelectionViewCountryRecyclerViewItemLoadingSpinnerTintColor'] = this.idenfyCountrySelectionViewCountryRecyclerViewItemLoadingSpinnerTintColor!;
-    if (this.idenfyCountryViewSelectionCountrySearchBarBorderColor != null) map['idenfyCountryViewSelectionCountrySearchBarBorderColor'] = this.idenfyCountryViewSelectionCountrySearchBarBorderColor!;
-    if (this.idenfyCountrySelectionViewPredefinedCountryContinueButtonTextColor != null) map['idenfyCountrySelectionViewPredefinedCountryContinueButtonTextColor'] = this.idenfyCountrySelectionViewPredefinedCountryContinueButtonTextColor!;
-    if (this.idenfyDocumentPhotoResultViewBackgroundColor != null) map['idenfyDocumentPhotoResultViewBackgroundColor'] = this.idenfyDocumentPhotoResultViewBackgroundColor!;
-    if (this.idenfyDocumentPhotoResultViewTitleTextColor != null) map['idenfyDocumentPhotoResultViewTitleTextColor'] = this.idenfyDocumentPhotoResultViewTitleTextColor!;
-    if (this.idenfyDocumentPhotoResultViewDescriptionTextColor != null) map['idenfyDocumentPhotoResultViewDescriptionTextColor'] = this.idenfyDocumentPhotoResultViewDescriptionTextColor!;
-    if (this.idenfyDocumentPhotoResultViewRetakePhotoButtonTextColor != null) map['idenfyDocumentPhotoResultViewRetakePhotoButtonTextColor'] = this.idenfyDocumentPhotoResultViewRetakePhotoButtonTextColor!;
-    if (this.idenfyDocumentPhotoResultViewNextButtonTextColor != null) map['idenfyDocumentPhotoResultViewNextButtonTextColor'] = this.idenfyDocumentPhotoResultViewNextButtonTextColor!;
-    if (this.idenfyDocumentPhotoResultViewPhotoLoadingSpinnerColor != null) map['idenfyDocumentPhotoResultViewPhotoLoadingSpinnerColor'] = this.idenfyDocumentPhotoResultViewPhotoLoadingSpinnerColor!;
-    if (this.idenfyDocumentPhotoResultViewPhotoBorderColor != null) map['idenfyDocumentPhotoResultViewPhotoBorderColor'] = this.idenfyDocumentPhotoResultViewPhotoBorderColor!;
-    if (this.idenfyDocumentPhotoResultViewAutoCaptureFailureCardImageColor != null) map['idenfyDocumentPhotoResultViewAutoCaptureFailureCardImageColor'] = this.idenfyDocumentPhotoResultViewAutoCaptureFailureCardImageColor!;
-    if (this.idenfyDocumentPhotoResultViewAutoCaptureFailureCardTitleColor != null) map['idenfyDocumentPhotoResultViewAutoCaptureFailureCardTitleColor'] = this.idenfyDocumentPhotoResultViewAutoCaptureFailureCardTitleColor!;
-    if (this.idenfyDocumentPhotoResultViewAutoCaptureFailureCardBackgroundColor != null) map['idenfyDocumentPhotoResultViewAutoCaptureFailureCardBackgroundColor'] = this.idenfyDocumentPhotoResultViewAutoCaptureFailureCardBackgroundColor!;
-    if (this.idenfyDocumentPhotoResultViewBlurGlareWarningCardImageColor != null) map['idenfyDocumentPhotoResultViewBlurGlareWarningCardImageColor'] = this.idenfyDocumentPhotoResultViewBlurGlareWarningCardImageColor!;
-    if (this.idenfyDocumentPhotoResultViewBlurGlareWarningCardTitleColor != null) map['idenfyDocumentPhotoResultViewBlurGlareWarningCardTitleColor'] = this.idenfyDocumentPhotoResultViewBlurGlareWarningCardTitleColor!;
-    if (this.idenfyDocumentPhotoResultViewBlurGlareWarningCardBackgroundColor != null) map['idenfyDocumentPhotoResultViewBlurGlareWarningCardBackgroundColor'] = this.idenfyDocumentPhotoResultViewBlurGlareWarningCardBackgroundColor!;
-    if (this.idenfyEmailSMSVerificationViewBackgroundColor != null) map['idenfyEmailSMSVerificationViewBackgroundColor'] = this.idenfyEmailSMSVerificationViewBackgroundColor!;
-    if (this.idenfyEmailSMSVerificationCommonInformationTitleTextColor != null) map['idenfyEmailSMSVerificationCommonInformationTitleTextColor'] = this.idenfyEmailSMSVerificationCommonInformationTitleTextColor!;
-    if (this.idenfyEmailSMSVerificationCommonInformationDescriptionTextColor != null) map['idenfyEmailSMSVerificationCommonInformationDescriptionTextColor'] = this.idenfyEmailSMSVerificationCommonInformationDescriptionTextColor!;
-    if (this.idenfyEmailSMSVerificationPinCodeTextColor != null) map['idenfyEmailSMSVerificationPinCodeTextColor'] = this.idenfyEmailSMSVerificationPinCodeTextColor!;
-    if (this.idenfyEmailSMSVerificationCodeInputRetryContainerBorderColor != null) map['idenfyEmailSMSVerificationCodeInputRetryContainerBorderColor'] = this.idenfyEmailSMSVerificationCodeInputRetryContainerBorderColor!;
-    if (this.idenfyEmailSMSVerificationCodeInputRetryContainerBackgroundColor != null) map['idenfyEmailSMSVerificationCodeInputRetryContainerBackgroundColor'] = this.idenfyEmailSMSVerificationCodeInputRetryContainerBackgroundColor!;
-    if (this.idenfyEmailSMSVerificationCodeInputFailedContainerBorderColor != null) map['idenfyEmailSMSVerificationCodeInputFailedContainerBorderColor'] = this.idenfyEmailSMSVerificationCodeInputFailedContainerBorderColor!;
-    if (this.idenfyEmailSMSVerificationCodeInputFailedContainerBackgroundColor != null) map['idenfyEmailSMSVerificationCodeInputFailedContainerBackgroundColor'] = this.idenfyEmailSMSVerificationCodeInputFailedContainerBackgroundColor!;
-    if (this.idenfyEmailSMSVerificationCodeInputSuccessContainerBorderColor != null) map['idenfyEmailSMSVerificationCodeInputSuccessContainerBorderColor'] = this.idenfyEmailSMSVerificationCodeInputSuccessContainerBorderColor!;
-    if (this.idenfyEmailSMSVerificationCodeInputSuccessContainerBackgroundColor != null) map['idenfyEmailSMSVerificationCodeInputSuccessContainerBackgroundColor'] = this.idenfyEmailSMSVerificationCodeInputSuccessContainerBackgroundColor!;
-    if (this.idenfyEmailSMSVerificationViewCodeStatusTitleTextColor != null) map['idenfyEmailSMSVerificationViewCodeStatusTitleTextColor'] = this.idenfyEmailSMSVerificationViewCodeStatusTitleTextColor!;
-    if (this.idenfyEmailSMSVerificationViewCodeFailedStatusImageTintColor != null) map['idenfyEmailSMSVerificationViewCodeFailedStatusImageTintColor'] = this.idenfyEmailSMSVerificationViewCodeFailedStatusImageTintColor!;
-    if (this.idenfyEmailSMSVerificationViewCodeSuccessStatusImageTintColor != null) map['idenfyEmailSMSVerificationViewCodeSuccessStatusImageTintColor'] = this.idenfyEmailSMSVerificationViewCodeSuccessStatusImageTintColor!;
-    if (this.idenfyEmailSMSVerificationViewCodeExpirationTitleTextColor != null) map['idenfyEmailSMSVerificationViewCodeExpirationTitleTextColor'] = this.idenfyEmailSMSVerificationViewCodeExpirationTitleTextColor!;
-    if (this.idenfyEmailSMSVerificationViewResendCodeTitleTextColor != null) map['idenfyEmailSMSVerificationViewResendCodeTitleTextColor'] = this.idenfyEmailSMSVerificationViewResendCodeTitleTextColor!;
-    if (this.idenfyEmailSMSVerificationViewResendCodeTitleDisabledTextColor != null) map['idenfyEmailSMSVerificationViewResendCodeTitleDisabledTextColor'] = this.idenfyEmailSMSVerificationViewResendCodeTitleDisabledTextColor!;
-    if (this.idenfyEmailSMSVerificationViewVerifyEmailSMSContainerBorderColor != null) map['idenfyEmailSMSVerificationViewVerifyEmailSMSContainerBorderColor'] = this.idenfyEmailSMSVerificationViewVerifyEmailSMSContainerBorderColor!;
-    if (this.idenfyEmailSMSVerificationViewVerifyEmailSMSContainerBackgroundColor != null) map['idenfyEmailSMSVerificationViewVerifyEmailSMSContainerBackgroundColor'] = this.idenfyEmailSMSVerificationViewVerifyEmailSMSContainerBackgroundColor!;
-    if (this.idenfyEmailSMSVerificationVerifyEmailSMSContainerTitleTextColor != null) map['idenfyEmailSMSVerificationVerifyEmailSMSContainerTitleTextColor'] = this.idenfyEmailSMSVerificationVerifyEmailSMSContainerTitleTextColor!;
-    if (this.idenfyEmailSMSVerificationVerifyEmailSMSContainerDescriptionTextColor != null) map['idenfyEmailSMSVerificationVerifyEmailSMSContainerDescriptionTextColor'] = this.idenfyEmailSMSVerificationVerifyEmailSMSContainerDescriptionTextColor!;
-    if (this.idenfyEmailSMSVerificationViewVerifyEmailSMSContainerImageTintColor != null) map['idenfyEmailSMSVerificationViewVerifyEmailSMSContainerImageTintColor'] = this.idenfyEmailSMSVerificationViewVerifyEmailSMSContainerImageTintColor!;
-    if (this.idenfyEmailSMSVerificationEmailSMSInputEditTextBorderColor != null) map['idenfyEmailSMSVerificationEmailSMSInputEditTextBorderColor'] = this.idenfyEmailSMSVerificationEmailSMSInputEditTextBorderColor!;
-    if (this.idenfyEmailSMSVerificationEmailSMSInputEditTextBackgroundColor != null) map['idenfyEmailSMSVerificationEmailSMSInputEditTextBackgroundColor'] = this.idenfyEmailSMSVerificationEmailSMSInputEditTextBackgroundColor!;
-    if (this.idenfyEmailSMSVerificationViewEmailSMSInputEditTextTitleColor != null) map['idenfyEmailSMSVerificationViewEmailSMSInputEditTextTitleColor'] = this.idenfyEmailSMSVerificationViewEmailSMSInputEditTextTitleColor!;
-    if (this.idenfyEmailSMSVerificationViewEmailSMSInputEditTextHintColor != null) map['idenfyEmailSMSVerificationViewEmailSMSInputEditTextHintColor'] = this.idenfyEmailSMSVerificationViewEmailSMSInputEditTextHintColor!;
-    if (this.idenfyEmailSMSVerificationViewEmailSMSInputFieldErrorMessageTextColor != null) map['idenfyEmailSMSVerificationViewEmailSMSInputFieldErrorMessageTextColor'] = this.idenfyEmailSMSVerificationViewEmailSMSInputFieldErrorMessageTextColor!;
-    if (this.idenfyEmailSMSVerificationContinueButtonTextColor != null) map['idenfyEmailSMSVerificationContinueButtonTextColor'] = this.idenfyEmailSMSVerificationContinueButtonTextColor!;
-    if (this.idenfyEmailSMSVerificationContinueButtonDisabledTextColor != null) map['idenfyEmailSMSVerificationContinueButtonDisabledTextColor'] = this.idenfyEmailSMSVerificationContinueButtonDisabledTextColor!;
-    if (this.idenfyEmailSMSVerificationViewContinueButtonDisabledBackgroundColor != null) map['idenfyEmailSMSVerificationViewContinueButtonDisabledBackgroundColor'] = this.idenfyEmailSMSVerificationViewContinueButtonDisabledBackgroundColor!;
-    if (this.idenfyEmailSMSVerificationContinueButtonEnabledTextColor != null) map['idenfyEmailSMSVerificationContinueButtonEnabledTextColor'] = this.idenfyEmailSMSVerificationContinueButtonEnabledTextColor!;
-    if (this.idenfyEmailSMSVerificationContinueButtonLoadingSpinnerTintColor != null) map['idenfyEmailSMSVerificationContinueButtonLoadingSpinnerTintColor'] = this.idenfyEmailSMSVerificationContinueButtonLoadingSpinnerTintColor!;
-    if (this.idenfyFacePhotoResultViewBackgroundColor != null) map['idenfyFacePhotoResultViewBackgroundColor'] = this.idenfyFacePhotoResultViewBackgroundColor!;
-    if (this.idenfyFacePhotoResultViewTitleTextColor != null) map['idenfyFacePhotoResultViewTitleTextColor'] = this.idenfyFacePhotoResultViewTitleTextColor!;
-    if (this.idenfyFacePhotoResultViewDescriptionTextColor != null) map['idenfyFacePhotoResultViewDescriptionTextColor'] = this.idenfyFacePhotoResultViewDescriptionTextColor!;
-    if (this.idenfyFacePhotoResultViewRetakePhotoButtonTextColor != null) map['idenfyFacePhotoResultViewRetakePhotoButtonTextColor'] = this.idenfyFacePhotoResultViewRetakePhotoButtonTextColor!;
-    if (this.idenfyFacePhotoResultViewNextButtonTextColor != null) map['idenfyFacePhotoResultViewNextButtonTextColor'] = this.idenfyFacePhotoResultViewNextButtonTextColor!;
-    if (this.idenfyFacePhotoResultViewPhotoLoadingSpinnerColor != null) map['idenfyFacePhotoResultViewPhotoLoadingSpinnerColor'] = this.idenfyFacePhotoResultViewPhotoLoadingSpinnerColor!;
-    if (this.idenfyFacePhotoResultViewPhotoBorderColor != null) map['idenfyFacePhotoResultViewPhotoBorderColor'] = this.idenfyFacePhotoResultViewPhotoBorderColor!;
-    if (this.idenfyMFACaptchaMethodViewBackgroundColor != null) map['idenfyMFACaptchaMethodViewBackgroundColor'] = this.idenfyMFACaptchaMethodViewBackgroundColor!;
-    if (this.idenfyMFACaptchaMethodViewTitleTextColor != null) map['idenfyMFACaptchaMethodViewTitleTextColor'] = this.idenfyMFACaptchaMethodViewTitleTextColor!;
-    if (this.idenfyMFACaptchaMethodViewDescriptionTextColor != null) map['idenfyMFACaptchaMethodViewDescriptionTextColor'] = this.idenfyMFACaptchaMethodViewDescriptionTextColor!;
-    if (this.idenfyMFACaptchaMethodViewCaptchaEditTextBackgroundColor != null) map['idenfyMFACaptchaMethodViewCaptchaEditTextBackgroundColor'] = this.idenfyMFACaptchaMethodViewCaptchaEditTextBackgroundColor!;
-    if (this.idenfyMFACaptchaMethodViewCaptchaEditTextTitleColor != null) map['idenfyMFACaptchaMethodViewCaptchaEditTextTitleColor'] = this.idenfyMFACaptchaMethodViewCaptchaEditTextTitleColor!;
-    if (this.idenfyMFACaptchaMethodViewCaptchaEditTextBorderColor != null) map['idenfyMFACaptchaMethodViewCaptchaEditTextBorderColor'] = this.idenfyMFACaptchaMethodViewCaptchaEditTextBorderColor!;
-    if (this.idenfyMFACaptchaMethodViewCaptchaEditTextHighlightedBorderColor != null) map['idenfyMFACaptchaMethodViewCaptchaEditTextHighlightedBorderColor'] = this.idenfyMFACaptchaMethodViewCaptchaEditTextHighlightedBorderColor!;
-    if (this.idenfyMFACaptchaMethodViewCaptchaEditTextHintTitleColor != null) map['idenfyMFACaptchaMethodViewCaptchaEditTextHintTitleColor'] = this.idenfyMFACaptchaMethodViewCaptchaEditTextHintTitleColor!;
-    if (this.idenfyMFACaptchaMethodViewCaptchaEditTextTopHintTitleColor != null) map['idenfyMFACaptchaMethodViewCaptchaEditTextTopHintTitleColor'] = this.idenfyMFACaptchaMethodViewCaptchaEditTextTopHintTitleColor!;
-    if (this.idenfyMFACaptchaMethodViewContinueButtonTextColor != null) map['idenfyMFACaptchaMethodViewContinueButtonTextColor'] = this.idenfyMFACaptchaMethodViewContinueButtonTextColor!;
-    if (this.idenfyMFACaptchaMethodViewContinueButtonLoadingSpinnerColor != null) map['idenfyMFACaptchaMethodViewContinueButtonLoadingSpinnerColor'] = this.idenfyMFACaptchaMethodViewContinueButtonLoadingSpinnerColor!;
-    if (this.idenfyMFAGeneralViewBackgroundColor != null) map['idenfyMFAGeneralViewBackgroundColor'] = this.idenfyMFAGeneralViewBackgroundColor!;
-    if (this.idenfyMFAGeneralViewTitleTextColor != null) map['idenfyMFAGeneralViewTitleTextColor'] = this.idenfyMFAGeneralViewTitleTextColor!;
-    if (this.idenfyMFAGeneralViewDescriptionTextColor != null) map['idenfyMFAGeneralViewDescriptionTextColor'] = this.idenfyMFAGeneralViewDescriptionTextColor!;
-    if (this.idenfyMFAGeneralViewEditTextBackgroundColor != null) map['idenfyMFAGeneralViewEditTextBackgroundColor'] = this.idenfyMFAGeneralViewEditTextBackgroundColor!;
-    if (this.idenfyMFAGeneralViewEditTextTitleColor != null) map['idenfyMFAGeneralViewEditTextTitleColor'] = this.idenfyMFAGeneralViewEditTextTitleColor!;
-    if (this.idenfyMFAGeneralViewEditTextBorderColor != null) map['idenfyMFAGeneralViewEditTextBorderColor'] = this.idenfyMFAGeneralViewEditTextBorderColor!;
-    if (this.idenfyMFAGeneralViewEditTextHighlightedBorderColor != null) map['idenfyMFAGeneralViewEditTextHighlightedBorderColor'] = this.idenfyMFAGeneralViewEditTextHighlightedBorderColor!;
-    if (this.idenfyMFAGeneralViewEditTextHintTitleColor != null) map['idenfyMFAGeneralViewEditTextHintTitleColor'] = this.idenfyMFAGeneralViewEditTextHintTitleColor!;
-    if (this.idenfyMFAGeneralViewEditTextTopHintTitleColor != null) map['idenfyMFAGeneralViewEditTextTopHintTitleColor'] = this.idenfyMFAGeneralViewEditTextTopHintTitleColor!;
-    if (this.idenfyMFAGeneralViewContinueButtonTextColor != null) map['idenfyMFAGeneralViewContinueButtonTextColor'] = this.idenfyMFAGeneralViewContinueButtonTextColor!;
-    if (this.idenfyMFAGeneralViewContinueButtonLoadingSpinnerTintColor != null) map['idenfyMFAGeneralViewContinueButtonLoadingSpinnerTintColor'] = this.idenfyMFAGeneralViewContinueButtonLoadingSpinnerTintColor!;
-    if (this.idenfyMFAMethodSelectionViewBackgroundColor != null) map['idenfyMFAMethodSelectionViewBackgroundColor'] = this.idenfyMFAMethodSelectionViewBackgroundColor!;
-    if (this.idenfyMFAMethodSelectionViewTitleTextColor != null) map['idenfyMFAMethodSelectionViewTitleTextColor'] = this.idenfyMFAMethodSelectionViewTitleTextColor!;
-    if (this.idenfyMFAMethodSelectionViewDescriptionTextColor != null) map['idenfyMFAMethodSelectionViewDescriptionTextColor'] = this.idenfyMFAMethodSelectionViewDescriptionTextColor!;
-    if (this.idenfyMFAMethodSelectionViewTopHintTitleColor != null) map['idenfyMFAMethodSelectionViewTopHintTitleColor'] = this.idenfyMFAMethodSelectionViewTopHintTitleColor!;
-    if (this.idenfyMFAMethodSelectionViewContinueButtonTextColor != null) map['idenfyMFAMethodSelectionViewContinueButtonTextColor'] = this.idenfyMFAMethodSelectionViewContinueButtonTextColor!;
-    if (this.idenfyMFAMethodSelectionViewContinueButtonLoadingSpinnerTintColor != null) map['idenfyMFAMethodSelectionViewContinueButtonLoadingSpinnerTintColor'] = this.idenfyMFAMethodSelectionViewContinueButtonLoadingSpinnerTintColor!;
-    if (this.idenfyProviderLoginViewBackgroundColor != null) map['idenfyProviderLoginViewBackgroundColor'] = this.idenfyProviderLoginViewBackgroundColor!;
-    if (this.idenfyProviderLoginViewTitleTextColor != null) map['idenfyProviderLoginViewTitleTextColor'] = this.idenfyProviderLoginViewTitleTextColor!;
-    if (this.idenfyProviderLoginViewDescriptionTextColor != null) map['idenfyProviderLoginViewDescriptionTextColor'] = this.idenfyProviderLoginViewDescriptionTextColor!;
-    if (this.idenfyProviderLoginViewUsernameAndPasswordEditTextBackgroundColor != null) map['idenfyProviderLoginViewUsernameAndPasswordEditTextBackgroundColor'] = this.idenfyProviderLoginViewUsernameAndPasswordEditTextBackgroundColor!;
-    if (this.idenfyProviderLoginViewUsernameAndPasswordEditTextTitleColor != null) map['idenfyProviderLoginViewUsernameAndPasswordEditTextTitleColor'] = this.idenfyProviderLoginViewUsernameAndPasswordEditTextTitleColor!;
-    if (this.idenfyProviderLoginViewUsernameAndPasswordEditTextBorderColor != null) map['idenfyProviderLoginViewUsernameAndPasswordEditTextBorderColor'] = this.idenfyProviderLoginViewUsernameAndPasswordEditTextBorderColor!;
-    if (this.idenfyProviderLoginViewUsernameAndPasswordEditTextHighlightedBorderColor != null) map['idenfyProviderLoginViewUsernameAndPasswordEditTextHighlightedBorderColor'] = this.idenfyProviderLoginViewUsernameAndPasswordEditTextHighlightedBorderColor!;
-    if (this.idenfyProviderLoginViewUsernameAndPasswordEditTextHintTitleColor != null) map['idenfyProviderLoginViewUsernameAndPasswordEditTextHintTitleColor'] = this.idenfyProviderLoginViewUsernameAndPasswordEditTextHintTitleColor!;
-    if (this.idenfyProviderLoginViewUsernameAndPasswordEditTextTopHintTitleColor != null) map['idenfyProviderLoginViewUsernameAndPasswordEditTextTopHintTitleColor'] = this.idenfyProviderLoginViewUsernameAndPasswordEditTextTopHintTitleColor!;
-    if (this.idenfyProviderLoginViewContinueButtonTextColor != null) map['idenfyProviderLoginViewContinueButtonTextColor'] = this.idenfyProviderLoginViewContinueButtonTextColor!;
-    if (this.idenfyProviderLoginViewContinueButtonLoadingSpinnerTintColor != null) map['idenfyProviderLoginViewContinueButtonLoadingSpinnerTintColor'] = this.idenfyProviderLoginViewContinueButtonLoadingSpinnerTintColor!;
-    if (this.idenfyProviderSelectionViewBackgroundColor != null) map['idenfyProviderSelectionViewBackgroundColor'] = this.idenfyProviderSelectionViewBackgroundColor!;
-    if (this.idenfyProviderSelectionViewTitleTextColor != null) map['idenfyProviderSelectionViewTitleTextColor'] = this.idenfyProviderSelectionViewTitleTextColor!;
-    if (this.idenfyProviderSelectionViewDescriptionTextColor != null) map['idenfyProviderSelectionViewDescriptionTextColor'] = this.idenfyProviderSelectionViewDescriptionTextColor!;
-    if (this.idenfyProviderSelectionViewProviderSearchBarBackgroundColor != null) map['idenfyProviderSelectionViewProviderSearchBarBackgroundColor'] = this.idenfyProviderSelectionViewProviderSearchBarBackgroundColor!;
-    if (this.idenfyProviderSelectionViewProviderSearchBarHighlightedTextColor != null) map['idenfyProviderSelectionViewProviderSearchBarHighlightedTextColor'] = this.idenfyProviderSelectionViewProviderSearchBarHighlightedTextColor!;
-    if (this.idenfyProviderSelectionViewProviderSearchBarTextColor != null) map['idenfyProviderSelectionViewProviderSearchBarTextColor'] = this.idenfyProviderSelectionViewProviderSearchBarTextColor!;
-    if (this.idenfyProviderSelectionViewProviderRecyclerViewBackgroundColor != null) map['idenfyProviderSelectionViewProviderRecyclerViewBackgroundColor'] = this.idenfyProviderSelectionViewProviderRecyclerViewBackgroundColor!;
-    if (this.idenfyProviderSelectionViewProviderRecyclerViewBorderColor != null) map['idenfyProviderSelectionViewProviderRecyclerViewBorderColor'] = this.idenfyProviderSelectionViewProviderRecyclerViewBorderColor!;
-    if (this.idenfyProviderSelectionViewProviderRecyclerViewItemBackgroundColor != null) map['idenfyProviderSelectionViewProviderRecyclerViewItemBackgroundColor'] = this.idenfyProviderSelectionViewProviderRecyclerViewItemBackgroundColor!;
-    if (this.idenfyProviderSelectionViewProviderRecyclerViewItemBorderColor != null) map['idenfyProviderSelectionViewProviderRecyclerViewItemBorderColor'] = this.idenfyProviderSelectionViewProviderRecyclerViewItemBorderColor!;
-    if (this.idenfyProviderSelectionViewProviderRecyclerViewItemTextColor != null) map['idenfyProviderSelectionViewProviderRecyclerViewItemTextColor'] = this.idenfyProviderSelectionViewProviderRecyclerViewItemTextColor!;
-    if (this.idenfyProviderSelectionViewProviderRecyclerViewItemHighlightedTextColor != null) map['idenfyProviderSelectionViewProviderRecyclerViewItemHighlightedTextColor'] = this.idenfyProviderSelectionViewProviderRecyclerViewItemHighlightedTextColor!;
-    if (this.idenfyProviderSelectionViewProviderRecyclerViewItemHighlightedBackgroundColor != null) map['idenfyProviderSelectionViewProviderRecyclerViewItemHighlightedBackgroundColor'] = this.idenfyProviderSelectionViewProviderRecyclerViewItemHighlightedBackgroundColor!;
-    if (this.idenfyProviderViewSelectionProviderSearchBarBorderColor != null) map['idenfyProviderViewSelectionProviderSearchBarBorderColor'] = this.idenfyProviderViewSelectionProviderSearchBarBorderColor!;
-    if (this.idenfyProviderSelectionViewProviderRecyclerViewItemLoadingSpinnerTintColor != null) map['idenfyProviderSelectionViewProviderRecyclerViewItemLoadingSpinnerTintColor'] = this.idenfyProviderSelectionViewProviderRecyclerViewItemLoadingSpinnerTintColor!;
-    if (this.idenfyAdditionalSupportViewBackgroundColor != null) map['idenfyAdditionalSupportViewBackgroundColor'] = this.idenfyAdditionalSupportViewBackgroundColor!;
-    if (this.idenfyAdditionalSupportCommonInformationTitleTextColor != null) map['idenfyAdditionalSupportCommonInformationTitleTextColor'] = this.idenfyAdditionalSupportCommonInformationTitleTextColor!;
-    if (this.idenfyAdditionalSupportCommonInformationDescriptionTextColor != null) map['idenfyAdditionalSupportCommonInformationDescriptionTextColor'] = this.idenfyAdditionalSupportCommonInformationDescriptionTextColor!;
-    if (this.idenfyAdditionalSupportContinueButtonTextColor != null) map['idenfyAdditionalSupportContinueButtonTextColor'] = this.idenfyAdditionalSupportContinueButtonTextColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewBackgroundColor != null) map['idenfyCountryAndDocumentSelectionViewBackgroundColor'] = this.idenfyCountryAndDocumentSelectionViewBackgroundColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewTitleTextColor != null) map['idenfyCountryAndDocumentSelectionViewTitleTextColor'] = this.idenfyCountryAndDocumentSelectionViewTitleTextColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewDescriptionTextColor != null) map['idenfyCountryAndDocumentSelectionViewDescriptionTextColor'] = this.idenfyCountryAndDocumentSelectionViewDescriptionTextColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewItemSelectionBorderColor != null) map['idenfyCountryAndDocumentSelectionViewItemSelectionBorderColor'] = this.idenfyCountryAndDocumentSelectionViewItemSelectionBorderColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewItemSelectionBackgroundColor != null) map['idenfyCountryAndDocumentSelectionViewItemSelectionBackgroundColor'] = this.idenfyCountryAndDocumentSelectionViewItemSelectionBackgroundColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewItemSelectionTextColor != null) map['idenfyCountryAndDocumentSelectionViewItemSelectionTextColor'] = this.idenfyCountryAndDocumentSelectionViewItemSelectionTextColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewItemSelectionTrailingIconTintColor != null) map['idenfyCountryAndDocumentSelectionViewItemSelectionTrailingIconTintColor'] = this.idenfyCountryAndDocumentSelectionViewItemSelectionTrailingIconTintColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBorderColor != null) map['idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBorderColor'] = this.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBorderColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBackgroundColor != null) map['idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBackgroundColor'] = this.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBackgroundColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedTextColor != null) map['idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedTextColor'] = this.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedTextColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewContinueButtonDisabledBackgroundColor != null) map['idenfyCountryAndDocumentSelectionViewContinueButtonDisabledBackgroundColor'] = this.idenfyCountryAndDocumentSelectionViewContinueButtonDisabledBackgroundColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewContinueButtonDisabledTextColor != null) map['idenfyCountryAndDocumentSelectionViewContinueButtonDisabledTextColor'] = this.idenfyCountryAndDocumentSelectionViewContinueButtonDisabledTextColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewContinueButtonEnabledTextColor != null) map['idenfyCountryAndDocumentSelectionViewContinueButtonEnabledTextColor'] = this.idenfyCountryAndDocumentSelectionViewContinueButtonEnabledTextColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewContinueButtonLoadingSpinnerTintColor != null) map['idenfyCountryAndDocumentSelectionViewContinueButtonLoadingSpinnerTintColor'] = this.idenfyCountryAndDocumentSelectionViewContinueButtonLoadingSpinnerTintColor!;
-    if (this.idenfyCountryAndDocumentSelectionViewPhysicalDocumentTitleDividerColor != null) map['idenfyCountryAndDocumentSelectionViewPhysicalDocumentTitleDividerColor'] = this.idenfyCountryAndDocumentSelectionViewPhysicalDocumentTitleDividerColor!;
-    if (this.idenfyDocumentCameraPreviewSessionBackgroundColor != null) map['idenfyDocumentCameraPreviewSessionBackgroundColor'] = this.idenfyDocumentCameraPreviewSessionBackgroundColor!;
-    if (this.idenfyDocumentCameraPreviewSessionBottomActionButtonsViewBackgroundColor != null) map['idenfyDocumentCameraPreviewSessionBottomActionButtonsViewBackgroundColor'] = this.idenfyDocumentCameraPreviewSessionBottomActionButtonsViewBackgroundColor!;
-    if (this.idenfyDocumentCameraPreviewSessionTakePhotoButtonUnFocusedTintColor != null) map['idenfyDocumentCameraPreviewSessionTakePhotoButtonUnFocusedTintColor'] = this.idenfyDocumentCameraPreviewSessionTakePhotoButtonUnFocusedTintColor!;
-    if (this.idenfyDocumentCameraPreviewSessionTakePhotoButtonFocusedTintColor != null) map['idenfyDocumentCameraPreviewSessionTakePhotoButtonFocusedTintColor'] = this.idenfyDocumentCameraPreviewSessionTakePhotoButtonFocusedTintColor!;
-    if (this.idenfyDocumentCameraPreviewSessionTakePhotoButtonUnFocusedBackgroundColor != null) map['idenfyDocumentCameraPreviewSessionTakePhotoButtonUnFocusedBackgroundColor'] = this.idenfyDocumentCameraPreviewSessionTakePhotoButtonUnFocusedBackgroundColor!;
-    if (this.idenfyDocumentCameraPreviewSessionTakePhotoButtonFocusedBackgroundColor != null) map['idenfyDocumentCameraPreviewSessionTakePhotoButtonFocusedBackgroundColor'] = this.idenfyDocumentCameraPreviewSessionTakePhotoButtonFocusedBackgroundColor!;
-    if (this.idenfyDocumentCameraPreviewSessionAcceptedDocumentsSelectedCountryHighlightColor != null) map['idenfyDocumentCameraPreviewSessionAcceptedDocumentsSelectedCountryHighlightColor'] = this.idenfyDocumentCameraPreviewSessionAcceptedDocumentsSelectedCountryHighlightColor!;
-    if (this.idenfyDocumentCameraPreviewTitleTextColor != null) map['idenfyDocumentCameraPreviewTitleTextColor'] = this.idenfyDocumentCameraPreviewTitleTextColor!;
-    if (this.idenfyDocumentCameraPreviewDescriptionTextColor != null) map['idenfyDocumentCameraPreviewDescriptionTextColor'] = this.idenfyDocumentCameraPreviewDescriptionTextColor!;
-    if (this.idenfyPrivacyPolicyViewBackgroundColor != null) map['idenfyPrivacyPolicyViewBackgroundColor'] = this.idenfyPrivacyPolicyViewBackgroundColor!;
-    if (this.idenfyPrivacyPolicyCommonInformationTitleTextColor != null) map['idenfyPrivacyPolicyCommonInformationTitleTextColor'] = this.idenfyPrivacyPolicyCommonInformationTitleTextColor!;
-    if (this.idenfyPrivacyPolicyCommonInformationDescriptionTextColor != null) map['idenfyPrivacyPolicyCommonInformationDescriptionTextColor'] = this.idenfyPrivacyPolicyCommonInformationDescriptionTextColor!;
-    if (this.idenfyPrivacyPolicyCardViewTextColor != null) map['idenfyPrivacyPolicyCardViewTextColor'] = this.idenfyPrivacyPolicyCardViewTextColor!;
-    if (this.idenfyPrivacyPolicyCardViewBackgroundColor != null) map['idenfyPrivacyPolicyCardViewBackgroundColor'] = this.idenfyPrivacyPolicyCardViewBackgroundColor!;
-    if (this.idenfyPrivacyPolicyCardViewArrowIconTintColor != null) map['idenfyPrivacyPolicyCardViewArrowIconTintColor'] = this.idenfyPrivacyPolicyCardViewArrowIconTintColor!;
-    if (this.idenfyPrivacyPolicyCardViewIconTintColor != null) map['idenfyPrivacyPolicyCardViewIconTintColor'] = this.idenfyPrivacyPolicyCardViewIconTintColor!;
-    if (this.idenfyPrivacyPolicyContinueButtonTextColor != null) map['idenfyPrivacyPolicyContinueButtonTextColor'] = this.idenfyPrivacyPolicyContinueButtonTextColor!;
-    if (this.idenfyPrivacyPolicyContinueButtonLoadingSpinnerTintColor != null) map['idenfyPrivacyPolicyContinueButtonLoadingSpinnerTintColor'] = this.idenfyPrivacyPolicyContinueButtonLoadingSpinnerTintColor!;
-    if (this.idenfyPartnerPrivacyPolicyDialogViewBackgroundColor != null) map['idenfyPartnerPrivacyPolicyDialogViewBackgroundColor'] = this.idenfyPartnerPrivacyPolicyDialogViewBackgroundColor!;
-    if (this.idenfySplashScreenViewTitleTextColor != null) map['idenfySplashScreenViewTitleTextColor'] = this.idenfySplashScreenViewTitleTextColor!;
-    if (this.idenfySplashScreenViewDescriptionTextColor != null) map['idenfySplashScreenViewDescriptionTextColor'] = this.idenfySplashScreenViewDescriptionTextColor!;
-    if (this.idenfySplashScreenViewLoadingSpinnerTintColor != null) map['idenfySplashScreenViewLoadingSpinnerTintColor'] = this.idenfySplashScreenViewLoadingSpinnerTintColor!;
-    if (this.idenfyBottomSheetBackgroundColor != null) map['idenfyBottomSheetBackgroundColor'] = this.idenfyBottomSheetBackgroundColor!;
-    if (this.idenfyBottomSheetDragHandleColor != null) map['idenfyBottomSheetDragHandleColor'] = this.idenfyBottomSheetDragHandleColor!;
-    if (this.idenfyBottomSheetButtonTextColor != null) map['idenfyBottomSheetButtonTextColor'] = this.idenfyBottomSheetButtonTextColor!;
-    if (this.idenfyBottomSheetTitleTextColor != null) map['idenfyBottomSheetTitleTextColor'] = this.idenfyBottomSheetTitleTextColor!;
-    if (this.idenfyBottomSheetDateTimePickerAccentColor != null) map['idenfyBottomSheetDateTimePickerAccentColor'] = this.idenfyBottomSheetDateTimePickerAccentColor!;
-    if (this.idenfyBottomSheetDateTimePickerActivatedColor != null) map['idenfyBottomSheetDateTimePickerActivatedColor'] = this.idenfyBottomSheetDateTimePickerActivatedColor!;
-    if (this.idenfyBottomSheetDateTimePickerHighlightColor != null) map['idenfyBottomSheetDateTimePickerHighlightColor'] = this.idenfyBottomSheetDateTimePickerHighlightColor!;
-    if (this.idenfyCustomAlertDialogNegativeButtonColor != null) map['idenfyCustomAlertDialogNegativeButtonColor'] = this.idenfyCustomAlertDialogNegativeButtonColor!;
-    if (this.idenfyCustomAlertDialogBackgroundColor != null) map['idenfyCustomAlertDialogBackgroundColor'] = this.idenfyCustomAlertDialogBackgroundColor!;
-    if (this.idenfyDefaultAlertDialogBackgroundColor != null) map['idenfyDefaultAlertDialogBackgroundColor'] = this.idenfyDefaultAlertDialogBackgroundColor!;
-    if (this.idenfyDefaultAlertDialogTitleColor != null) map['idenfyDefaultAlertDialogTitleColor'] = this.idenfyDefaultAlertDialogTitleColor!;
-    if (this.idenfyDefaultAlertDialogMessageColor != null) map['idenfyDefaultAlertDialogMessageColor'] = this.idenfyDefaultAlertDialogMessageColor!;
-    if (this.idenfyDefaultAlertDialogPositiveButtonColor != null) map['idenfyDefaultAlertDialogPositiveButtonColor'] = this.idenfyDefaultAlertDialogPositiveButtonColor!;
-    if (this.idenfyDefaultAlertDialogNegativeButtonColor != null) map['idenfyDefaultAlertDialogNegativeButtonColor'] = this.idenfyDefaultAlertDialogNegativeButtonColor!;
-    if (this.idenfyEIDSessionViewBackgroundColor != null) map['idenfyEIDSessionViewBackgroundColor'] = this.idenfyEIDSessionViewBackgroundColor!;
-    if (this.idenfyEIDSessionViewTitleTextColor != null) map['idenfyEIDSessionViewTitleTextColor'] = this.idenfyEIDSessionViewTitleTextColor!;
-    if (this.idenfyEIDSessionViewDescriptionTextColor != null) map['idenfyEIDSessionViewDescriptionTextColor'] = this.idenfyEIDSessionViewDescriptionTextColor!;
-    if (this.idenfyEIDSessionViewButtonTextColor != null) map['idenfyEIDSessionViewButtonTextColor'] = this.idenfyEIDSessionViewButtonTextColor!;
-    if (this.idenfyEIDSessionViewButtonLoadingSpinnerTintColor != null) map['idenfyEIDSessionViewButtonLoadingSpinnerTintColor'] = this.idenfyEIDSessionViewButtonLoadingSpinnerTintColor!;
-    if (this.idenfyEIDSessionViewCodeInputEditTextTitleColor != null) map['idenfyEIDSessionViewCodeInputEditTextTitleColor'] = this.idenfyEIDSessionViewCodeInputEditTextTitleColor!;
-    if (this.idenfyEIDSessionViewCodeInputEditTextHintColor != null) map['idenfyEIDSessionViewCodeInputEditTextHintColor'] = this.idenfyEIDSessionViewCodeInputEditTextHintColor!;
-    if (this.idenfyEIDSessionViewCodeInputFieldErrorMessageTextColor != null) map['idenfyEIDSessionViewCodeInputFieldErrorMessageTextColor'] = this.idenfyEIDSessionViewCodeInputFieldErrorMessageTextColor!;
-    if (this.idenfyEIDSessionViewCodeInputFailedContainerBorderColor != null) map['idenfyEIDSessionViewCodeInputFailedContainerBorderColor'] = this.idenfyEIDSessionViewCodeInputFailedContainerBorderColor!;
-    if (this.idenfyEIDSessionViewCodeInputFailedContainerBackgroundColor != null) map['idenfyEIDSessionViewCodeInputFailedContainerBackgroundColor'] = this.idenfyEIDSessionViewCodeInputFailedContainerBackgroundColor!;
-    if (this.idenfyEIDSessionViewCodeStatusTitleTextColor != null) map['idenfyEIDSessionViewCodeStatusTitleTextColor'] = this.idenfyEIDSessionViewCodeStatusTitleTextColor!;
-    if (this.idenfyEIDSessionViewCodeFailedStatusImageTintColor != null) map['idenfyEIDSessionViewCodeFailedStatusImageTintColor'] = this.idenfyEIDSessionViewCodeFailedStatusImageTintColor!;
-    if (this.idenfyEIDSessionViewCodeHintTextColor != null) map['idenfyEIDSessionViewCodeHintTextColor'] = this.idenfyEIDSessionViewCodeHintTextColor!;
-    if (this.idenfyEIDSessionViewContinueButtonEnabledTextColor != null) map['idenfyEIDSessionViewContinueButtonEnabledTextColor'] = this.idenfyEIDSessionViewContinueButtonEnabledTextColor!;
-    if (this.idenfyEIDSessionViewContinueButtonDisabledTextColor != null) map['idenfyEIDSessionViewContinueButtonDisabledTextColor'] = this.idenfyEIDSessionViewContinueButtonDisabledTextColor!;
-    if (this.idenfyEIDSessionViewContinueButtonDisabledBackgroundColor != null) map['idenfyEIDSessionViewContinueButtonDisabledBackgroundColor'] = this.idenfyEIDSessionViewContinueButtonDisabledBackgroundColor!;
-    if (this.idenfyEIDSessionViewUploadIconTintColor != null) map['idenfyEIDSessionViewUploadIconTintColor'] = this.idenfyEIDSessionViewUploadIconTintColor!;
-    if (this.idenfyEIDSessionViewClickToUploadTextColor != null) map['idenfyEIDSessionViewClickToUploadTextColor'] = this.idenfyEIDSessionViewClickToUploadTextColor!;
-    if (this.idenfyEIDSessionViewInputFieldBorderColor != null) map['idenfyEIDSessionViewInputFieldBorderColor'] = this.idenfyEIDSessionViewInputFieldBorderColor!;
-    if (this.idenfyEIDSessionViewInputFieldBackgroundColor != null) map['idenfyEIDSessionViewInputFieldBackgroundColor'] = this.idenfyEIDSessionViewInputFieldBackgroundColor!;
+    if (this.idenfyBackgroundColorV2 != null)
+      map.idenfyBackgroundColorV2 = this.idenfyBackgroundColorV2!;
+    if (this.idenfyMainColorV2 != null)
+      map.idenfyMainColorV2 = this.idenfyMainColorV2!;
+    if (this.idenfyMainDarkerColorV2 != null)
+      map.idenfyMainDarkerColorV2 = this.idenfyMainDarkerColorV2!;
+    if (this.idenfySecondColorV2 != null)
+      map.idenfySecondColorV2 = this.idenfySecondColorV2!;
+    if (this.idenfyMainColor50percentV2 != null)
+      map.idenfyMainColor50percentV2 = this.idenfyMainColor50percentV2!;
+    if (this.idenfySecondColor6percentV2 != null)
+      map.idenfySecondColor6percentV2 = this.idenfySecondColor6percentV2!;
+    if (this.idenfySecondColor20percentV2 != null)
+      map.idenfySecondColor20percentV2 = this.idenfySecondColor20percentV2!;
+    if (this.idenfySecondColor50percentV2 != null)
+      map.idenfySecondColor50percentV2 = this.idenfySecondColor50percentV2!;
+    if (this.idenfySecondColor80percentV2 != null)
+      map.idenfySecondColor80percentV2 = this.idenfySecondColor80percentV2!;
+    if (this.idenfyInactiveColorV2 != null)
+      map.idenfyInactiveColorV2 = this.idenfyInactiveColorV2!;
+    if (this.idenfyStepSuccessColorV2 != null)
+      map.idenfyStepSuccessColorV2 = this.idenfyStepSuccessColorV2!;
+    if (this.idenfyStepErrorColorV2 != null)
+      map.idenfyStepErrorColorV2 = this.idenfyStepErrorColorV2!;
+    if (this.idenfyFaceOvalStrokeColor != null)
+      map.idenfyFaceOvalStrokeColor = this.idenfyFaceOvalStrokeColor!;
+    if (this.idenfyTakePhotoButtonBackgroundFocused != null)
+      map.idenfyTakePhotoButtonBackgroundFocused =
+        this.idenfyTakePhotoButtonBackgroundFocused!;
+    if (this.idenfyTakePhotoButtonIconUnFocused != null)
+      map.idenfyTakePhotoButtonIconUnFocused =
+        this.idenfyTakePhotoButtonIconUnFocused!;
+    if (this.idenfyTransparentCameraOverlayV2 != null)
+      map.idenfyTransparentCameraOverlayV2 =
+        this.idenfyTransparentCameraOverlayV2!;
+    if (this.idenfyDrawerCurrentInstructionIndicatorColorV2 != null)
+      map.idenfyDrawerCurrentInstructionIndicatorColorV2 =
+        this.idenfyDrawerCurrentInstructionIndicatorColorV2!;
+    if (this.idenfyDrawerInstructionControlsTintColorV2 != null)
+      map.idenfyDrawerInstructionControlsTintColorV2 =
+        this.idenfyDrawerInstructionControlsTintColorV2!;
+    if (this.idenfyPhotoResultDetailsCardBackgroundColorV2 != null)
+      map.idenfyPhotoResultDetailsCardBackgroundColorV2 =
+        this.idenfyPhotoResultDetailsCardBackgroundColorV2!;
+    if (this.idenfyRedColorV2 != null)
+      map.idenfyRedColorV2 = this.idenfyRedColorV2!;
+    if (this.idenfyErrorRedColorV2 != null)
+      map.idenfyErrorRedColorV2 = this.idenfyErrorRedColorV2!;
+    if (this.idenfyErrorLightRedColorV2 != null)
+      map.idenfyErrorLightRedColorV2 = this.idenfyErrorLightRedColorV2!;
+    if (this.idenfyGreenColorV2 != null)
+      map.idenfyGreenColorV2 = this.idenfyGreenColorV2!;
+    if (this.idenfyGrayColorV2 != null)
+      map.idenfyGrayColorV2 = this.idenfyGrayColorV2!;
+    if (this.idenfyTransparentCameraOverlay != null)
+      map.idenfyTransparentCameraOverlay = this.idenfyTransparentCameraOverlay!;
+    if (this.idenfyHelpSheetOverlay != null)
+      map.idenfyHelpSheetOverlay = this.idenfyHelpSheetOverlay!;
+    if (this.idenfyLivenessBackgroundColor != null)
+      map.idenfyLivenessBackgroundColor = this.idenfyLivenessBackgroundColor!;
+    if (this.idenfyBlack != null) map.idenfyBlack = this.idenfyBlack!;
+    if (this.idenfyWhite != null) map.idenfyWhite = this.idenfyWhite!;
+    if (this.idenfyWarningLightYellowV2 != null)
+      map.idenfyWarningLightYellowV2 = this.idenfyWarningLightYellowV2!;
+    if (this.idenfyWarningYellowV2 != null)
+      map.idenfyWarningYellowV2 = this.idenfyWarningYellowV2!;
+    if (this.idenfyBackgroundGreenV2 != null)
+      map.idenfyBackgroundGreenV2 = this.idenfyBackgroundGreenV2!;
+    if (this.idenfyBorderGreenV2 != null)
+      map.idenfyBorderGreenV2 = this.idenfyBorderGreenV2!;
+    if (this.idenfyPurpleColor != null)
+      map.idenfyPurpleColor = this.idenfyPurpleColor!;
+    if (this.idenfyPurpleTextColor != null)
+      map.idenfyPurpleTextColor = this.idenfyPurpleTextColor!;
+    if (this.idenfyPurpleBackgroundColor != null)
+      map.idenfyPurpleBackgroundColor = this.idenfyPurpleBackgroundColor!;
+    if (this.idenfyLightBlueColor != null)
+      map.idenfyLightBlueColor = this.idenfyLightBlueColor!;
+    if (this.idenfyBlueColor != null)
+      map.idenfyBlueColor = this.idenfyBlueColor!;
+    if (this.idenfyLightGrayColor != null)
+      map.idenfyLightGrayColor = this.idenfyLightGrayColor!;
+    if (this.idenfyBlackV2 != null) map.idenfyBlackV2 = this.idenfyBlackV2!;
+    if (this.idenfyDefaultAppBarBackgroundColor != null)
+      map.idenfyDefaultAppBarBackgroundColor =
+        this.idenfyDefaultAppBarBackgroundColor!;
+    if (this.idenfyDefaultAppBarIconTintColor != null)
+      map.idenfyDefaultAppBarIconTintColor =
+        this.idenfyDefaultAppBarIconTintColor!;
+    if (this.idenfyCameraPreviewSessionAppBarBackgroundColor != null)
+      map.idenfyCameraPreviewSessionAppBarBackgroundColor =
+        this.idenfyCameraPreviewSessionAppBarBackgroundColor!;
+    if (this.idenfyCameraPreviewSessionAppBarBackButtonTintColor != null)
+      map.idenfyCameraPreviewSessionAppBarBackButtonTintColor =
+        this.idenfyCameraPreviewSessionAppBarBackButtonTintColor!;
+    if (this.idenfyCameraPreviewSessionAppBarCameraFlashButtonTintColor != null)
+      map.idenfyCameraPreviewSessionAppBarCameraFlashButtonTintColor =
+        this.idenfyCameraPreviewSessionAppBarCameraFlashButtonTintColor!;
+    if (this.idenfyCameraPreviewSessionAppBarBackButtonTextColor != null)
+      map.idenfyCameraPreviewSessionAppBarBackButtonTextColor =
+        this.idenfyCameraPreviewSessionAppBarBackButtonTextColor!;
+    if (
+      this.idenfyCameraPreviewSessionAppBarFaceNotDetectedAlertTintColor != null
+    )
+      map.idenfyCameraPreviewSessionAppBarFaceNotDetectedAlertTintColor =
+        this.idenfyCameraPreviewSessionAppBarFaceNotDetectedAlertTintColor!;
+    if (
+      this
+        .idenfyFaceAuthenticationCameraPreviewSessionAppBarCameraLanguageSelectionTintColor !=
+      null
+    )
+      map.idenfyFaceAuthenticationCameraPreviewSessionAppBarCameraLanguageSelectionTintColor =
+        this.idenfyFaceAuthenticationCameraPreviewSessionAppBarCameraLanguageSelectionTintColor!;
+    if (this.idenfyNoBackButtonAppBarBackgroundColor != null)
+      map.idenfyNoBackButtonAppBarBackgroundColor =
+        this.idenfyNoBackButtonAppBarBackgroundColor!;
+    if (this.idenfyPhotoResultAppBarBackgroundColor != null)
+      map.idenfyPhotoResultAppBarBackgroundColor =
+        this.idenfyPhotoResultAppBarBackgroundColor!;
+    if (this.idenfyPhotoResultAppBarBackButtonTextColor != null)
+      map.idenfyPhotoResultAppBarBackButtonTextColor =
+        this.idenfyPhotoResultAppBarBackButtonTextColor!;
+    if (
+      this.idenfyLanguageSelectionToolbarLanguageSelectionIconTintColor != null
+    )
+      map.idenfyLanguageSelectionToolbarLanguageSelectionIconTintColor =
+        this.idenfyLanguageSelectionToolbarLanguageSelectionIconTintColor!;
+    if (this.idenfyLanguageSelectionToolbarCloseIconTintColor != null)
+      map.idenfyLanguageSelectionToolbarCloseIconTintColor =
+        this.idenfyLanguageSelectionToolbarCloseIconTintColor!;
+    if (
+      this.idenfyIdentificationResultsViewInstructionsAlertBackgroundColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewInstructionsAlertBackgroundColorV2 =
+        this.idenfyIdentificationResultsViewInstructionsAlertBackgroundColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewInstructionsAlertLoadingSpinnerColor !=
+      null
+    )
+      map.idenfyIdentificationResultsViewInstructionsAlertLoadingSpinnerColor =
+        this.idenfyIdentificationResultsViewInstructionsAlertLoadingSpinnerColor!;
+    if (
+      this.idenfyIdentificationResultsViewInstructionsAlertTitleTextColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewInstructionsAlertTitleTextColorV2 =
+        this.idenfyIdentificationResultsViewInstructionsAlertTitleTextColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewInstructionsAlertContinueButtonTextColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewInstructionsAlertContinueButtonTextColorV2 =
+        this.idenfyIdentificationResultsViewInstructionsAlertContinueButtonTextColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewInstructionsAlertProgressBarProgressColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewInstructionsAlertProgressBarProgressColorV2 =
+        this.idenfyIdentificationResultsViewInstructionsAlertProgressBarProgressColorV2!;
+    if (this.idenfyDocumentSelectionViewBackgroundColor != null)
+      map.idenfyDocumentSelectionViewBackgroundColor =
+        this.idenfyDocumentSelectionViewBackgroundColor!;
+    if (this.idenfyDocumentSelectionViewTitleTextColor != null)
+      map.idenfyDocumentSelectionViewTitleTextColor =
+        this.idenfyDocumentSelectionViewTitleTextColor!;
+    if (this.idenfyDocumentSelectionViewDescriptionTextColor != null)
+      map.idenfyDocumentSelectionViewDescriptionTextColor =
+        this.idenfyDocumentSelectionViewDescriptionTextColor!;
+    if (this.idenfyDocumentSelectionViewRecyclerViewBorderColor != null)
+      map.idenfyDocumentSelectionViewRecyclerViewBorderColor =
+        this.idenfyDocumentSelectionViewRecyclerViewBorderColor!;
+    if (this.idenfyDocumentSelectionViewRecyclerViewBackgroundColor != null)
+      map.idenfyDocumentSelectionViewRecyclerViewBackgroundColor =
+        this.idenfyDocumentSelectionViewRecyclerViewBackgroundColor!;
+    if (this.idenfyDocumentSelectionViewRecyclerViewItemBackgroundColor != null)
+      map.idenfyDocumentSelectionViewRecyclerViewItemBackgroundColor =
+        this.idenfyDocumentSelectionViewRecyclerViewItemBackgroundColor!;
+    if (this.idenfyDocumentSelectionViewRecyclerViewItemBorderColor != null)
+      map.idenfyDocumentSelectionViewRecyclerViewItemBorderColor =
+        this.idenfyDocumentSelectionViewRecyclerViewItemBorderColor!;
+    if (this.idenfyDocumentSelectionViewRecyclerViewItemTitleTextColor != null)
+      map.idenfyDocumentSelectionViewRecyclerViewItemTitleTextColor =
+        this.idenfyDocumentSelectionViewRecyclerViewItemTitleTextColor!;
+    if (
+      this.idenfyDocumentSelectionViewRecyclerViewItemHighlightedTextColor !=
+      null
+    )
+      map.idenfyDocumentSelectionViewRecyclerViewItemHighlightedTextColor =
+        this.idenfyDocumentSelectionViewRecyclerViewItemHighlightedTextColor!;
+    if (
+      this
+        .idenfyDocumentSelectionViewRecyclerViewItemHighlightedBackgroundColor !=
+      null
+    )
+      map.idenfyDocumentSelectionViewRecyclerViewItemHighlightedBackgroundColor =
+        this.idenfyDocumentSelectionViewRecyclerViewItemHighlightedBackgroundColor!;
+    if (
+      this.idenfyDocumentSelectionViewContinueButtonDisabledBackgroundColor !=
+      null
+    )
+      map.idenfyDocumentSelectionViewContinueButtonDisabledBackgroundColor =
+        this.idenfyDocumentSelectionViewContinueButtonDisabledBackgroundColor!;
+    if (this.idenfyDocumentSelectionViewContinueButtonDisabledTextColor != null)
+      map.idenfyDocumentSelectionViewContinueButtonDisabledTextColor =
+        this.idenfyDocumentSelectionViewContinueButtonDisabledTextColor!;
+    if (this.idenfyDocumentSelectionViewContinueButtonEnabledTextColor != null)
+      map.idenfyDocumentSelectionViewContinueButtonEnabledTextColor =
+        this.idenfyDocumentSelectionViewContinueButtonEnabledTextColor!;
+    if (this.idenfyFaceAuthenticationResultsViewBackgroundColor != null)
+      map.idenfyFaceAuthenticationResultsViewBackgroundColor =
+        this.idenfyFaceAuthenticationResultsViewBackgroundColor!;
+    if (
+      this.idenfyFaceAuthenticationResultsCommonInformationTitleTextColor !=
+      null
+    )
+      map.idenfyFaceAuthenticationResultsCommonInformationTitleTextColor =
+        this.idenfyFaceAuthenticationResultsCommonInformationTitleTextColor!;
+    if (
+      this
+        .idenfyFaceAuthenticationResultsCommonInformationDescriptionTextColor !=
+      null
+    )
+      map.idenfyFaceAuthenticationResultsCommonInformationDescriptionTextColor =
+        this.idenfyFaceAuthenticationResultsCommonInformationDescriptionTextColor!;
+    if (this.idenfyFaceAuthenticationResultsContinueButtonTextColor != null)
+      map.idenfyFaceAuthenticationResultsContinueButtonTextColor =
+        this.idenfyFaceAuthenticationResultsContinueButtonTextColor!;
+    if (this.idenfyFaceCameraPreviewSessionBackgroundColor != null)
+      map.idenfyFaceCameraPreviewSessionBackgroundColor =
+        this.idenfyFaceCameraPreviewSessionBackgroundColor!;
+    if (this.idenfyFaceCameraPreviewSessionOvalOutsideColor != null)
+      map.idenfyFaceCameraPreviewSessionOvalOutsideColor =
+        this.idenfyFaceCameraPreviewSessionOvalOutsideColor!;
+    if (
+      this
+        .idenfyFaceCameraPreviewSessionBottomActionButtonsViewBackgroundColor !=
+      null
+    )
+      map.idenfyFaceCameraPreviewSessionBottomActionButtonsViewBackgroundColor =
+        this.idenfyFaceCameraPreviewSessionBottomActionButtonsViewBackgroundColor!;
+    if (
+      this.idenfyFaceCameraPreviewSessionTakePhotoButtonUnFocusedTintColor !=
+      null
+    )
+      map.idenfyFaceCameraPreviewSessionTakePhotoButtonUnFocusedTintColor =
+        this.idenfyFaceCameraPreviewSessionTakePhotoButtonUnFocusedTintColor!;
+    if (
+      this.idenfyFaceCameraPreviewSessionTakePhotoButtonFocusedTintColor != null
+    )
+      map.idenfyFaceCameraPreviewSessionTakePhotoButtonFocusedTintColor =
+        this.idenfyFaceCameraPreviewSessionTakePhotoButtonFocusedTintColor!;
+    if (
+      this
+        .idenfyFaceCameraPreviewSessionTakePhotoButtonUnFocusedBackgroundColor !=
+      null
+    )
+      map.idenfyFaceCameraPreviewSessionTakePhotoButtonUnFocusedBackgroundColor =
+        this.idenfyFaceCameraPreviewSessionTakePhotoButtonUnFocusedBackgroundColor!;
+    if (
+      this
+        .idenfyFaceCameraPreviewSessionTakePhotoButtonFocusedBackgroundColor !=
+      null
+    )
+      map.idenfyFaceCameraPreviewSessionTakePhotoButtonFocusedBackgroundColor =
+        this.idenfyFaceCameraPreviewSessionTakePhotoButtonFocusedBackgroundColor!;
+    if (this.idenfyFaceCameraPreviewSessionFaceOvalColor != null)
+      map.idenfyFaceCameraPreviewSessionFaceOvalColor =
+        this.idenfyFaceCameraPreviewSessionFaceOvalColor!;
+    if (this.idenfyFaceCameraPreviewSessionFaceOvalNotDetectedColor != null)
+      map.idenfyFaceCameraPreviewSessionFaceOvalNotDetectedColor =
+        this.idenfyFaceCameraPreviewSessionFaceOvalNotDetectedColor!;
+    if (this.idenfyFaceCameraPreviewSessionFaceOvalLoadingColor != null)
+      map.idenfyFaceCameraPreviewSessionFaceOvalLoadingColor =
+        this.idenfyFaceCameraPreviewSessionFaceOvalLoadingColor!;
+    if (this.idenfyFaceCameraPreviewSessionFaceDetectedColor != null)
+      map.idenfyFaceCameraPreviewSessionFaceDetectedColor =
+        this.idenfyFaceCameraPreviewSessionFaceDetectedColor!;
+    if (this.idenfyFaceCameraPreviewTitleTextColor != null)
+      map.idenfyFaceCameraPreviewTitleTextColor =
+        this.idenfyFaceCameraPreviewTitleTextColor!;
+    if (this.idenfyFaceCameraPreviewDescriptionTextColor != null)
+      map.idenfyFaceCameraPreviewDescriptionTextColor =
+        this.idenfyFaceCameraPreviewDescriptionTextColor!;
+    if (this.idenfyFaceCameraPreviewSessionLivenessAccentColor != null)
+      map.idenfyFaceCameraPreviewSessionLivenessAccentColor =
+        this.idenfyFaceCameraPreviewSessionLivenessAccentColor!;
+    if (this.idenfyContinueButtonTextColor != null)
+      map.idenfyContinueButtonTextColor = this.idenfyContinueButtonTextColor!;
+    if (this.idenfyContinueButtonSpinnerColor != null)
+      map.idenfyContinueButtonSpinnerColor =
+        this.idenfyContinueButtonSpinnerColor!;
+    if (this.idenfyRetakeButtonTextColor != null)
+      map.idenfyRetakeButtonTextColor = this.idenfyRetakeButtonTextColor!;
+    if (this.idenfyPhotoResultCardTitleColor != null)
+      map.idenfyPhotoResultCardTitleColor =
+        this.idenfyPhotoResultCardTitleColor!;
+    if (this.idenfyGradientButtonColorStart != null)
+      map.idenfyGradientButtonColorStart = this.idenfyGradientButtonColorStart!;
+    if (this.idenfyGradientButtonColorEnd != null)
+      map.idenfyGradientButtonColorEnd = this.idenfyGradientButtonColorEnd!;
+    if (this.idenfyRetakeButtonBackgroundColor != null)
+      map.idenfyRetakeButtonBackgroundColor =
+        this.idenfyRetakeButtonBackgroundColor!;
+    if (this.idenfyRetakeButtonBorderColor != null)
+      map.idenfyRetakeButtonBorderColor = this.idenfyRetakeButtonBorderColor!;
+    if (this.idenfyIdentificationResultsViewBackgroundColor != null)
+      map.idenfyIdentificationResultsViewBackgroundColor =
+        this.idenfyIdentificationResultsViewBackgroundColor!;
+    if (this.idenfyIdentificationResultsViewTitleTextColor != null)
+      map.idenfyIdentificationResultsViewTitleTextColor =
+        this.idenfyIdentificationResultsViewTitleTextColor!;
+    if (this.idenfyIdentificationResultsViewDescriptionTextColor != null)
+      map.idenfyIdentificationResultsViewDescriptionTextColor =
+        this.idenfyIdentificationResultsViewDescriptionTextColor!;
+    if (this.idenfyIdentificationResultsViewDocumentStepTitleTextColor != null)
+      map.idenfyIdentificationResultsViewDocumentStepTitleTextColor =
+        this.idenfyIdentificationResultsViewDocumentStepTitleTextColor!;
+    if (
+      this
+        .idenfyIdentificationResultsViewDocumentStepLoadingStepDividerLoadingColor !=
+      null
+    )
+      map.idenfyIdentificationResultsViewDocumentStepLoadingStepDividerLoadingColor =
+        this.idenfyIdentificationResultsViewDocumentStepLoadingStepDividerLoadingColor!;
+    if (
+      this
+        .idenfyIdentificationResultsViewDocumentStepLoadingSpinnerAccentColor !=
+      null
+    )
+      map.idenfyIdentificationResultsViewDocumentStepLoadingSpinnerAccentColor =
+        this.idenfyIdentificationResultsViewDocumentStepLoadingSpinnerAccentColor!;
+    if (
+      this
+        .idenfyIdentificationResultsViewDocumentStepLoadingStepDividerSuccessColor !=
+      null
+    )
+      map.idenfyIdentificationResultsViewDocumentStepLoadingStepDividerSuccessColor =
+        this.idenfyIdentificationResultsViewDocumentStepLoadingStepDividerSuccessColor!;
+    if (
+      this
+        .idenfyIdentificationResultsViewDocumentStepLoadingStepDividerErrorColor !=
+      null
+    )
+      map.idenfyIdentificationResultsViewDocumentStepLoadingStepDividerErrorColor =
+        this.idenfyIdentificationResultsViewDocumentStepLoadingStepDividerErrorColor!;
+    if (
+      this.idenfyIdentificationResultsViewDocumentStepScrollBarThumbColor !=
+      null
+    )
+      map.idenfyIdentificationResultsViewDocumentStepScrollBarThumbColor =
+        this.idenfyIdentificationResultsViewDocumentStepScrollBarThumbColor!;
+    if (this.idenfyIdentificationResultsViewRetakeButtonTextColor != null)
+      map.idenfyIdentificationResultsViewRetakeButtonTextColor =
+        this.idenfyIdentificationResultsViewRetakeButtonTextColor!;
+    if (this.idenfyIdentificationResultsViewContentMaskForegroundColor != null)
+      map.idenfyIdentificationResultsViewContentMaskForegroundColor =
+        this.idenfyIdentificationResultsViewContentMaskForegroundColor!;
+    if (this.idenfyIdentificationResultsViewSuccessStepTextColor != null)
+      map.idenfyIdentificationResultsViewSuccessStepTextColor =
+        this.idenfyIdentificationResultsViewSuccessStepTextColor!;
+    if (this.idenfyIdentificationResultsViewErrorStepTextColorV2 != null)
+      map.idenfyIdentificationResultsViewErrorStepTextColorV2 =
+        this.idenfyIdentificationResultsViewErrorStepTextColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewCountryMismatchAlertBackgroundColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewCountryMismatchAlertBackgroundColorV2 =
+        this.idenfyIdentificationResultsViewCountryMismatchAlertBackgroundColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewCountryMismatchAlertTitleTextColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewCountryMismatchAlertTitleTextColorV2 =
+        this.idenfyIdentificationResultsViewCountryMismatchAlertTitleTextColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewCountryMismatchAlertDescriptionTextColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewCountryMismatchAlertDescriptionTextColorV2 =
+        this.idenfyIdentificationResultsViewCountryMismatchAlertDescriptionTextColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewCountryMismatchAlertContinueButtonTextColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewCountryMismatchAlertContinueButtonTextColorV2 =
+        this.idenfyIdentificationResultsViewCountryMismatchAlertContinueButtonTextColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewCountryMismatchAlertBackButtonTextColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewCountryMismatchAlertBackButtonTextColorV2 =
+        this.idenfyIdentificationResultsViewCountryMismatchAlertBackButtonTextColorV2!;
+    if (
+      this.idenfyIdentificationResultsViewMrzNotFoundAlertBackgroundColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewMrzNotFoundAlertBackgroundColorV2 =
+        this.idenfyIdentificationResultsViewMrzNotFoundAlertBackgroundColorV2!;
+    if (
+      this.idenfyIdentificationResultsViewMrzNotFoundAlertTitleTextColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewMrzNotFoundAlertTitleTextColorV2 =
+        this.idenfyIdentificationResultsViewMrzNotFoundAlertTitleTextColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewMrzNotFoundAlertDescriptionTextColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewMrzNotFoundAlertDescriptionTextColorV2 =
+        this.idenfyIdentificationResultsViewMrzNotFoundAlertDescriptionTextColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewMrzNotFoundAlertContinueButtonTextColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewMrzNotFoundAlertContinueButtonTextColorV2 =
+        this.idenfyIdentificationResultsViewMrzNotFoundAlertContinueButtonTextColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewMrzNotFoundAlertBackButtonTextColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewMrzNotFoundAlertBackButtonTextColorV2 =
+        this.idenfyIdentificationResultsViewMrzNotFoundAlertBackButtonTextColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewMismatchTagsFoundAlertBackgroundColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewMismatchTagsFoundAlertBackgroundColorV2 =
+        this.idenfyIdentificationResultsViewMismatchTagsFoundAlertBackgroundColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewMismatchTagsFoundAlertTitleTextColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewMismatchTagsFoundAlertTitleTextColorV2 =
+        this.idenfyIdentificationResultsViewMismatchTagsFoundAlertTitleTextColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewMismatchTagsFoundAlertDescriptionTextColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewMismatchTagsFoundAlertDescriptionTextColorV2 =
+        this.idenfyIdentificationResultsViewMismatchTagsFoundAlertDescriptionTextColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonDisabledTextColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonDisabledTextColorV2 =
+        this.idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonDisabledTextColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonDisabledBackgroundColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonDisabledBackgroundColorV2 =
+        this.idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonDisabledBackgroundColorV2!;
+    if (
+      this
+        .idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonEnabledTextColorV2 !=
+      null
+    )
+      map.idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonEnabledTextColorV2 =
+        this.idenfyIdentificationResultsViewMismatchTagsFoundAlertContinueButtonEnabledTextColorV2!;
+    if (this.idenfyIdentificationSuccessResultsViewBackgroundColor != null)
+      map.idenfyIdentificationSuccessResultsViewBackgroundColor =
+        this.idenfyIdentificationSuccessResultsViewBackgroundColor!;
+    if (this.idenfyIdentificationSuccessResultsViewTitleTextColor != null)
+      map.idenfyIdentificationSuccessResultsViewTitleTextColor =
+        this.idenfyIdentificationSuccessResultsViewTitleTextColor!;
+    if (this.idenfyIdentificationSuccessResultsViewDescriptionTextColor != null)
+      map.idenfyIdentificationSuccessResultsViewDescriptionTextColor =
+        this.idenfyIdentificationSuccessResultsViewDescriptionTextColor!;
+    if (this.idenfyIdentificationSuccessResultsViewIdentifiedTextColor != null)
+      map.idenfyIdentificationSuccessResultsViewIdentifiedTextColor =
+        this.idenfyIdentificationSuccessResultsViewIdentifiedTextColor!;
+    if (this.idenfyIdentificationSuspectedResultsViewTitleColor != null)
+      map.idenfyIdentificationSuspectedResultsViewTitleColor =
+        this.idenfyIdentificationSuspectedResultsViewTitleColor!;
+    if (this.idenfyIdentificationSuspectedResultsViewDescriptionColor != null)
+      map.idenfyIdentificationSuspectedResultsViewDescriptionColor =
+        this.idenfyIdentificationSuspectedResultsViewDescriptionColor!;
+    if (
+      this.idenfyIdentificationSuspectedResultsViewDescriptionEmailColor != null
+    )
+      map.idenfyIdentificationSuspectedResultsViewDescriptionEmailColor =
+        this.idenfyIdentificationSuspectedResultsViewDescriptionEmailColor!;
+    if (
+      this
+        .idenfyIdentificationSuspectedResultsViewContinueButtonBackgroundColor !=
+      null
+    )
+      map.idenfyIdentificationSuspectedResultsViewContinueButtonBackgroundColor =
+        this.idenfyIdentificationSuspectedResultsViewContinueButtonBackgroundColor!;
+    if (
+      this.idenfyIdentificationSuspectedResultsViewContinueButtonTitleColor !=
+      null
+    )
+      map.idenfyIdentificationSuspectedResultsViewContinueButtonTitleColor =
+        this.idenfyIdentificationSuspectedResultsViewContinueButtonTitleColor!;
+    if (this.idenfyLanguageSelectionViewBackgroundColor != null)
+      map.idenfyLanguageSelectionViewBackgroundColor =
+        this.idenfyLanguageSelectionViewBackgroundColor!;
+    if (this.idenfyLanguageSelectionViewTitleTextColor != null)
+      map.idenfyLanguageSelectionViewTitleTextColor =
+        this.idenfyLanguageSelectionViewTitleTextColor!;
+    if (
+      this.idenfyLanguageSelectionViewLanguageRecyclerViewBackgroundColor !=
+      null
+    )
+      map.idenfyLanguageSelectionViewLanguageRecyclerViewBackgroundColor =
+        this.idenfyLanguageSelectionViewLanguageRecyclerViewBackgroundColor!;
+    if (this.idenfyLanguageSelectionViewLanguageRecyclerViewBorderColor != null)
+      map.idenfyLanguageSelectionViewLanguageRecyclerViewBorderColor =
+        this.idenfyLanguageSelectionViewLanguageRecyclerViewBorderColor!;
+    if (
+      this.idenfyLanguageSelectionViewLanguageRecyclerViewItemBackgroundColor !=
+      null
+    )
+      map.idenfyLanguageSelectionViewLanguageRecyclerViewItemBackgroundColor =
+        this.idenfyLanguageSelectionViewLanguageRecyclerViewItemBackgroundColor!;
+    if (
+      this.idenfyLanguageSelectionViewLanguageRecyclerViewItemBorderColor !=
+      null
+    )
+      map.idenfyLanguageSelectionViewLanguageRecyclerViewItemBorderColor =
+        this.idenfyLanguageSelectionViewLanguageRecyclerViewItemBorderColor!;
+    if (
+      this.idenfyLanguageSelectionViewLanguageRecyclerViewItemTextColor != null
+    )
+      map.idenfyLanguageSelectionViewLanguageRecyclerViewItemTextColor =
+        this.idenfyLanguageSelectionViewLanguageRecyclerViewItemTextColor!;
+    if (this.idenfyManualReviewingStatusApprovedViewBackgroundColor != null)
+      map.idenfyManualReviewingStatusApprovedViewBackgroundColor =
+        this.idenfyManualReviewingStatusApprovedViewBackgroundColor!;
+    if (
+      this.idenfyManualReviewingStatusApprovedCommonInformationTitleTextColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusApprovedCommonInformationTitleTextColor =
+        this.idenfyManualReviewingStatusApprovedCommonInformationTitleTextColor!;
+    if (
+      this
+        .idenfyManualReviewingStatusApprovedCommonInformationDescriptionTextColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusApprovedCommonInformationDescriptionTextColor =
+        this.idenfyManualReviewingStatusApprovedCommonInformationDescriptionTextColor!;
+    if (this.idenfyManualReviewingStatusApprovedContinueButtonTextColor != null)
+      map.idenfyManualReviewingStatusApprovedContinueButtonTextColor =
+        this.idenfyManualReviewingStatusApprovedContinueButtonTextColor!;
+    if (this.idenfyManualReviewingStatusFailedViewBackgroundColor != null)
+      map.idenfyManualReviewingStatusFailedViewBackgroundColor =
+        this.idenfyManualReviewingStatusFailedViewBackgroundColor!;
+    if (
+      this.idenfyManualReviewingStatusFailedCommonInformationTitleTextColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusFailedCommonInformationTitleTextColor =
+        this.idenfyManualReviewingStatusFailedCommonInformationTitleTextColor!;
+    if (
+      this
+        .idenfyManualReviewingStatusFailedCommonInformationDescriptionTextColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusFailedCommonInformationDescriptionTextColor =
+        this.idenfyManualReviewingStatusFailedCommonInformationDescriptionTextColor!;
+    if (
+      this
+        .idenfyManualReviewingStatusFailedCommonInformationDescriptionSupportEmailTextColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusFailedCommonInformationDescriptionSupportEmailTextColor =
+        this.idenfyManualReviewingStatusFailedCommonInformationDescriptionSupportEmailTextColor!;
+    if (this.idenfyManualReviewingStatusFailedContinueButtonTextColor != null)
+      map.idenfyManualReviewingStatusFailedContinueButtonTextColor =
+        this.idenfyManualReviewingStatusFailedContinueButtonTextColor!;
+    if (this.idenfyManualReviewingStatusWaitingViewBackgroundColor != null)
+      map.idenfyManualReviewingStatusWaitingViewBackgroundColor =
+        this.idenfyManualReviewingStatusWaitingViewBackgroundColor!;
+    if (
+      this.idenfyManualReviewingStatusWaitingCommonInformationTitleTextColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusWaitingCommonInformationTitleTextColor =
+        this.idenfyManualReviewingStatusWaitingCommonInformationTitleTextColor!;
+    if (
+      this
+        .idenfyManualReviewingStatusWaitingCommonInformationDescriptionTextColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusWaitingCommonInformationDescriptionTextColor =
+        this.idenfyManualReviewingStatusWaitingCommonInformationDescriptionTextColor!;
+    if (
+      this
+        .idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedBackgroundColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedBackgroundColor =
+        this.idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedBackgroundColor!;
+    if (
+      this
+        .idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedTitleColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedTitleColor =
+        this.idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedTitleColor!;
+    if (
+      this
+        .idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedTickImageTintColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedTickImageTintColor =
+        this.idenfyManualReviewingStatusWaitingCommonReviewBoxFinishedTickImageTintColor!;
+    if (
+      this
+        .idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingBackgroundColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingBackgroundColor =
+        this.idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingBackgroundColor!;
+    if (
+      this.idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingTitleColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingTitleColor =
+        this.idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingTitleColor!;
+    if (
+      this
+        .idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingSpinnerColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingSpinnerColor =
+        this.idenfyManualReviewingStatusWaitingCommonReviewBoxWaitingSpinnerColor!;
+    if (
+      this.idenfyManualReviewingStatusWaitingCommonWaitingDurationTitleColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusWaitingCommonWaitingDurationTitleColor =
+        this.idenfyManualReviewingStatusWaitingCommonWaitingDurationTitleColor!;
+    if (
+      this
+        .idenfyManualReviewingStatusWaitingCommonWaitingTimerBoxBackgroundColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusWaitingCommonWaitingTimerBoxBackgroundColor =
+        this.idenfyManualReviewingStatusWaitingCommonWaitingTimerBoxBackgroundColor!;
+    if (
+      this.idenfyManualReviewingStatusWaitingCommonWaitingTimerImageTintColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusWaitingCommonWaitingTimerImageTintColor =
+        this.idenfyManualReviewingStatusWaitingCommonWaitingTimerImageTintColor!;
+    if (
+      this.idenfyManualReviewingStatusWaitingCommonWaitingTimerTitleColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusWaitingCommonWaitingTimerTitleColor =
+        this.idenfyManualReviewingStatusWaitingCommonWaitingTimerTitleColor!;
+    if (
+      this
+        .idenfyManualReviewingStatusWaitingBackToAccountButtonBackgroundColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusWaitingBackToAccountButtonBackgroundColor =
+        this.idenfyManualReviewingStatusWaitingBackToAccountButtonBackgroundColor!;
+    if (
+      this.idenfyManualReviewingStatusWaitingBackToAccountButtonTextColor !=
+      null
+    )
+      map.idenfyManualReviewingStatusWaitingBackToAccountButtonTextColor =
+        this.idenfyManualReviewingStatusWaitingBackToAccountButtonTextColor!;
+    if (this.idenfyNFCReadingTimeOutViewBackgroundColor != null)
+      map.idenfyNFCReadingTimeOutViewBackgroundColor =
+        this.idenfyNFCReadingTimeOutViewBackgroundColor!;
+    if (this.idenfyNFCReadingTimeOutCommonInformationTitleTextColor != null)
+      map.idenfyNFCReadingTimeOutCommonInformationTitleTextColor =
+        this.idenfyNFCReadingTimeOutCommonInformationTitleTextColor!;
+    if (
+      this.idenfyNFCReadingTimeOutCommonInformationDescriptionTextColor != null
+    )
+      map.idenfyNFCReadingTimeOutCommonInformationDescriptionTextColor =
+        this.idenfyNFCReadingTimeOutCommonInformationDescriptionTextColor!;
+    if (this.idenfyNFCReadingTimeOutContinueButtonTextColor != null)
+      map.idenfyNFCReadingTimeOutContinueButtonTextColor =
+        this.idenfyNFCReadingTimeOutContinueButtonTextColor!;
+    if (this.idenfyNFCReadingViewBackgroundColor != null)
+      map.idenfyNFCReadingViewBackgroundColor =
+        this.idenfyNFCReadingViewBackgroundColor!;
+    if (this.idenfyNFCReadingCommonInformationTitleTextColor != null)
+      map.idenfyNFCReadingCommonInformationTitleTextColor =
+        this.idenfyNFCReadingCommonInformationTitleTextColor!;
+    if (this.idenfyNFCReadingCommonInformationDescriptionTextColor != null)
+      map.idenfyNFCReadingCommonInformationDescriptionTextColor =
+        this.idenfyNFCReadingCommonInformationDescriptionTextColor!;
+    if (this.idenfyNFCRequiredViewBackgroundColor != null)
+      map.idenfyNFCRequiredViewBackgroundColor =
+        this.idenfyNFCRequiredViewBackgroundColor!;
+    if (this.idenfyNFCRequiredCommonInformationTitleTextColor != null)
+      map.idenfyNFCRequiredCommonInformationTitleTextColor =
+        this.idenfyNFCRequiredCommonInformationTitleTextColor!;
+    if (this.idenfyNFCRequiredCommonInformationDescriptionTextColor != null)
+      map.idenfyNFCRequiredCommonInformationDescriptionTextColor =
+        this.idenfyNFCRequiredCommonInformationDescriptionTextColor!;
+    if (this.idenfyNFCRequiredContinueButtonTextColor != null)
+      map.idenfyNFCRequiredContinueButtonTextColor =
+        this.idenfyNFCRequiredContinueButtonTextColor!;
+    if (this.idenfyQuestionnaireViewBackgroundColor != null)
+      map.idenfyQuestionnaireViewBackgroundColor =
+        this.idenfyQuestionnaireViewBackgroundColor!;
+    if (this.idenfyQuestionnaireViewTitleTextColor != null)
+      map.idenfyQuestionnaireViewTitleTextColor =
+        this.idenfyQuestionnaireViewTitleTextColor!;
+    if (this.idenfyQuestionnaireViewDescriptionTextColor != null)
+      map.idenfyQuestionnaireViewDescriptionTextColor =
+        this.idenfyQuestionnaireViewDescriptionTextColor!;
+    if (this.idenfyQuestionnaireViewSectionTitleTextColor != null)
+      map.idenfyQuestionnaireViewSectionTitleTextColor =
+        this.idenfyQuestionnaireViewSectionTitleTextColor!;
+    if (this.idenfyQuestionnaireViewSectionDescriptionTextColor != null)
+      map.idenfyQuestionnaireViewSectionDescriptionTextColor =
+        this.idenfyQuestionnaireViewSectionDescriptionTextColor!;
+    if (
+      this.idenfyQuestionnaireViewContinueButtonDisabledBackgroundColor != null
+    )
+      map.idenfyQuestionnaireViewContinueButtonDisabledBackgroundColor =
+        this.idenfyQuestionnaireViewContinueButtonDisabledBackgroundColor!;
+    if (this.idenfyQuestionnaireViewContinueButtonDisabledTextColor != null)
+      map.idenfyQuestionnaireViewContinueButtonDisabledTextColor =
+        this.idenfyQuestionnaireViewContinueButtonDisabledTextColor!;
+    if (this.idenfyQuestionnaireViewContinueButtonEnabledTextColor != null)
+      map.idenfyQuestionnaireViewContinueButtonEnabledTextColor =
+        this.idenfyQuestionnaireViewContinueButtonEnabledTextColor!;
+    if (this.idenfyQuestionnaireViewLoadingSpinnerTintColor != null)
+      map.idenfyQuestionnaireViewLoadingSpinnerTintColor =
+        this.idenfyQuestionnaireViewLoadingSpinnerTintColor!;
+    if (this.idenfyQuestionnaireViewQuestionItemTitleTextColor != null)
+      map.idenfyQuestionnaireViewQuestionItemTitleTextColor =
+        this.idenfyQuestionnaireViewQuestionItemTitleTextColor!;
+    if (this.idenfyQuestionnaireViewQuestionItemDescriptionTextColor != null)
+      map.idenfyQuestionnaireViewQuestionItemDescriptionTextColor =
+        this.idenfyQuestionnaireViewQuestionItemDescriptionTextColor!;
+    if (this.idenfyQuestionnaireViewTextQuestionItemEditTextTitleColor != null)
+      map.idenfyQuestionnaireViewTextQuestionItemEditTextTitleColor =
+        this.idenfyQuestionnaireViewTextQuestionItemEditTextTitleColor!;
+    if (this.idenfyQuestionnaireViewTextQuestionItemEditTextHintColor != null)
+      map.idenfyQuestionnaireViewTextQuestionItemEditTextHintColor =
+        this.idenfyQuestionnaireViewTextQuestionItemEditTextHintColor!;
+    if (
+      this
+        .idenfyQuestionnaireViewTextQuestionItemEditTextHighlightedBorderColor !=
+      null
+    )
+      map.idenfyQuestionnaireViewTextQuestionItemEditTextHighlightedBorderColor =
+        this.idenfyQuestionnaireViewTextQuestionItemEditTextHighlightedBorderColor!;
+    if (
+      this.idenfyQuestionnaireViewTextQuestionItemEditTextBackgroundColor !=
+      null
+    )
+      map.idenfyQuestionnaireViewTextQuestionItemEditTextBackgroundColor =
+        this.idenfyQuestionnaireViewTextQuestionItemEditTextBackgroundColor!;
+    if (this.idenfyQuestionnaireViewTextQuestionItemEditTextBorderColor != null)
+      map.idenfyQuestionnaireViewTextQuestionItemEditTextBorderColor =
+        this.idenfyQuestionnaireViewTextQuestionItemEditTextBorderColor!;
+    if (this.idenfyQuestionnaireViewCheckBoxQuestionItemCheckBoxColor != null)
+      map.idenfyQuestionnaireViewCheckBoxQuestionItemCheckBoxColor =
+        this.idenfyQuestionnaireViewCheckBoxQuestionItemCheckBoxColor!;
+    if (
+      this
+        .idenfyQuestionnaireViewCheckBoxQuestionItemCheckBoxDescriptionColor !=
+      null
+    )
+      map.idenfyQuestionnaireViewCheckBoxQuestionItemCheckBoxDescriptionColor =
+        this.idenfyQuestionnaireViewCheckBoxQuestionItemCheckBoxDescriptionColor!;
+    if (
+      this.idenfyQuestionnaireViewCountryQuestionTrailingIconTintColor != null
+    )
+      map.idenfyQuestionnaireViewCountryQuestionTrailingIconTintColor =
+        this.idenfyQuestionnaireViewCountryQuestionTrailingIconTintColor!;
+    if (this.idenfyQuestionnaireViewDateQuestionTrailingIconTintColor != null)
+      map.idenfyQuestionnaireViewDateQuestionTrailingIconTintColor =
+        this.idenfyQuestionnaireViewDateQuestionTrailingIconTintColor!;
+    if (this.idenfyQuestionnaireViewFileQuestionUploadIconTintColor != null)
+      map.idenfyQuestionnaireViewFileQuestionUploadIconTintColor =
+        this.idenfyQuestionnaireViewFileQuestionUploadIconTintColor!;
+    if (this.idenfyQuestionnaireViewFileQuestionCancelIconTintColor != null)
+      map.idenfyQuestionnaireViewFileQuestionCancelIconTintColor =
+        this.idenfyQuestionnaireViewFileQuestionCancelIconTintColor!;
+    if (
+      this.idenfyQuestionnaireViewFileQuestionFilePickerPlaceHolderTextColor !=
+      null
+    )
+      map.idenfyQuestionnaireViewFileQuestionFilePickerPlaceHolderTextColor =
+        this.idenfyQuestionnaireViewFileQuestionFilePickerPlaceHolderTextColor!;
+    if (this.idenfyQuestionnaireViewImageQuestionUploadIconTintColor != null)
+      map.idenfyQuestionnaireViewImageQuestionUploadIconTintColor =
+        this.idenfyQuestionnaireViewImageQuestionUploadIconTintColor!;
+    if (this.idenfyQuestionnaireViewImageQuestionCancelIconTintColor != null)
+      map.idenfyQuestionnaireViewImageQuestionCancelIconTintColor =
+        this.idenfyQuestionnaireViewImageQuestionCancelIconTintColor!;
+    if (
+      this
+        .idenfyQuestionnaireViewImageQuestionImagePickerPlaceHolderTextColor !=
+      null
+    )
+      map.idenfyQuestionnaireViewImageQuestionImagePickerPlaceHolderTextColor =
+        this.idenfyQuestionnaireViewImageQuestionImagePickerPlaceHolderTextColor!;
+    if (
+      this.idenfyQuestionnaireViewPasswordQuestionTrailingIconTintColor != null
+    )
+      map.idenfyQuestionnaireViewPasswordQuestionTrailingIconTintColor =
+        this.idenfyQuestionnaireViewPasswordQuestionTrailingIconTintColor!;
+    if (this.idenfyQuestionnaireViewRadioQuestionRadioButtonTintColor != null)
+      map.idenfyQuestionnaireViewRadioQuestionRadioButtonTintColor =
+        this.idenfyQuestionnaireViewRadioQuestionRadioButtonTintColor!;
+    if (
+      this.idenfyQuestionnaireViewRadioQuestionRadioButtonBackgroundColor !=
+      null
+    )
+      map.idenfyQuestionnaireViewRadioQuestionRadioButtonBackgroundColor =
+        this.idenfyQuestionnaireViewRadioQuestionRadioButtonBackgroundColor!;
+    if (this.idenfyQuestionnaireViewRadioQuestionRadioButtonTextColor != null)
+      map.idenfyQuestionnaireViewRadioQuestionRadioButtonTextColor =
+        this.idenfyQuestionnaireViewRadioQuestionRadioButtonTextColor!;
+    if (
+      this.idenfyQuestionnaireViewSelectMultiQuestionCheckBoxTintColor != null
+    )
+      map.idenfyQuestionnaireViewSelectMultiQuestionCheckBoxTintColor =
+        this.idenfyQuestionnaireViewSelectMultiQuestionCheckBoxTintColor!;
+    if (
+      this.idenfyQuestionnaireViewSelectMultiQuestionCheckBoxTextColor != null
+    )
+      map.idenfyQuestionnaireViewSelectMultiQuestionCheckBoxTextColor =
+        this.idenfyQuestionnaireViewSelectMultiQuestionCheckBoxTextColor!;
+    if (this.idenfyQuestionnaireViewInputFieldErrorMessageTextColor != null)
+      map.idenfyQuestionnaireViewInputFieldErrorMessageTextColor =
+        this.idenfyQuestionnaireViewInputFieldErrorMessageTextColor!;
+    if (
+      this
+        .idenfyQuestionnaireViewCountryMultiQuestionCountryPickerPlaceHolderTextColor !=
+      null
+    )
+      map.idenfyQuestionnaireViewCountryMultiQuestionCountryPickerPlaceHolderTextColor =
+        this.idenfyQuestionnaireViewCountryMultiQuestionCountryPickerPlaceHolderTextColor!;
+    if (this.idenfyUploadPhotoViewBackgroundColor != null)
+      map.idenfyUploadPhotoViewBackgroundColor =
+        this.idenfyUploadPhotoViewBackgroundColor!;
+    if (this.idenfyUploadPhotoViewTitleTextColor != null)
+      map.idenfyUploadPhotoViewTitleTextColor =
+        this.idenfyUploadPhotoViewTitleTextColor!;
+    if (this.idenfyUploadPhotoViewDescriptionTextColor != null)
+      map.idenfyUploadPhotoViewDescriptionTextColor =
+        this.idenfyUploadPhotoViewDescriptionTextColor!;
+    if (this.idenfyUploadPhotoViewCroppingBorderColor != null)
+      map.idenfyUploadPhotoViewCroppingBorderColor =
+        this.idenfyUploadPhotoViewCroppingBorderColor!;
+    if (this.idenfyUploadPhotoViewCroppingBackgroundColor != null)
+      map.idenfyUploadPhotoViewCroppingBackgroundColor =
+        this.idenfyUploadPhotoViewCroppingBackgroundColor!;
+    if (this.idenfyUploadPhotoViewCroppingPhotoLoadingSpinnerColor != null)
+      map.idenfyUploadPhotoViewCroppingPhotoLoadingSpinnerColor =
+        this.idenfyUploadPhotoViewCroppingPhotoLoadingSpinnerColor!;
+    if (this.idenfyUploadPhotoViewChooseAnotherPhotoButtonTextColor != null)
+      map.idenfyUploadPhotoViewChooseAnotherPhotoButtonTextColor =
+        this.idenfyUploadPhotoViewChooseAnotherPhotoButtonTextColor!;
+    if (this.idenfyUploadPhotoViewContinuePhotoButtonTextColor != null)
+      map.idenfyUploadPhotoViewContinuePhotoButtonTextColor =
+        this.idenfyUploadPhotoViewContinuePhotoButtonTextColor!;
+    if (this.idenfyBankVerificationViewBackgroundColor != null)
+      map.idenfyBankVerificationViewBackgroundColor =
+        this.idenfyBankVerificationViewBackgroundColor!;
+    if (this.idenfyBankVerificationCommonInformationTitleTextColor != null)
+      map.idenfyBankVerificationCommonInformationTitleTextColor =
+        this.idenfyBankVerificationCommonInformationTitleTextColor!;
+    if (
+      this.idenfyBankVerificationCommonInformationDescriptionTextColor != null
+    )
+      map.idenfyBankVerificationCommonInformationDescriptionTextColor =
+        this.idenfyBankVerificationCommonInformationDescriptionTextColor!;
+    if (this.idenfyBankVerificationViewItemSelectionBorderColor != null)
+      map.idenfyBankVerificationViewItemSelectionBorderColor =
+        this.idenfyBankVerificationViewItemSelectionBorderColor!;
+    if (this.idenfyBankVerificationViewItemSelectionBackgroundColor != null)
+      map.idenfyBankVerificationViewItemSelectionBackgroundColor =
+        this.idenfyBankVerificationViewItemSelectionBackgroundColor!;
+    if (this.idenfyBankVerificationViewItemSelectionTextColor != null)
+      map.idenfyBankVerificationViewItemSelectionTextColor =
+        this.idenfyBankVerificationViewItemSelectionTextColor!;
+    if (
+      this.idenfyBankVerificationViewItemSelectionTrailingIconTintColor != null
+    )
+      map.idenfyBankVerificationViewItemSelectionTrailingIconTintColor =
+        this.idenfyBankVerificationViewItemSelectionTrailingIconTintColor!;
+    if (this.idenfyBankVerificationViewCheckBoxColor != null)
+      map.idenfyBankVerificationViewCheckBoxColor =
+        this.idenfyBankVerificationViewCheckBoxColor!;
+    if (this.idenfyBankVerificationViewCheckBoxDescriptionColor != null)
+      map.idenfyBankVerificationViewCheckBoxDescriptionColor =
+        this.idenfyBankVerificationViewCheckBoxDescriptionColor!;
+    if (
+      this.idenfyBankVerificationViewCheckBoxInformationTrailingIconTintColor !=
+      null
+    )
+      map.idenfyBankVerificationViewCheckBoxInformationTrailingIconTintColor =
+        this.idenfyBankVerificationViewCheckBoxInformationTrailingIconTintColor!;
+    if (this.idenfyBankVerificationContinueButtonTextColor != null)
+      map.idenfyBankVerificationContinueButtonTextColor =
+        this.idenfyBankVerificationContinueButtonTextColor!;
+    if (this.idenfyBankVerificationContinueButtonDisabledTextColor != null)
+      map.idenfyBankVerificationContinueButtonDisabledTextColor =
+        this.idenfyBankVerificationContinueButtonDisabledTextColor!;
+    if (
+      this.idenfyBankVerificationViewContinueButtonDisabledBackgroundColor !=
+      null
+    )
+      map.idenfyBankVerificationViewContinueButtonDisabledBackgroundColor =
+        this.idenfyBankVerificationViewContinueButtonDisabledBackgroundColor!;
+    if (this.idenfyBankVerificationContinueButtonEnabledTextColor != null)
+      map.idenfyBankVerificationContinueButtonEnabledTextColor =
+        this.idenfyBankVerificationContinueButtonEnabledTextColor!;
+    if (
+      this.idenfyBankVerificationViewSuccessStatusContainerBackgroundColor !=
+      null
+    )
+      map.idenfyBankVerificationViewSuccessStatusContainerBackgroundColor =
+        this.idenfyBankVerificationViewSuccessStatusContainerBackgroundColor!;
+    if (
+      this.idenfyBankVerificationViewSuccessStatusContainerBorderColor != null
+    )
+      map.idenfyBankVerificationViewSuccessStatusContainerBorderColor =
+        this.idenfyBankVerificationViewSuccessStatusContainerBorderColor!;
+    if (
+      this.idenfyBankVerificationViewFailedStatusContainerBackgroundColor !=
+      null
+    )
+      map.idenfyBankVerificationViewFailedStatusContainerBackgroundColor =
+        this.idenfyBankVerificationViewFailedStatusContainerBackgroundColor!;
+    if (this.idenfyBankVerificationViewFailedStatusContainerBorderColor != null)
+      map.idenfyBankVerificationViewFailedStatusContainerBorderColor =
+        this.idenfyBankVerificationViewFailedStatusContainerBorderColor!;
+    if (
+      this.idenfyBankVerificationViewSuccessStatusDescriptionIconTintColor !=
+      null
+    )
+      map.idenfyBankVerificationViewSuccessStatusDescriptionIconTintColor =
+        this.idenfyBankVerificationViewSuccessStatusDescriptionIconTintColor!;
+    if (this.idenfyBankVerificationViewBanksRecyclerViewItemBorderColor != null)
+      map.idenfyBankVerificationViewBanksRecyclerViewItemBorderColor =
+        this.idenfyBankVerificationViewBanksRecyclerViewItemBorderColor!;
+    if (
+      this.idenfyBankVerificationViewBanksRecyclerViewItemBackgroundColor !=
+      null
+    )
+      map.idenfyBankVerificationViewBanksRecyclerViewItemBackgroundColor =
+        this.idenfyBankVerificationViewBanksRecyclerViewItemBackgroundColor!;
+    if (this.idenfyBankVerificationViewBankRecyclerViewItemTextColor != null)
+      map.idenfyBankVerificationViewBankRecyclerViewItemTextColor =
+        this.idenfyBankVerificationViewBankRecyclerViewItemTextColor!;
+    if (this.idenfyBankVerificationViewLoadingSpinnerTintColor != null)
+      map.idenfyBankVerificationViewLoadingSpinnerTintColor =
+        this.idenfyBankVerificationViewLoadingSpinnerTintColor!;
+    if (this.idenfyCameraPermissionViewBackgroundColor != null)
+      map.idenfyCameraPermissionViewBackgroundColor =
+        this.idenfyCameraPermissionViewBackgroundColor!;
+    if (this.idenfyCameraPermissionViewTitleTextColor != null)
+      map.idenfyCameraPermissionViewTitleTextColor =
+        this.idenfyCameraPermissionViewTitleTextColor!;
+    if (this.idenfyCameraPermissionViewDescriptionTextColor != null)
+      map.idenfyCameraPermissionViewDescriptionTextColor =
+        this.idenfyCameraPermissionViewDescriptionTextColor!;
+    if (this.idenfyCameraPermissionViewGuidanceDescriptionTextColor != null)
+      map.idenfyCameraPermissionViewGuidanceDescriptionTextColor =
+        this.idenfyCameraPermissionViewGuidanceDescriptionTextColor!;
+    if (this.idenfyCameraPermissionViewGoToSettingsButtonTextColor != null)
+      map.idenfyCameraPermissionViewGoToSettingsButtonTextColor =
+        this.idenfyCameraPermissionViewGoToSettingsButtonTextColor!;
+    if (this.idenfyCameraOnBoardingViewBackgroundColor != null)
+      map.idenfyCameraOnBoardingViewBackgroundColor =
+        this.idenfyCameraOnBoardingViewBackgroundColor!;
+    if (this.idenfyCameraOnBoardingViewLoadingSpinnerColor != null)
+      map.idenfyCameraOnBoardingViewLoadingSpinnerColor =
+        this.idenfyCameraOnBoardingViewLoadingSpinnerColor!;
+    if (this.idenfyCameraStaticOnBoardingViewTitleColor != null)
+      map.idenfyCameraStaticOnBoardingViewTitleColor =
+        this.idenfyCameraStaticOnBoardingViewTitleColor!;
+    if (this.idenfyCameraStaticOnBoardingViewDescriptionColor != null)
+      map.idenfyCameraStaticOnBoardingViewDescriptionColor =
+        this.idenfyCameraStaticOnBoardingViewDescriptionColor!;
+    if (this.idenfyCameraStaticOnBoardingViewProgressBarBackgroundColor != null)
+      map.idenfyCameraStaticOnBoardingViewProgressBarBackgroundColor =
+        this.idenfyCameraStaticOnBoardingViewProgressBarBackgroundColor!;
+    if (this.idenfyCameraStaticOnBoardingViewProgressBarForegroundColor != null)
+      map.idenfyCameraStaticOnBoardingViewProgressBarForegroundColor =
+        this.idenfyCameraStaticOnBoardingViewProgressBarForegroundColor!;
+    if (
+      this.idenfyCameraStaticOnBoardingViewVideoDescriptionsTitleColor != null
+    )
+      map.idenfyCameraStaticOnBoardingViewVideoDescriptionsTitleColor =
+        this.idenfyCameraStaticOnBoardingViewVideoDescriptionsTitleColor!;
+    if (
+      this
+        .idenfyCameraStaticOnBoardingViewVideoDescriptionsCircleImageTintColor !=
+      null
+    )
+      map.idenfyCameraStaticOnBoardingViewVideoDescriptionsCircleImageTintColor =
+        this.idenfyCameraStaticOnBoardingViewVideoDescriptionsCircleImageTintColor!;
+    if (this.idenfyCameraStaticOnBoardingViewVideoDescriptionsTextColor != null)
+      map.idenfyCameraStaticOnBoardingViewVideoDescriptionsTextColor =
+        this.idenfyCameraStaticOnBoardingViewVideoDescriptionsTextColor!;
+    if (this.idenfyCameraStaticOnBoardingViewEnabledButtonTitleColor != null)
+      map.idenfyCameraStaticOnBoardingViewEnabledButtonTitleColor =
+        this.idenfyCameraStaticOnBoardingViewEnabledButtonTitleColor!;
+    if (
+      this.idenfyCameraStaticOnBoardingViewDisabledButtonBackgroundColor != null
+    )
+      map.idenfyCameraStaticOnBoardingViewDisabledButtonBackgroundColor =
+        this.idenfyCameraStaticOnBoardingViewDisabledButtonBackgroundColor!;
+    if (this.idenfyCameraStaticOnBoardingViewDisabledButtonTitleColor != null)
+      map.idenfyCameraStaticOnBoardingViewDisabledButtonTitleColor =
+        this.idenfyCameraStaticOnBoardingViewDisabledButtonTitleColor!;
+    if (this.idenfyCameraStaticOnBoardingViewLoadingSpinnerColor != null)
+      map.idenfyCameraStaticOnBoardingViewLoadingSpinnerColor =
+        this.idenfyCameraStaticOnBoardingViewLoadingSpinnerColor!;
+    if (this.idenfyCountrySelectionViewBackgroundColor != null)
+      map.idenfyCountrySelectionViewBackgroundColor =
+        this.idenfyCountrySelectionViewBackgroundColor!;
+    if (this.idenfyCountrySelectionViewTitleTextColor != null)
+      map.idenfyCountrySelectionViewTitleTextColor =
+        this.idenfyCountrySelectionViewTitleTextColor!;
+    if (this.idenfyCountrySelectionViewDescriptionTextColor != null)
+      map.idenfyCountrySelectionViewDescriptionTextColor =
+        this.idenfyCountrySelectionViewDescriptionTextColor!;
+    if (this.idenfyCountrySelectionViewCountrySearchBarBackgroundColor != null)
+      map.idenfyCountrySelectionViewCountrySearchBarBackgroundColor =
+        this.idenfyCountrySelectionViewCountrySearchBarBackgroundColor!;
+    if (
+      this.idenfyCountrySelectionViewCountrySearchBarHighlightedTextColor !=
+      null
+    )
+      map.idenfyCountrySelectionViewCountrySearchBarHighlightedTextColor =
+        this.idenfyCountrySelectionViewCountrySearchBarHighlightedTextColor!;
+    if (this.idenfyCountrySelectionViewCountrySearchBarTextColor != null)
+      map.idenfyCountrySelectionViewCountrySearchBarTextColor =
+        this.idenfyCountrySelectionViewCountrySearchBarTextColor!;
+    if (
+      this.idenfyCountrySelectionViewCountryRecyclerViewBackgroundColor != null
+    )
+      map.idenfyCountrySelectionViewCountryRecyclerViewBackgroundColor =
+        this.idenfyCountrySelectionViewCountryRecyclerViewBackgroundColor!;
+    if (this.idenfyCountrySelectionViewCountryRecyclerViewBorderColor != null)
+      map.idenfyCountrySelectionViewCountryRecyclerViewBorderColor =
+        this.idenfyCountrySelectionViewCountryRecyclerViewBorderColor!;
+    if (
+      this.idenfyCountrySelectionViewCountryRecyclerViewItemBackgroundColor !=
+      null
+    )
+      map.idenfyCountrySelectionViewCountryRecyclerViewItemBackgroundColor =
+        this.idenfyCountrySelectionViewCountryRecyclerViewItemBackgroundColor!;
+    if (
+      this.idenfyCountrySelectionViewCountryRecyclerViewItemBorderColor != null
+    )
+      map.idenfyCountrySelectionViewCountryRecyclerViewItemBorderColor =
+        this.idenfyCountrySelectionViewCountryRecyclerViewItemBorderColor!;
+    if (this.idenfyCountrySelectionViewCountryRecyclerViewItemTextColor != null)
+      map.idenfyCountrySelectionViewCountryRecyclerViewItemTextColor =
+        this.idenfyCountrySelectionViewCountryRecyclerViewItemTextColor!;
+    if (
+      this
+        .idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedTextColor !=
+      null
+    )
+      map.idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedTextColor =
+        this.idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedTextColor!;
+    if (
+      this
+        .idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedBackgroundColor !=
+      null
+    )
+      map.idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedBackgroundColor =
+        this.idenfyCountrySelectionViewCountryRecyclerViewItemHighlightedBackgroundColor!;
+    if (this.idenfyCountryViewSelectionCountrySearchBarBorderColor != null)
+      map.idenfyCountryViewSelectionCountrySearchBarBorderColor =
+        this.idenfyCountryViewSelectionCountrySearchBarBorderColor!;
+    if (
+      this.idenfyCountrySelectionViewPredefinedCountryContinueButtonTextColor !=
+      null
+    )
+      map.idenfyCountrySelectionViewPredefinedCountryContinueButtonTextColor =
+        this.idenfyCountrySelectionViewPredefinedCountryContinueButtonTextColor!;
+    if (this.idenfyDocumentPhotoResultViewBackgroundColor != null)
+      map.idenfyDocumentPhotoResultViewBackgroundColor =
+        this.idenfyDocumentPhotoResultViewBackgroundColor!;
+    if (this.idenfyDocumentPhotoResultViewTitleTextColor != null)
+      map.idenfyDocumentPhotoResultViewTitleTextColor =
+        this.idenfyDocumentPhotoResultViewTitleTextColor!;
+    if (this.idenfyDocumentPhotoResultViewDescriptionTextColor != null)
+      map.idenfyDocumentPhotoResultViewDescriptionTextColor =
+        this.idenfyDocumentPhotoResultViewDescriptionTextColor!;
+    if (this.idenfyDocumentPhotoResultViewRetakePhotoButtonTextColor != null)
+      map.idenfyDocumentPhotoResultViewRetakePhotoButtonTextColor =
+        this.idenfyDocumentPhotoResultViewRetakePhotoButtonTextColor!;
+    if (this.idenfyDocumentPhotoResultViewNextButtonTextColor != null)
+      map.idenfyDocumentPhotoResultViewNextButtonTextColor =
+        this.idenfyDocumentPhotoResultViewNextButtonTextColor!;
+    if (this.idenfyDocumentPhotoResultViewPhotoLoadingSpinnerColor != null)
+      map.idenfyDocumentPhotoResultViewPhotoLoadingSpinnerColor =
+        this.idenfyDocumentPhotoResultViewPhotoLoadingSpinnerColor!;
+    if (this.idenfyDocumentPhotoResultViewPhotoBorderColor != null)
+      map.idenfyDocumentPhotoResultViewPhotoBorderColor =
+        this.idenfyDocumentPhotoResultViewPhotoBorderColor!;
+    if (
+      this.idenfyDocumentPhotoResultViewAutoCaptureFailureCardImageColor != null
+    )
+      map.idenfyDocumentPhotoResultViewAutoCaptureFailureCardImageColor =
+        this.idenfyDocumentPhotoResultViewAutoCaptureFailureCardImageColor!;
+    if (
+      this.idenfyDocumentPhotoResultViewAutoCaptureFailureCardTitleColor != null
+    )
+      map.idenfyDocumentPhotoResultViewAutoCaptureFailureCardTitleColor =
+        this.idenfyDocumentPhotoResultViewAutoCaptureFailureCardTitleColor!;
+    if (
+      this.idenfyDocumentPhotoResultViewAutoCaptureFailureCardBackgroundColor !=
+      null
+    )
+      map.idenfyDocumentPhotoResultViewAutoCaptureFailureCardBackgroundColor =
+        this.idenfyDocumentPhotoResultViewAutoCaptureFailureCardBackgroundColor!;
+    if (
+      this.idenfyDocumentPhotoResultViewBlurGlareWarningCardImageColor != null
+    )
+      map.idenfyDocumentPhotoResultViewBlurGlareWarningCardImageColor =
+        this.idenfyDocumentPhotoResultViewBlurGlareWarningCardImageColor!;
+    if (
+      this.idenfyDocumentPhotoResultViewBlurGlareWarningCardTitleColor != null
+    )
+      map.idenfyDocumentPhotoResultViewBlurGlareWarningCardTitleColor =
+        this.idenfyDocumentPhotoResultViewBlurGlareWarningCardTitleColor!;
+    if (
+      this.idenfyDocumentPhotoResultViewBlurGlareWarningCardBackgroundColor !=
+      null
+    )
+      map.idenfyDocumentPhotoResultViewBlurGlareWarningCardBackgroundColor =
+        this.idenfyDocumentPhotoResultViewBlurGlareWarningCardBackgroundColor!;
+    if (this.idenfyEmailSMSVerificationViewBackgroundColor != null)
+      map.idenfyEmailSMSVerificationViewBackgroundColor =
+        this.idenfyEmailSMSVerificationViewBackgroundColor!;
+    if (this.idenfyEmailSMSVerificationCommonInformationTitleTextColor != null)
+      map.idenfyEmailSMSVerificationCommonInformationTitleTextColor =
+        this.idenfyEmailSMSVerificationCommonInformationTitleTextColor!;
+    if (
+      this.idenfyEmailSMSVerificationCommonInformationDescriptionTextColor !=
+      null
+    )
+      map.idenfyEmailSMSVerificationCommonInformationDescriptionTextColor =
+        this.idenfyEmailSMSVerificationCommonInformationDescriptionTextColor!;
+    if (this.idenfyEmailSMSVerificationPinCodeTextColor != null)
+      map.idenfyEmailSMSVerificationPinCodeTextColor =
+        this.idenfyEmailSMSVerificationPinCodeTextColor!;
+    if (
+      this.idenfyEmailSMSVerificationCodeInputRetryContainerBorderColor != null
+    )
+      map.idenfyEmailSMSVerificationCodeInputRetryContainerBorderColor =
+        this.idenfyEmailSMSVerificationCodeInputRetryContainerBorderColor!;
+    if (
+      this.idenfyEmailSMSVerificationCodeInputRetryContainerBackgroundColor !=
+      null
+    )
+      map.idenfyEmailSMSVerificationCodeInputRetryContainerBackgroundColor =
+        this.idenfyEmailSMSVerificationCodeInputRetryContainerBackgroundColor!;
+    if (
+      this.idenfyEmailSMSVerificationCodeInputFailedContainerBorderColor != null
+    )
+      map.idenfyEmailSMSVerificationCodeInputFailedContainerBorderColor =
+        this.idenfyEmailSMSVerificationCodeInputFailedContainerBorderColor!;
+    if (
+      this.idenfyEmailSMSVerificationCodeInputFailedContainerBackgroundColor !=
+      null
+    )
+      map.idenfyEmailSMSVerificationCodeInputFailedContainerBackgroundColor =
+        this.idenfyEmailSMSVerificationCodeInputFailedContainerBackgroundColor!;
+    if (
+      this.idenfyEmailSMSVerificationCodeInputSuccessContainerBorderColor !=
+      null
+    )
+      map.idenfyEmailSMSVerificationCodeInputSuccessContainerBorderColor =
+        this.idenfyEmailSMSVerificationCodeInputSuccessContainerBorderColor!;
+    if (
+      this.idenfyEmailSMSVerificationCodeInputSuccessContainerBackgroundColor !=
+      null
+    )
+      map.idenfyEmailSMSVerificationCodeInputSuccessContainerBackgroundColor =
+        this.idenfyEmailSMSVerificationCodeInputSuccessContainerBackgroundColor!;
+    if (this.idenfyEmailSMSVerificationViewCodeStatusTitleTextColor != null)
+      map.idenfyEmailSMSVerificationViewCodeStatusTitleTextColor =
+        this.idenfyEmailSMSVerificationViewCodeStatusTitleTextColor!;
+    if (
+      this.idenfyEmailSMSVerificationViewCodeFailedStatusImageTintColor != null
+    )
+      map.idenfyEmailSMSVerificationViewCodeFailedStatusImageTintColor =
+        this.idenfyEmailSMSVerificationViewCodeFailedStatusImageTintColor!;
+    if (
+      this.idenfyEmailSMSVerificationViewCodeSuccessStatusImageTintColor != null
+    )
+      map.idenfyEmailSMSVerificationViewCodeSuccessStatusImageTintColor =
+        this.idenfyEmailSMSVerificationViewCodeSuccessStatusImageTintColor!;
+    if (this.idenfyEmailSMSVerificationViewCodeExpirationTitleTextColor != null)
+      map.idenfyEmailSMSVerificationViewCodeExpirationTitleTextColor =
+        this.idenfyEmailSMSVerificationViewCodeExpirationTitleTextColor!;
+    if (this.idenfyEmailSMSVerificationViewResendCodeTitleTextColor != null)
+      map.idenfyEmailSMSVerificationViewResendCodeTitleTextColor =
+        this.idenfyEmailSMSVerificationViewResendCodeTitleTextColor!;
+    if (
+      this.idenfyEmailSMSVerificationViewResendCodeTitleDisabledTextColor !=
+      null
+    )
+      map.idenfyEmailSMSVerificationViewResendCodeTitleDisabledTextColor =
+        this.idenfyEmailSMSVerificationViewResendCodeTitleDisabledTextColor!;
+    if (
+      this.idenfyEmailSMSVerificationViewVerifyEmailSMSContainerBorderColor !=
+      null
+    )
+      map.idenfyEmailSMSVerificationViewVerifyEmailSMSContainerBorderColor =
+        this.idenfyEmailSMSVerificationViewVerifyEmailSMSContainerBorderColor!;
+    if (
+      this
+        .idenfyEmailSMSVerificationViewVerifyEmailSMSContainerBackgroundColor !=
+      null
+    )
+      map.idenfyEmailSMSVerificationViewVerifyEmailSMSContainerBackgroundColor =
+        this.idenfyEmailSMSVerificationViewVerifyEmailSMSContainerBackgroundColor!;
+    if (
+      this.idenfyEmailSMSVerificationVerifyEmailSMSContainerTitleTextColor !=
+      null
+    )
+      map.idenfyEmailSMSVerificationVerifyEmailSMSContainerTitleTextColor =
+        this.idenfyEmailSMSVerificationVerifyEmailSMSContainerTitleTextColor!;
+    if (
+      this
+        .idenfyEmailSMSVerificationVerifyEmailSMSContainerDescriptionTextColor !=
+      null
+    )
+      map.idenfyEmailSMSVerificationVerifyEmailSMSContainerDescriptionTextColor =
+        this.idenfyEmailSMSVerificationVerifyEmailSMSContainerDescriptionTextColor!;
+    if (
+      this
+        .idenfyEmailSMSVerificationViewVerifyEmailSMSContainerImageTintColor !=
+      null
+    )
+      map.idenfyEmailSMSVerificationViewVerifyEmailSMSContainerImageTintColor =
+        this.idenfyEmailSMSVerificationViewVerifyEmailSMSContainerImageTintColor!;
+    if (this.idenfyEmailSMSVerificationEmailSMSInputEditTextBorderColor != null)
+      map.idenfyEmailSMSVerificationEmailSMSInputEditTextBorderColor =
+        this.idenfyEmailSMSVerificationEmailSMSInputEditTextBorderColor!;
+    if (
+      this.idenfyEmailSMSVerificationEmailSMSInputEditTextBackgroundColor !=
+      null
+    )
+      map.idenfyEmailSMSVerificationEmailSMSInputEditTextBackgroundColor =
+        this.idenfyEmailSMSVerificationEmailSMSInputEditTextBackgroundColor!;
+    if (
+      this.idenfyEmailSMSVerificationViewEmailSMSInputEditTextTitleColor != null
+    )
+      map.idenfyEmailSMSVerificationViewEmailSMSInputEditTextTitleColor =
+        this.idenfyEmailSMSVerificationViewEmailSMSInputEditTextTitleColor!;
+    if (
+      this.idenfyEmailSMSVerificationViewEmailSMSInputEditTextHintColor != null
+    )
+      map.idenfyEmailSMSVerificationViewEmailSMSInputEditTextHintColor =
+        this.idenfyEmailSMSVerificationViewEmailSMSInputEditTextHintColor!;
+    if (
+      this
+        .idenfyEmailSMSVerificationViewEmailSMSInputFieldErrorMessageTextColor !=
+      null
+    )
+      map.idenfyEmailSMSVerificationViewEmailSMSInputFieldErrorMessageTextColor =
+        this.idenfyEmailSMSVerificationViewEmailSMSInputFieldErrorMessageTextColor!;
+    if (this.idenfyEmailSMSVerificationContinueButtonTextColor != null)
+      map.idenfyEmailSMSVerificationContinueButtonTextColor =
+        this.idenfyEmailSMSVerificationContinueButtonTextColor!;
+    if (this.idenfyEmailSMSVerificationContinueButtonDisabledTextColor != null)
+      map.idenfyEmailSMSVerificationContinueButtonDisabledTextColor =
+        this.idenfyEmailSMSVerificationContinueButtonDisabledTextColor!;
+    if (
+      this
+        .idenfyEmailSMSVerificationViewContinueButtonDisabledBackgroundColor !=
+      null
+    )
+      map.idenfyEmailSMSVerificationViewContinueButtonDisabledBackgroundColor =
+        this.idenfyEmailSMSVerificationViewContinueButtonDisabledBackgroundColor!;
+    if (this.idenfyEmailSMSVerificationContinueButtonEnabledTextColor != null)
+      map.idenfyEmailSMSVerificationContinueButtonEnabledTextColor =
+        this.idenfyEmailSMSVerificationContinueButtonEnabledTextColor!;
+    if (this.idenfyFacePhotoResultViewBackgroundColor != null)
+      map.idenfyFacePhotoResultViewBackgroundColor =
+        this.idenfyFacePhotoResultViewBackgroundColor!;
+    if (this.idenfyFacePhotoResultViewTitleTextColor != null)
+      map.idenfyFacePhotoResultViewTitleTextColor =
+        this.idenfyFacePhotoResultViewTitleTextColor!;
+    if (this.idenfyFacePhotoResultViewDescriptionTextColor != null)
+      map.idenfyFacePhotoResultViewDescriptionTextColor =
+        this.idenfyFacePhotoResultViewDescriptionTextColor!;
+    if (this.idenfyFacePhotoResultViewRetakePhotoButtonTextColor != null)
+      map.idenfyFacePhotoResultViewRetakePhotoButtonTextColor =
+        this.idenfyFacePhotoResultViewRetakePhotoButtonTextColor!;
+    if (this.idenfyFacePhotoResultViewNextButtonTextColor != null)
+      map.idenfyFacePhotoResultViewNextButtonTextColor =
+        this.idenfyFacePhotoResultViewNextButtonTextColor!;
+    if (this.idenfyFacePhotoResultViewPhotoLoadingSpinnerColor != null)
+      map.idenfyFacePhotoResultViewPhotoLoadingSpinnerColor =
+        this.idenfyFacePhotoResultViewPhotoLoadingSpinnerColor!;
+    if (this.idenfyFacePhotoResultViewPhotoBorderColor != null)
+      map.idenfyFacePhotoResultViewPhotoBorderColor =
+        this.idenfyFacePhotoResultViewPhotoBorderColor!;
+    if (this.idenfyMFACaptchaMethodViewBackgroundColor != null)
+      map.idenfyMFACaptchaMethodViewBackgroundColor =
+        this.idenfyMFACaptchaMethodViewBackgroundColor!;
+    if (this.idenfyMFACaptchaMethodViewTitleTextColor != null)
+      map.idenfyMFACaptchaMethodViewTitleTextColor =
+        this.idenfyMFACaptchaMethodViewTitleTextColor!;
+    if (this.idenfyMFACaptchaMethodViewDescriptionTextColor != null)
+      map.idenfyMFACaptchaMethodViewDescriptionTextColor =
+        this.idenfyMFACaptchaMethodViewDescriptionTextColor!;
+    if (this.idenfyMFACaptchaMethodViewCaptchaEditTextBackgroundColor != null)
+      map.idenfyMFACaptchaMethodViewCaptchaEditTextBackgroundColor =
+        this.idenfyMFACaptchaMethodViewCaptchaEditTextBackgroundColor!;
+    if (this.idenfyMFACaptchaMethodViewCaptchaEditTextTitleColor != null)
+      map.idenfyMFACaptchaMethodViewCaptchaEditTextTitleColor =
+        this.idenfyMFACaptchaMethodViewCaptchaEditTextTitleColor!;
+    if (this.idenfyMFACaptchaMethodViewCaptchaEditTextBorderColor != null)
+      map.idenfyMFACaptchaMethodViewCaptchaEditTextBorderColor =
+        this.idenfyMFACaptchaMethodViewCaptchaEditTextBorderColor!;
+    if (
+      this.idenfyMFACaptchaMethodViewCaptchaEditTextHighlightedBorderColor !=
+      null
+    )
+      map.idenfyMFACaptchaMethodViewCaptchaEditTextHighlightedBorderColor =
+        this.idenfyMFACaptchaMethodViewCaptchaEditTextHighlightedBorderColor!;
+    if (this.idenfyMFACaptchaMethodViewCaptchaEditTextHintTitleColor != null)
+      map.idenfyMFACaptchaMethodViewCaptchaEditTextHintTitleColor =
+        this.idenfyMFACaptchaMethodViewCaptchaEditTextHintTitleColor!;
+    if (this.idenfyMFACaptchaMethodViewCaptchaEditTextTopHintTitleColor != null)
+      map.idenfyMFACaptchaMethodViewCaptchaEditTextTopHintTitleColor =
+        this.idenfyMFACaptchaMethodViewCaptchaEditTextTopHintTitleColor!;
+    if (this.idenfyMFACaptchaMethodViewContinueButtonTextColor != null)
+      map.idenfyMFACaptchaMethodViewContinueButtonTextColor =
+        this.idenfyMFACaptchaMethodViewContinueButtonTextColor!;
+    if (this.idenfyMFAGeneralViewBackgroundColor != null)
+      map.idenfyMFAGeneralViewBackgroundColor =
+        this.idenfyMFAGeneralViewBackgroundColor!;
+    if (this.idenfyMFAGeneralViewTitleTextColor != null)
+      map.idenfyMFAGeneralViewTitleTextColor =
+        this.idenfyMFAGeneralViewTitleTextColor!;
+    if (this.idenfyMFAGeneralViewDescriptionTextColor != null)
+      map.idenfyMFAGeneralViewDescriptionTextColor =
+        this.idenfyMFAGeneralViewDescriptionTextColor!;
+    if (this.idenfyMFAGeneralViewEditTextBackgroundColor != null)
+      map.idenfyMFAGeneralViewEditTextBackgroundColor =
+        this.idenfyMFAGeneralViewEditTextBackgroundColor!;
+    if (this.idenfyMFAGeneralViewEditTextTitleColor != null)
+      map.idenfyMFAGeneralViewEditTextTitleColor =
+        this.idenfyMFAGeneralViewEditTextTitleColor!;
+    if (this.idenfyMFAGeneralViewEditTextBorderColor != null)
+      map.idenfyMFAGeneralViewEditTextBorderColor =
+        this.idenfyMFAGeneralViewEditTextBorderColor!;
+    if (this.idenfyMFAGeneralViewEditTextHighlightedBorderColor != null)
+      map.idenfyMFAGeneralViewEditTextHighlightedBorderColor =
+        this.idenfyMFAGeneralViewEditTextHighlightedBorderColor!;
+    if (this.idenfyMFAGeneralViewEditTextHintTitleColor != null)
+      map.idenfyMFAGeneralViewEditTextHintTitleColor =
+        this.idenfyMFAGeneralViewEditTextHintTitleColor!;
+    if (this.idenfyMFAGeneralViewEditTextTopHintTitleColor != null)
+      map.idenfyMFAGeneralViewEditTextTopHintTitleColor =
+        this.idenfyMFAGeneralViewEditTextTopHintTitleColor!;
+    if (this.idenfyMFAGeneralViewContinueButtonTextColor != null)
+      map.idenfyMFAGeneralViewContinueButtonTextColor =
+        this.idenfyMFAGeneralViewContinueButtonTextColor!;
+    if (this.idenfyMFAMethodSelectionViewBackgroundColor != null)
+      map.idenfyMFAMethodSelectionViewBackgroundColor =
+        this.idenfyMFAMethodSelectionViewBackgroundColor!;
+    if (this.idenfyMFAMethodSelectionViewTitleTextColor != null)
+      map.idenfyMFAMethodSelectionViewTitleTextColor =
+        this.idenfyMFAMethodSelectionViewTitleTextColor!;
+    if (this.idenfyMFAMethodSelectionViewDescriptionTextColor != null)
+      map.idenfyMFAMethodSelectionViewDescriptionTextColor =
+        this.idenfyMFAMethodSelectionViewDescriptionTextColor!;
+    if (this.idenfyMFAMethodSelectionViewTopHintTitleColor != null)
+      map.idenfyMFAMethodSelectionViewTopHintTitleColor =
+        this.idenfyMFAMethodSelectionViewTopHintTitleColor!;
+    if (this.idenfyMFAMethodSelectionViewContinueButtonTextColor != null)
+      map.idenfyMFAMethodSelectionViewContinueButtonTextColor =
+        this.idenfyMFAMethodSelectionViewContinueButtonTextColor!;
+    if (this.idenfyProviderLoginViewBackgroundColor != null)
+      map.idenfyProviderLoginViewBackgroundColor =
+        this.idenfyProviderLoginViewBackgroundColor!;
+    if (this.idenfyProviderLoginViewTitleTextColor != null)
+      map.idenfyProviderLoginViewTitleTextColor =
+        this.idenfyProviderLoginViewTitleTextColor!;
+    if (this.idenfyProviderLoginViewDescriptionTextColor != null)
+      map.idenfyProviderLoginViewDescriptionTextColor =
+        this.idenfyProviderLoginViewDescriptionTextColor!;
+    if (
+      this.idenfyProviderLoginViewUsernameAndPasswordEditTextBackgroundColor !=
+      null
+    )
+      map.idenfyProviderLoginViewUsernameAndPasswordEditTextBackgroundColor =
+        this.idenfyProviderLoginViewUsernameAndPasswordEditTextBackgroundColor!;
+    if (
+      this.idenfyProviderLoginViewUsernameAndPasswordEditTextTitleColor != null
+    )
+      map.idenfyProviderLoginViewUsernameAndPasswordEditTextTitleColor =
+        this.idenfyProviderLoginViewUsernameAndPasswordEditTextTitleColor!;
+    if (
+      this.idenfyProviderLoginViewUsernameAndPasswordEditTextBorderColor != null
+    )
+      map.idenfyProviderLoginViewUsernameAndPasswordEditTextBorderColor =
+        this.idenfyProviderLoginViewUsernameAndPasswordEditTextBorderColor!;
+    if (
+      this
+        .idenfyProviderLoginViewUsernameAndPasswordEditTextHighlightedBorderColor !=
+      null
+    )
+      map.idenfyProviderLoginViewUsernameAndPasswordEditTextHighlightedBorderColor =
+        this.idenfyProviderLoginViewUsernameAndPasswordEditTextHighlightedBorderColor!;
+    if (
+      this.idenfyProviderLoginViewUsernameAndPasswordEditTextHintTitleColor !=
+      null
+    )
+      map.idenfyProviderLoginViewUsernameAndPasswordEditTextHintTitleColor =
+        this.idenfyProviderLoginViewUsernameAndPasswordEditTextHintTitleColor!;
+    if (
+      this
+        .idenfyProviderLoginViewUsernameAndPasswordEditTextTopHintTitleColor !=
+      null
+    )
+      map.idenfyProviderLoginViewUsernameAndPasswordEditTextTopHintTitleColor =
+        this.idenfyProviderLoginViewUsernameAndPasswordEditTextTopHintTitleColor!;
+    if (this.idenfyProviderLoginViewContinueButtonTextColor != null)
+      map.idenfyProviderLoginViewContinueButtonTextColor =
+        this.idenfyProviderLoginViewContinueButtonTextColor!;
+    if (this.idenfyProviderSelectionViewBackgroundColor != null)
+      map.idenfyProviderSelectionViewBackgroundColor =
+        this.idenfyProviderSelectionViewBackgroundColor!;
+    if (this.idenfyProviderSelectionViewTitleTextColor != null)
+      map.idenfyProviderSelectionViewTitleTextColor =
+        this.idenfyProviderSelectionViewTitleTextColor!;
+    if (this.idenfyProviderSelectionViewDescriptionTextColor != null)
+      map.idenfyProviderSelectionViewDescriptionTextColor =
+        this.idenfyProviderSelectionViewDescriptionTextColor!;
+    if (
+      this.idenfyProviderSelectionViewProviderSearchBarBackgroundColor != null
+    )
+      map.idenfyProviderSelectionViewProviderSearchBarBackgroundColor =
+        this.idenfyProviderSelectionViewProviderSearchBarBackgroundColor!;
+    if (
+      this.idenfyProviderSelectionViewProviderSearchBarHighlightedTextColor !=
+      null
+    )
+      map.idenfyProviderSelectionViewProviderSearchBarHighlightedTextColor =
+        this.idenfyProviderSelectionViewProviderSearchBarHighlightedTextColor!;
+    if (this.idenfyProviderSelectionViewProviderSearchBarTextColor != null)
+      map.idenfyProviderSelectionViewProviderSearchBarTextColor =
+        this.idenfyProviderSelectionViewProviderSearchBarTextColor!;
+    if (
+      this.idenfyProviderSelectionViewProviderRecyclerViewBackgroundColor !=
+      null
+    )
+      map.idenfyProviderSelectionViewProviderRecyclerViewBackgroundColor =
+        this.idenfyProviderSelectionViewProviderRecyclerViewBackgroundColor!;
+    if (this.idenfyProviderSelectionViewProviderRecyclerViewBorderColor != null)
+      map.idenfyProviderSelectionViewProviderRecyclerViewBorderColor =
+        this.idenfyProviderSelectionViewProviderRecyclerViewBorderColor!;
+    if (
+      this.idenfyProviderSelectionViewProviderRecyclerViewItemBackgroundColor !=
+      null
+    )
+      map.idenfyProviderSelectionViewProviderRecyclerViewItemBackgroundColor =
+        this.idenfyProviderSelectionViewProviderRecyclerViewItemBackgroundColor!;
+    if (
+      this.idenfyProviderSelectionViewProviderRecyclerViewItemBorderColor !=
+      null
+    )
+      map.idenfyProviderSelectionViewProviderRecyclerViewItemBorderColor =
+        this.idenfyProviderSelectionViewProviderRecyclerViewItemBorderColor!;
+    if (
+      this.idenfyProviderSelectionViewProviderRecyclerViewItemTextColor != null
+    )
+      map.idenfyProviderSelectionViewProviderRecyclerViewItemTextColor =
+        this.idenfyProviderSelectionViewProviderRecyclerViewItemTextColor!;
+    if (
+      this
+        .idenfyProviderSelectionViewProviderRecyclerViewItemHighlightedTextColor !=
+      null
+    )
+      map.idenfyProviderSelectionViewProviderRecyclerViewItemHighlightedTextColor =
+        this.idenfyProviderSelectionViewProviderRecyclerViewItemHighlightedTextColor!;
+    if (
+      this
+        .idenfyProviderSelectionViewProviderRecyclerViewItemHighlightedBackgroundColor !=
+      null
+    )
+      map.idenfyProviderSelectionViewProviderRecyclerViewItemHighlightedBackgroundColor =
+        this.idenfyProviderSelectionViewProviderRecyclerViewItemHighlightedBackgroundColor!;
+    if (this.idenfyProviderViewSelectionProviderSearchBarBorderColor != null)
+      map.idenfyProviderViewSelectionProviderSearchBarBorderColor =
+        this.idenfyProviderViewSelectionProviderSearchBarBorderColor!;
+    if (this.idenfyAdditionalSupportViewBackgroundColor != null)
+      map.idenfyAdditionalSupportViewBackgroundColor =
+        this.idenfyAdditionalSupportViewBackgroundColor!;
+    if (this.idenfyAdditionalSupportCommonInformationTitleTextColor != null)
+      map.idenfyAdditionalSupportCommonInformationTitleTextColor =
+        this.idenfyAdditionalSupportCommonInformationTitleTextColor!;
+    if (
+      this.idenfyAdditionalSupportCommonInformationDescriptionTextColor != null
+    )
+      map.idenfyAdditionalSupportCommonInformationDescriptionTextColor =
+        this.idenfyAdditionalSupportCommonInformationDescriptionTextColor!;
+    if (this.idenfyAdditionalSupportContinueButtonTextColor != null)
+      map.idenfyAdditionalSupportContinueButtonTextColor =
+        this.idenfyAdditionalSupportContinueButtonTextColor!;
+    if (this.idenfyCountryAndDocumentSelectionViewBackgroundColor != null)
+      map.idenfyCountryAndDocumentSelectionViewBackgroundColor =
+        this.idenfyCountryAndDocumentSelectionViewBackgroundColor!;
+    if (this.idenfyCountryAndDocumentSelectionViewTitleTextColor != null)
+      map.idenfyCountryAndDocumentSelectionViewTitleTextColor =
+        this.idenfyCountryAndDocumentSelectionViewTitleTextColor!;
+    if (this.idenfyCountryAndDocumentSelectionViewDescriptionTextColor != null)
+      map.idenfyCountryAndDocumentSelectionViewDescriptionTextColor =
+        this.idenfyCountryAndDocumentSelectionViewDescriptionTextColor!;
+    if (
+      this.idenfyCountryAndDocumentSelectionViewItemSelectionBorderColor != null
+    )
+      map.idenfyCountryAndDocumentSelectionViewItemSelectionBorderColor =
+        this.idenfyCountryAndDocumentSelectionViewItemSelectionBorderColor!;
+    if (
+      this.idenfyCountryAndDocumentSelectionViewItemSelectionBackgroundColor !=
+      null
+    )
+      map.idenfyCountryAndDocumentSelectionViewItemSelectionBackgroundColor =
+        this.idenfyCountryAndDocumentSelectionViewItemSelectionBackgroundColor!;
+    if (
+      this.idenfyCountryAndDocumentSelectionViewItemSelectionTextColor != null
+    )
+      map.idenfyCountryAndDocumentSelectionViewItemSelectionTextColor =
+        this.idenfyCountryAndDocumentSelectionViewItemSelectionTextColor!;
+    if (
+      this
+        .idenfyCountryAndDocumentSelectionViewItemSelectionTrailingIconTintColor !=
+      null
+    )
+      map.idenfyCountryAndDocumentSelectionViewItemSelectionTrailingIconTintColor =
+        this.idenfyCountryAndDocumentSelectionViewItemSelectionTrailingIconTintColor!;
+    if (
+      this
+        .idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBorderColor !=
+      null
+    )
+      map.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBorderColor =
+        this.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBorderColor!;
+    if (
+      this
+        .idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBackgroundColor !=
+      null
+    )
+      map.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBackgroundColor =
+        this.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedBackgroundColor!;
+    if (
+      this
+        .idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedTextColor !=
+      null
+    )
+      map.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedTextColor =
+        this.idenfyCountryAndDocumentSelectionViewItemSelectionHighlightedTextColor!;
+    if (
+      this
+        .idenfyCountryAndDocumentSelectionViewContinueButtonDisabledBackgroundColor !=
+      null
+    )
+      map.idenfyCountryAndDocumentSelectionViewContinueButtonDisabledBackgroundColor =
+        this.idenfyCountryAndDocumentSelectionViewContinueButtonDisabledBackgroundColor!;
+    if (
+      this
+        .idenfyCountryAndDocumentSelectionViewContinueButtonDisabledTextColor !=
+      null
+    )
+      map.idenfyCountryAndDocumentSelectionViewContinueButtonDisabledTextColor =
+        this.idenfyCountryAndDocumentSelectionViewContinueButtonDisabledTextColor!;
+    if (
+      this
+        .idenfyCountryAndDocumentSelectionViewContinueButtonEnabledTextColor !=
+      null
+    )
+      map.idenfyCountryAndDocumentSelectionViewContinueButtonEnabledTextColor =
+        this.idenfyCountryAndDocumentSelectionViewContinueButtonEnabledTextColor!;
+    if (
+      this
+        .idenfyCountryAndDocumentSelectionViewPhysicalDocumentTitleDividerColor !=
+      null
+    )
+      map.idenfyCountryAndDocumentSelectionViewPhysicalDocumentTitleDividerColor =
+        this.idenfyCountryAndDocumentSelectionViewPhysicalDocumentTitleDividerColor!;
+    if (this.idenfyDocumentCameraPreviewSessionBackgroundColor != null)
+      map.idenfyDocumentCameraPreviewSessionBackgroundColor =
+        this.idenfyDocumentCameraPreviewSessionBackgroundColor!;
+    if (
+      this
+        .idenfyDocumentCameraPreviewSessionBottomActionButtonsViewBackgroundColor !=
+      null
+    )
+      map.idenfyDocumentCameraPreviewSessionBottomActionButtonsViewBackgroundColor =
+        this.idenfyDocumentCameraPreviewSessionBottomActionButtonsViewBackgroundColor!;
+    if (
+      this
+        .idenfyDocumentCameraPreviewSessionTakePhotoButtonUnFocusedTintColor !=
+      null
+    )
+      map.idenfyDocumentCameraPreviewSessionTakePhotoButtonUnFocusedTintColor =
+        this.idenfyDocumentCameraPreviewSessionTakePhotoButtonUnFocusedTintColor!;
+    if (
+      this.idenfyDocumentCameraPreviewSessionTakePhotoButtonFocusedTintColor !=
+      null
+    )
+      map.idenfyDocumentCameraPreviewSessionTakePhotoButtonFocusedTintColor =
+        this.idenfyDocumentCameraPreviewSessionTakePhotoButtonFocusedTintColor!;
+    if (
+      this
+        .idenfyDocumentCameraPreviewSessionTakePhotoButtonUnFocusedBackgroundColor !=
+      null
+    )
+      map.idenfyDocumentCameraPreviewSessionTakePhotoButtonUnFocusedBackgroundColor =
+        this.idenfyDocumentCameraPreviewSessionTakePhotoButtonUnFocusedBackgroundColor!;
+    if (
+      this
+        .idenfyDocumentCameraPreviewSessionTakePhotoButtonFocusedBackgroundColor !=
+      null
+    )
+      map.idenfyDocumentCameraPreviewSessionTakePhotoButtonFocusedBackgroundColor =
+        this.idenfyDocumentCameraPreviewSessionTakePhotoButtonFocusedBackgroundColor!;
+    if (
+      this
+        .idenfyDocumentCameraPreviewSessionAcceptedDocumentsSelectedCountryHighlightColor !=
+      null
+    )
+      map.idenfyDocumentCameraPreviewSessionAcceptedDocumentsSelectedCountryHighlightColor =
+        this.idenfyDocumentCameraPreviewSessionAcceptedDocumentsSelectedCountryHighlightColor!;
+    if (this.idenfyDocumentCameraPreviewTitleTextColor != null)
+      map.idenfyDocumentCameraPreviewTitleTextColor =
+        this.idenfyDocumentCameraPreviewTitleTextColor!;
+    if (this.idenfyDocumentCameraPreviewDescriptionTextColor != null)
+      map.idenfyDocumentCameraPreviewDescriptionTextColor =
+        this.idenfyDocumentCameraPreviewDescriptionTextColor!;
+    if (this.idenfyPrivacyPolicyViewBackgroundColor != null)
+      map.idenfyPrivacyPolicyViewBackgroundColor =
+        this.idenfyPrivacyPolicyViewBackgroundColor!;
+    if (this.idenfyPrivacyPolicyCommonInformationTitleTextColor != null)
+      map.idenfyPrivacyPolicyCommonInformationTitleTextColor =
+        this.idenfyPrivacyPolicyCommonInformationTitleTextColor!;
+    if (this.idenfyPrivacyPolicyCommonInformationDescriptionTextColor != null)
+      map.idenfyPrivacyPolicyCommonInformationDescriptionTextColor =
+        this.idenfyPrivacyPolicyCommonInformationDescriptionTextColor!;
+    if (this.idenfyPrivacyPolicyCardViewTextColor != null)
+      map.idenfyPrivacyPolicyCardViewTextColor =
+        this.idenfyPrivacyPolicyCardViewTextColor!;
+    if (this.idenfyPrivacyPolicyCardViewBackgroundColor != null)
+      map.idenfyPrivacyPolicyCardViewBackgroundColor =
+        this.idenfyPrivacyPolicyCardViewBackgroundColor!;
+    if (this.idenfyPrivacyPolicyCardViewArrowIconTintColor != null)
+      map.idenfyPrivacyPolicyCardViewArrowIconTintColor =
+        this.idenfyPrivacyPolicyCardViewArrowIconTintColor!;
+    if (this.idenfyPrivacyPolicyCardViewIconTintColor != null)
+      map.idenfyPrivacyPolicyCardViewIconTintColor =
+        this.idenfyPrivacyPolicyCardViewIconTintColor!;
+    if (this.idenfyPrivacyPolicyContinueButtonTextColor != null)
+      map.idenfyPrivacyPolicyContinueButtonTextColor =
+        this.idenfyPrivacyPolicyContinueButtonTextColor!;
+    if (this.idenfyPartnerPrivacyPolicyDialogViewBackgroundColor != null)
+      map.idenfyPartnerPrivacyPolicyDialogViewBackgroundColor =
+        this.idenfyPartnerPrivacyPolicyDialogViewBackgroundColor!;
+    if (this.idenfySplashScreenViewTitleTextColor != null)
+      map.idenfySplashScreenViewTitleTextColor =
+        this.idenfySplashScreenViewTitleTextColor!;
+    if (this.idenfySplashScreenViewDescriptionTextColor != null)
+      map.idenfySplashScreenViewDescriptionTextColor =
+        this.idenfySplashScreenViewDescriptionTextColor!;
+    if (this.idenfySplashScreenViewLoadingSpinnerTintColor != null)
+      map.idenfySplashScreenViewLoadingSpinnerTintColor =
+        this.idenfySplashScreenViewLoadingSpinnerTintColor!;
+    if (this.idenfyBottomSheetBackgroundColor != null)
+      map.idenfyBottomSheetBackgroundColor =
+        this.idenfyBottomSheetBackgroundColor!;
+    if (this.idenfyBottomSheetDragHandleColor != null)
+      map.idenfyBottomSheetDragHandleColor =
+        this.idenfyBottomSheetDragHandleColor!;
+    if (this.idenfyBottomSheetButtonTextColor != null)
+      map.idenfyBottomSheetButtonTextColor =
+        this.idenfyBottomSheetButtonTextColor!;
+    if (this.idenfyBottomSheetTitleTextColor != null)
+      map.idenfyBottomSheetTitleTextColor =
+        this.idenfyBottomSheetTitleTextColor!;
+    if (this.idenfyBottomSheetDateTimePickerAccentColor != null)
+      map.idenfyBottomSheetDateTimePickerAccentColor =
+        this.idenfyBottomSheetDateTimePickerAccentColor!;
+    if (this.idenfyBottomSheetDateTimePickerActivatedColor != null)
+      map.idenfyBottomSheetDateTimePickerActivatedColor =
+        this.idenfyBottomSheetDateTimePickerActivatedColor!;
+    if (this.idenfyBottomSheetDateTimePickerHighlightColor != null)
+      map.idenfyBottomSheetDateTimePickerHighlightColor =
+        this.idenfyBottomSheetDateTimePickerHighlightColor!;
+    if (this.idenfyCustomAlertDialogNegativeButtonColor != null)
+      map.idenfyCustomAlertDialogNegativeButtonColor =
+        this.idenfyCustomAlertDialogNegativeButtonColor!;
+    if (this.idenfyCustomAlertDialogBackgroundColor != null)
+      map.idenfyCustomAlertDialogBackgroundColor =
+        this.idenfyCustomAlertDialogBackgroundColor!;
+    if (this.idenfyDefaultAlertDialogBackgroundColor != null)
+      map.idenfyDefaultAlertDialogBackgroundColor =
+        this.idenfyDefaultAlertDialogBackgroundColor!;
+    if (this.idenfyDefaultAlertDialogTitleColor != null)
+      map.idenfyDefaultAlertDialogTitleColor =
+        this.idenfyDefaultAlertDialogTitleColor!;
+    if (this.idenfyDefaultAlertDialogMessageColor != null)
+      map.idenfyDefaultAlertDialogMessageColor =
+        this.idenfyDefaultAlertDialogMessageColor!;
+    if (this.idenfyDefaultAlertDialogPositiveButtonColor != null)
+      map.idenfyDefaultAlertDialogPositiveButtonColor =
+        this.idenfyDefaultAlertDialogPositiveButtonColor!;
+    if (this.idenfyDefaultAlertDialogNegativeButtonColor != null)
+      map.idenfyDefaultAlertDialogNegativeButtonColor =
+        this.idenfyDefaultAlertDialogNegativeButtonColor!;
+    if (this.idenfyEIDSessionViewBackgroundColor != null)
+      map.idenfyEIDSessionViewBackgroundColor =
+        this.idenfyEIDSessionViewBackgroundColor!;
+    if (this.idenfyEIDSessionViewTitleTextColor != null)
+      map.idenfyEIDSessionViewTitleTextColor =
+        this.idenfyEIDSessionViewTitleTextColor!;
+    if (this.idenfyEIDSessionViewDescriptionTextColor != null)
+      map.idenfyEIDSessionViewDescriptionTextColor =
+        this.idenfyEIDSessionViewDescriptionTextColor!;
+    if (this.idenfyEIDSessionViewButtonTextColor != null)
+      map.idenfyEIDSessionViewButtonTextColor =
+        this.idenfyEIDSessionViewButtonTextColor!;
+    if (this.idenfyEIDSessionViewCodeInputEditTextTitleColor != null)
+      map.idenfyEIDSessionViewCodeInputEditTextTitleColor =
+        this.idenfyEIDSessionViewCodeInputEditTextTitleColor!;
+    if (this.idenfyEIDSessionViewCodeInputEditTextHintColor != null)
+      map.idenfyEIDSessionViewCodeInputEditTextHintColor =
+        this.idenfyEIDSessionViewCodeInputEditTextHintColor!;
+    if (this.idenfyEIDSessionViewCodeInputFieldErrorMessageTextColor != null)
+      map.idenfyEIDSessionViewCodeInputFieldErrorMessageTextColor =
+        this.idenfyEIDSessionViewCodeInputFieldErrorMessageTextColor!;
+    if (this.idenfyEIDSessionViewCodeInputFailedContainerBorderColor != null)
+      map.idenfyEIDSessionViewCodeInputFailedContainerBorderColor =
+        this.idenfyEIDSessionViewCodeInputFailedContainerBorderColor!;
+    if (
+      this.idenfyEIDSessionViewCodeInputFailedContainerBackgroundColor != null
+    )
+      map.idenfyEIDSessionViewCodeInputFailedContainerBackgroundColor =
+        this.idenfyEIDSessionViewCodeInputFailedContainerBackgroundColor!;
+    if (this.idenfyEIDSessionViewCodeStatusTitleTextColor != null)
+      map.idenfyEIDSessionViewCodeStatusTitleTextColor =
+        this.idenfyEIDSessionViewCodeStatusTitleTextColor!;
+    if (this.idenfyEIDSessionViewCodeFailedStatusImageTintColor != null)
+      map.idenfyEIDSessionViewCodeFailedStatusImageTintColor =
+        this.idenfyEIDSessionViewCodeFailedStatusImageTintColor!;
+    if (this.idenfyEIDSessionViewCodeHintTextColor != null)
+      map.idenfyEIDSessionViewCodeHintTextColor =
+        this.idenfyEIDSessionViewCodeHintTextColor!;
+    if (this.idenfyEIDSessionViewContinueButtonEnabledTextColor != null)
+      map.idenfyEIDSessionViewContinueButtonEnabledTextColor =
+        this.idenfyEIDSessionViewContinueButtonEnabledTextColor!;
+    if (this.idenfyEIDSessionViewContinueButtonDisabledTextColor != null)
+      map.idenfyEIDSessionViewContinueButtonDisabledTextColor =
+        this.idenfyEIDSessionViewContinueButtonDisabledTextColor!;
+    if (this.idenfyEIDSessionViewContinueButtonDisabledBackgroundColor != null)
+      map.idenfyEIDSessionViewContinueButtonDisabledBackgroundColor =
+        this.idenfyEIDSessionViewContinueButtonDisabledBackgroundColor!;
+    if (this.idenfyEIDSessionViewUploadIconTintColor != null)
+      map.idenfyEIDSessionViewUploadIconTintColor =
+        this.idenfyEIDSessionViewUploadIconTintColor!;
+    if (this.idenfyEIDSessionViewClickToUploadTextColor != null)
+      map.idenfyEIDSessionViewClickToUploadTextColor =
+        this.idenfyEIDSessionViewClickToUploadTextColor!;
+    if (this.idenfyEIDSessionViewInputFieldBorderColor != null)
+      map.idenfyEIDSessionViewInputFieldBorderColor =
+        this.idenfyEIDSessionViewInputFieldBorderColor!;
+    if (this.idenfyEIDSessionViewInputFieldBackgroundColor != null)
+      map.idenfyEIDSessionViewInputFieldBackgroundColor =
+        this.idenfyEIDSessionViewInputFieldBackgroundColor!;
+    if (this.idenfyHighlightedItemBackgroundColor != null)
+      map.idenfyHighlightedItemBackgroundColor =
+        this.idenfyHighlightedItemBackgroundColor!;
+    if (this.idenfyHighlightedItemTextColor != null)
+      map.idenfyHighlightedItemTextColor = this.idenfyHighlightedItemTextColor!;
+    if (this.idenfyHighlightedItemBorderColor != null)
+      map.idenfyHighlightedItemBorderColor =
+        this.idenfyHighlightedItemBorderColor!;
+    if (this.idenfyBankCardCameraViewLoadingSpinnerColor != null)
+      map.idenfyBankCardCameraViewLoadingSpinnerColor =
+        this.idenfyBankCardCameraViewLoadingSpinnerColor!;
+    if (this.idenfyBankCardOnBoardingViewBackgroundColor != null)
+      map.idenfyBankCardOnBoardingViewBackgroundColor =
+        this.idenfyBankCardOnBoardingViewBackgroundColor!;
+    if (this.idenfyBankCardOnBoardingViewTitleTextColor != null)
+      map.idenfyBankCardOnBoardingViewTitleTextColor =
+        this.idenfyBankCardOnBoardingViewTitleTextColor!;
+    if (this.idenfyBankCardOnBoardingViewDescriptionTextColor != null)
+      map.idenfyBankCardOnBoardingViewDescriptionTextColor =
+        this.idenfyBankCardOnBoardingViewDescriptionTextColor!;
+    if (this.idenfyBankCardOnBoardingViewCardIconTintColor != null)
+      map.idenfyBankCardOnBoardingViewCardIconTintColor =
+        this.idenfyBankCardOnBoardingViewCardIconTintColor!;
+    if (this.idenfyBankCardOnBoardingViewCardBorderColor != null)
+      map.idenfyBankCardOnBoardingViewCardBorderColor =
+        this.idenfyBankCardOnBoardingViewCardBorderColor!;
+    if (this.idenfyBankCardOnBoardingViewCardBackgroundColor != null)
+      map.idenfyBankCardOnBoardingViewCardBackgroundColor =
+        this.idenfyBankCardOnBoardingViewCardBackgroundColor!;
+    if (this.idenfyBankCardOnBoardingViewCardSelectedBorderColor != null)
+      map.idenfyBankCardOnBoardingViewCardSelectedBorderColor =
+        this.idenfyBankCardOnBoardingViewCardSelectedBorderColor!;
+    if (this.idenfyBankCardOnBoardingViewCardSelectedBackgroundColor != null)
+      map.idenfyBankCardOnBoardingViewCardSelectedBackgroundColor =
+        this.idenfyBankCardOnBoardingViewCardSelectedBackgroundColor!;
+    if (this.idenfyBankCardOnBoardingViewCardSelectedTextColor != null)
+      map.idenfyBankCardOnBoardingViewCardSelectedTextColor =
+        this.idenfyBankCardOnBoardingViewCardSelectedTextColor!;
+    if (
+      this.idenfyBankCardOnBoardingViewContinueButtonDisabledBackgroundColor !=
+      null
+    )
+      map.idenfyBankCardOnBoardingViewContinueButtonDisabledBackgroundColor =
+        this.idenfyBankCardOnBoardingViewContinueButtonDisabledBackgroundColor!;
+    if (
+      this.idenfyBankCardOnBoardingViewContinueButtonDisabledTextColor != null
+    )
+      map.idenfyBankCardOnBoardingViewContinueButtonDisabledTextColor =
+        this.idenfyBankCardOnBoardingViewContinueButtonDisabledTextColor!;
+    if (this.idenfyBankCardOnBoardingViewContinueButtonEnabledTextColor != null)
+      map.idenfyBankCardOnBoardingViewContinueButtonEnabledTextColor =
+        this.idenfyBankCardOnBoardingViewContinueButtonEnabledTextColor!;
+    if (this.idenfyBankCardSelectionViewBackgroundColor != null)
+      map.idenfyBankCardSelectionViewBackgroundColor =
+        this.idenfyBankCardSelectionViewBackgroundColor!;
+    if (this.idenfyBankCardSelectionViewButtonDisabledBackgroundColor != null)
+      map.idenfyBankCardSelectionViewButtonDisabledBackgroundColor =
+        this.idenfyBankCardSelectionViewButtonDisabledBackgroundColor!;
+    if (this.idenfyBankCardSelectionViewButtonDisabledTextColor != null)
+      map.idenfyBankCardSelectionViewButtonDisabledTextColor =
+        this.idenfyBankCardSelectionViewButtonDisabledTextColor!;
+    if (this.idenfyBankCardSelectionViewButtonEnabledTextColor != null)
+      map.idenfyBankCardSelectionViewButtonEnabledTextColor =
+        this.idenfyBankCardSelectionViewButtonEnabledTextColor!;
+    if (this.idenfyBankCardSelectionViewButtonTextColor != null)
+      map.idenfyBankCardSelectionViewButtonTextColor =
+        this.idenfyBankCardSelectionViewButtonTextColor!;
+    if (this.idenfyBankCardUploadViewBackgroundColor != null)
+      map.idenfyBankCardUploadViewBackgroundColor =
+        this.idenfyBankCardUploadViewBackgroundColor!;
+    if (this.idenfyBankCardUploadViewDescriptionTextColor != null)
+      map.idenfyBankCardUploadViewDescriptionTextColor =
+        this.idenfyBankCardUploadViewDescriptionTextColor!;
+    if (this.idenfyBankCardUploadViewClickToUploadTextColor != null)
+      map.idenfyBankCardUploadViewClickToUploadTextColor =
+        this.idenfyBankCardUploadViewClickToUploadTextColor!;
+    if (this.idenfyBankCardUploadViewUploadIconTintColor != null)
+      map.idenfyBankCardUploadViewUploadIconTintColor =
+        this.idenfyBankCardUploadViewUploadIconTintColor!;
+    if (this.idenfyBankCardUploadViewButtonDisabledBackgroundColor != null)
+      map.idenfyBankCardUploadViewButtonDisabledBackgroundColor =
+        this.idenfyBankCardUploadViewButtonDisabledBackgroundColor!;
+    if (this.idenfyBankCardUploadViewButtonDisabledTextColor != null)
+      map.idenfyBankCardUploadViewButtonDisabledTextColor =
+        this.idenfyBankCardUploadViewButtonDisabledTextColor!;
+    if (this.idenfyBankCardUploadViewButtonEnabledTextColor != null)
+      map.idenfyBankCardUploadViewButtonEnabledTextColor =
+        this.idenfyBankCardUploadViewButtonEnabledTextColor!;
+    if (this.idenfyBankCardUploadReviewViewBackgroundColor != null)
+      map.idenfyBankCardUploadReviewViewBackgroundColor =
+        this.idenfyBankCardUploadReviewViewBackgroundColor!;
+    if (this.idenfyBankCardUploadReviewViewDescriptionTextColor != null)
+      map.idenfyBankCardUploadReviewViewDescriptionTextColor =
+        this.idenfyBankCardUploadReviewViewDescriptionTextColor!;
+    if (this.idenfyBankCardUploadReviewViewQuestionCardBackgroundColor != null)
+      map.idenfyBankCardUploadReviewViewQuestionCardBackgroundColor =
+        this.idenfyBankCardUploadReviewViewQuestionCardBackgroundColor!;
+    if (this.idenfyBankCardUploadReviewViewQuestionCardIconColor != null)
+      map.idenfyBankCardUploadReviewViewQuestionCardIconColor =
+        this.idenfyBankCardUploadReviewViewQuestionCardIconColor!;
+    if (this.idenfyBankCardUploadReviewViewQuestionCardTitleColor != null)
+      map.idenfyBankCardUploadReviewViewQuestionCardTitleColor =
+        this.idenfyBankCardUploadReviewViewQuestionCardTitleColor!;
+    if (this.idenfyBankCardUploadReviewViewNextButtonTextColor != null)
+      map.idenfyBankCardUploadReviewViewNextButtonTextColor =
+        this.idenfyBankCardUploadReviewViewNextButtonTextColor!;
+    if (this.idenfyBankCardUploadReviewViewRetakeButtonTextColor != null)
+      map.idenfyBankCardUploadReviewViewRetakeButtonTextColor =
+        this.idenfyBankCardUploadReviewViewRetakeButtonTextColor!;
+    if (this.idenfyBankCardUploadReviewViewButtonTextColor != null)
+      map.idenfyBankCardUploadReviewViewButtonTextColor =
+        this.idenfyBankCardUploadReviewViewButtonTextColor!;
+    if (this.idenfyBankCardVerificationPrivacyPolicyViewBackgroundColor != null)
+      map.idenfyBankCardVerificationPrivacyPolicyViewBackgroundColor =
+        this.idenfyBankCardVerificationPrivacyPolicyViewBackgroundColor!;
+    if (
+      this
+        .idenfyBankCardVerificationPrivacyPolicyCommonInformationTitleTextColor !=
+      null
+    )
+      map.idenfyBankCardVerificationPrivacyPolicyCommonInformationTitleTextColor =
+        this.idenfyBankCardVerificationPrivacyPolicyCommonInformationTitleTextColor!;
+    if (
+      this
+        .idenfyBankCardVerificationPrivacyPolicyCommonInformationDescriptionTextColor !=
+      null
+    )
+      map.idenfyBankCardVerificationPrivacyPolicyCommonInformationDescriptionTextColor =
+        this.idenfyBankCardVerificationPrivacyPolicyCommonInformationDescriptionTextColor!;
+    if (this.idenfyBankCardVerificationPrivacyPolicyCardViewTextColor != null)
+      map.idenfyBankCardVerificationPrivacyPolicyCardViewTextColor =
+        this.idenfyBankCardVerificationPrivacyPolicyCardViewTextColor!;
+    if (
+      this.idenfyBankCardVerificationPrivacyPolicyCardViewBackgroundColor !=
+      null
+    )
+      map.idenfyBankCardVerificationPrivacyPolicyCardViewBackgroundColor =
+        this.idenfyBankCardVerificationPrivacyPolicyCardViewBackgroundColor!;
+    if (
+      this.idenfyBankCardVerificationPrivacyPolicyCardViewIconTintColor != null
+    )
+      map.idenfyBankCardVerificationPrivacyPolicyCardViewIconTintColor =
+        this.idenfyBankCardVerificationPrivacyPolicyCardViewIconTintColor!;
+    if (
+      this.idenfyBankCardVerificationPrivacyPolicyContinueButtonTextColor !=
+      null
+    )
+      map.idenfyBankCardVerificationPrivacyPolicyContinueButtonTextColor =
+        this.idenfyBankCardVerificationPrivacyPolicyContinueButtonTextColor!;
+    if (this.idenfyBankCardVerificationResultsViewBackgroundColor != null)
+      map.idenfyBankCardVerificationResultsViewBackgroundColor =
+        this.idenfyBankCardVerificationResultsViewBackgroundColor!;
+    if (
+      this.idenfyBankCardVerificationResultsCommonInformationTitleTextColor !=
+      null
+    )
+      map.idenfyBankCardVerificationResultsCommonInformationTitleTextColor =
+        this.idenfyBankCardVerificationResultsCommonInformationTitleTextColor!;
+    if (
+      this
+        .idenfyBankCardVerificationResultsCommonInformationDescriptionTextColor !=
+      null
+    )
+      map.idenfyBankCardVerificationResultsCommonInformationDescriptionTextColor =
+        this.idenfyBankCardVerificationResultsCommonInformationDescriptionTextColor!;
+    if (this.idenfyBankCardVerificationResultsContinueButtonTextColor != null)
+      map.idenfyBankCardVerificationResultsContinueButtonTextColor =
+        this.idenfyBankCardVerificationResultsContinueButtonTextColor!;
     return map;
   }
 }
